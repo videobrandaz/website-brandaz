@@ -28,6 +28,7 @@ SITE = C['site']
 PROJECTS = load('projetos.json')
 POSTS = sorted(load('blog.json'), key=lambda b: b['date'], reverse=True)
 DIMS = load('dimensoes.json')
+DEP = load('depoimentos.json')
 BY_SLUG = {p['slug']: p for p in PROJECTS}
 BASE = SITE['url']
 YEAR = date.today().year
@@ -309,6 +310,27 @@ def client_items(rows=None):
                 else f'<span class="client-marquee-item">{logo}</span>')
     return out
 
+def testimonials(cls=''):
+    """Depoimentos de clientes. Itens "modelo" só aparecem nas prévias, nunca no site oficial."""
+    real = [d for d in DEP['depoimentos'] if d.get('texto') and not d.get('modelo')]
+    items = real or ([d for d in DEP['depoimentos'] if d.get('modelo')] if RELATIVE else [])
+    if not items:
+        return ''
+    cards = ''
+    for i, d in enumerate(items):
+        ini = ''.join(w[0] for w in d['nome'].split()[:2]).upper()
+        foto = (f'<img class="t-photo" src="{U(d["foto"])}" alt="{E(d["nome"])}" width="112" height="112" loading="lazy" decoding="async">' if d.get('foto')
+                else f'<span class="t-photo t-ini" aria-hidden="true">{E(ini)}</span>')
+        role = ' · '.join(x for x in (d.get('cargo'), d.get('empresa')) if x)
+        case = (f'<a class="t-case" href="{U("/projetos/" + d["case"] + "/")}">Ver o case {ARROW}</a>' if d.get('case') in BY_SLUG else '')
+        tag = '<span class="t-tag">Modelo · substituir em content/depoimentos.json</span>' if d.get('modelo') else ''
+        cards += (f'<figure class="t-card{" modelo" if d.get("modelo") else ""}" data-reveal style="--d:{i * 110}ms">{tag}{svg("<path d=" + chr(34) + "M10 7H6a2 2 0 0 0-2 2v4h5v5H4M20 7h-4a2 2 0 0 0-2 2v4h5v5h-5" + chr(34) + "/>", "t-quote", extra=LINE)}'
+                  f'<blockquote>{E(d["texto"])}</blockquote><figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
+    return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos" aria-labelledby="dep-title"><div class="editorial-container">
+  <div class="t-head">{label(DEP['label'])}<div class="mt6" id="dep-title">{title(*DEP['titulo'])}</div><p class="type-lead muted mt6 measure">{E(DEP['texto'])}</p></div>
+  <div class="t-grid">{cards}</div>
+</div></section>'''
+
 FEATURED = [BY_SLUG[s] for s in C['transformamos']['caseSlugs']]
 OTHERS = [p for p in PROJECTS if p['slug'] not in C['transformamos']['caseSlugs']]
 
@@ -404,6 +426,8 @@ def home(variant):
     <div class="home-chapter-cta"><i class="dust-anchor num" aria-hidden="true"><b class="dust-cap">marcas</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
   </div>
 </section>
+
+{testimonials('cinema-band')}
 
 <section id="contato" class="editorial-band home-chapter cinema-band" data-ch="Contato" data-shape="mark">
   <div class="editorial-container home-chapter-grid reveal">
@@ -586,6 +610,8 @@ def projetos():
   <p class="type-label muted mt6" id="projCount" aria-live="polite"></p>
   <div class="project-grid" id="projGrid">{grid}<div class="load-more"><button type="button" class="btn" id="loadMore">Carregar mais</button></div></div>
 </div></section>
+
+{testimonials()}
 
 {cta_band("Vamos conversar", "Sua marca pode ser", "nosso próximo case.", "", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
     lst = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Portfólio Brandaz", "url": BASE + "/projetos/",

@@ -505,3 +505,21 @@ html.still *{animation-play-state:paused!important}
 .bg-accent .scrub .w{opacity:.28}.bg-accent .scrub .w.on{opacity:1}
 .bg-paper .back{color:var(--paper-muted)}
 .next-case .type-label{color:var(--accent);margin:0}
+
+/* ---------- depoimentos ---------- */
+.t-grid{display:grid;gap:24px;margin-top:48px}
+@media (min-width:768px){.t-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px){.t-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.t-card{position:relative;margin:0;display:flex;flex-direction:column;gap:24px;padding:32px;border:1px solid var(--border);border-radius:8px;background:var(--surface);transition:border-color .3s,translate .3s}
+.t-card:hover{border-color:var(--accent);translate:0 -4px}
+.t-card.modelo{border-style:dashed;background:transparent}
+.t-tag{position:absolute;top:-11px;left:24px;padding:2px 10px;border-radius:999px;background:var(--background);border:1px dashed var(--accent);color:var(--accent);font:600 10px "Karibu",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.t-quote{width:32px;height:32px;color:var(--accent)}
+.t-card blockquote{margin:0;flex:1;font-size:19px;font-weight:300;line-height:1.6}
+.t-card.modelo blockquote{color:var(--muted)}
+.t-card figcaption{display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border)}
+.t-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--accent)}
+.t-ini{display:grid;place-items:center;background:var(--depth);color:var(--accent);font-weight:800;font-size:18px}
+.t-card figcaption b{display:block;font-weight:700}.t-card figcaption small{display:block;font-size:14px;color:var(--muted)}
+.t-case{display:inline-flex;align-items:center;gap:8px;font:600 12px "Karibu",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.t-case:hover{color:var(--fg)}

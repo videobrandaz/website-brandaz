@@ -1,0 +1,14 @@
+{
+  "label": "Depoimentos",
+  "titulo": ["O que dizem", "nossos clientes."],
+  "texto": "Parcerias que atravessam anos contam a nossa história melhor do que ninguém.",
+  "_como_usar": "Preencha um item por cliente. 'foto': envie a imagem (quadrada, mín. 400x400) para static/assets/img/depoimentos/ e informe o caminho, ex.: /assets/img/depoimentos/joao-silva.webp. 'case': slug do case em content/projetos.json (opcional). Itens com \"modelo\": true são só exemplos de layout: aparecem nas prévias e nunca no site oficial. Apague-os quando houver depoimentos reais.",
+  "depoimentos": [
+    {"modelo": true, "nome": "Nome do cliente", "cargo": "Cargo", "empresa": "Empresa", "foto": "", "case": "",
+     "texto": "Espaço reservado para o depoimento do cliente. Uma ou duas frases sobre a parceria, o processo e o resultado alcançado com a Brandaz."},
+    {"modelo": true, "nome": "Nome do cliente", "cargo": "Cargo", "empresa": "Empresa", "foto": "", "case": "",
+     "texto": "Espaço reservado para o depoimento do cliente. Ideal entre 150 e 300 caracteres para manter o layout equilibrado."},
+    {"modelo": true, "nome": "Nome do cliente", "cargo": "Cargo", "empresa": "Empresa", "foto": "", "case": "",
+     "texto": "Espaço reservado para o depoimento do cliente. Com foto, nome, cargo e empresa, o card ganha credibilidade e pode levar ao case."}
+  ]
+}

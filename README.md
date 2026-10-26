@@ -31,6 +31,14 @@ Prévia com arquivos `.html` soltos (para compartilhar como link de revisão):
 python tools/build.py --preview ../previa
 ```
 
+## Depoimentos
+
+Aparecem na home (antes do Contato) e no Portfólio. Para incluir um cliente:
+
+1. Envie a foto (quadrada, mínimo 400×400, de preferência `.webp`) para `static/assets/img/depoimentos/`.
+2. Em `content/depoimentos.json`, adicione um item com `nome`, `cargo`, `empresa`, `texto`, `foto` (ex.: `/assets/img/depoimentos/joao-silva.webp`) e, se houver, `case` (o slug do case, ex.: `supermercado-royal`).
+3. Apague os itens com `"modelo": true`. Eles servem só para mostrar o layout nas prévias e nunca aparecem no site oficial.
+
 ## Capas da home
 
 - `/` — V1: filme horizontal da 90 Graus + cases de design
