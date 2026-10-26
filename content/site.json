@@ -1,0 +1,148 @@
+{
+  "site": {
+    "url": "https://brandaz.com.br",
+    "name": "Brandaz",
+    "slogan": "Onde a estratégia ganha magia.",
+    "email": "atendimento@brandaz.com.br",
+    "phone": { "display": "(49) 99810-3399", "intl": "+55 49 99810-3399", "tel": "+5549998103399", "whatsapp": "https://wa.me/5549998103399" },
+    "instagram": { "handle": "@agenciabrandaz", "url": "https://www.instagram.com/agenciabrandaz/" },
+    "facebook": "https://www.facebook.com/agenciabrandaz",
+    "behance": "https://www.behance.net/agenciabrandaz",
+    "address": "Rua Borges de Medeiros, 897 – Sala 902, Presidente Médici, Chapecó – SC, 89801-161",
+    "address_full": "Rua Borges de Medeiros, 897 – Sala 902, Presidente Médici, Chapecó – SC, 89801-161, BR",
+    "street": "Rua Borges de Medeiros, 897 – Sala 902, Presidente Médici",
+    "city": "Chapecó", "region": "SC", "postal": "89801-161",
+    "geo": [-27.095259, -52.609009],
+    "maps": "https://www.google.com/maps/search/?api=1&query=-27.095259,-52.609009",
+    "map_embed": "https://maps.google.com/maps?q=-27.095259,-52.609009(Ag%C3%AAncia%20Brandaz)&z=17&hl=pt-BR&output=embed",
+    "cities": ["Chapecó", "Concórdia", "Xanxerê", "São Miguel do Oeste", "Pinhalzinho", "Xaxim", "Oeste de Santa Catarina"],
+    "founder": "Diego Malinski"
+  },
+  "nav": [["A Brandaz", "/brandaz/"], ["Serviços", "/servicos/"], ["Portfólio", "/projetos/"], ["Blog", "/blog/"]],
+  "home": {
+    "title": "Agência de Marketing e Publicidade em Chapecó | Brandaz",
+    "description": "+20 anos, +12 anos com o Supermercado Royal, ROAS 9,56x e 478 mil visualizações em 30 dias. Branding, campanhas, conteúdo, audiovisual e mídia em Chapecó e no Oeste de SC.",
+    "hero": ["Onde a estratégia", "ganha magia."],
+    "lead": "Agência de marketing e publicidade especializada em branding, comunicação e estratégias para marcas.",
+    "statement": "Há mais de *20 anos* enxergando o que *poucos veem* e construindo o que muitos ainda *não imaginam.*",
+    "about": "A Brandaz é uma agência de publicidade e comunicação integrada que reúne criatividade, planejamento e estratégia para desenvolver marcas, campanhas e experiências de comunicação."
+  },
+  "historia": {
+    "title": ["Mais de 20 anos de", "histórias, marcas e conexões."],
+    "paragraphs": ["Nossa trajetória foi construída ao lado de empresas de diferentes segmentos, acompanhando as transformações do mercado e da forma como as marcas se comunicam.", "Ao longo dessas duas décadas, ampliamos nosso repertório, fortalecemos relacionamentos e evoluímos nossa maneira de fazer comunicação."],
+    "closing": ["A experiência nos trouxe até aqui.", "A vontade de evoluir nos leva adiante."],
+    "stats": [["+20", "Anos de história"], ["+12", "Anos de parceria com o Supermercado Royal"]]
+  },
+  "scrub": "Grandes transformações começam com uma nova forma de enxergar. É assim que conectamos ideias, marcas e pessoas para criar o que vem a seguir.",
+  "evolucao": {
+    "label": "Nossa evolução",
+    "title": ["Uma nova fase.", "A mesma essência."],
+    "text": "A Brandaz vive um novo momento de crescimento. Com a ampliação da equipe, a chegada de novos talentos e uma estrutura renovada, seguimos evoluindo para atender projetos de diferentes portes e necessidades.",
+    "chips": ["Novo espaço", "Nova equipe", "Novos desafios"],
+    "office": [
+      ["/assets/img/site/office-reception-v2.webp", "Novo espaço da Brandaz em Chapecó"],
+      ["/assets/img/site/office-workstation-v2.webp", "Estação de trabalho no novo espaço da Brandaz"],
+      ["/assets/img/site/office-meeting-v2.webp", "Sala de reunião da Brandaz"],
+      ["/assets/img/site/office-shelf-v2.webp", "Detalhe do novo espaço da Brandaz"],
+      ["/assets/img/site/office-lounge-v2.webp", "Recepção da Brandaz"]
+    ]
+  },
+  "lider": {
+    "name": "Diego Malinski",
+    "role": "Fundador e CEO",
+    "image": "/assets/img/site/diego-malinski-ceo.webp",
+    "bio": "À frente da Brandaz, Diego Malinski acompanha há mais de duas décadas as transformações do mercado e da comunicação. Sua visão combina experiência, criatividade e a busca constante por novas possibilidades para as marcas.",
+    "quote": "Tenho orgulho da história que construímos. Mas o que mais me motiva é tudo aquilo que ainda podemos criar, transformar e conquistar."
+  },
+  "proposito": {
+    "label": "O que nos move",
+    "title": ["Criatividade com propósito.", "Comunicação com resultado."],
+    "text": "Acreditamos que boas ideias começam com boas perguntas. Antes de criar, buscamos compreender o negócio, o mercado, o público e os desafios de cada cliente.",
+    "checks": ["Entender o negócio antes de propor soluções.", "Criar com estratégia, identidade e propósito.", "Transformar ideias em entregas que geram resultados."],
+    "differentialsLabel": "Nossos diferenciais",
+    "differentials": [
+      ["Visão de negócio", "Entendemos o cenário, os desafios e os objetivos de cada cliente."],
+      ["Planejamento integrado", "Conectamos diferentes frentes da comunicação em um mesmo planejamento."],
+      ["Criação autoral", "Desenvolvemos soluções criativas alinhadas à identidade de cada marca."],
+      ["Entrega multidisciplinar", "Reunimos diferentes especialidades para transformar ideias em projetos."],
+      ["Atenção aos detalhes", "Cuidamos de cada etapa, do conceito à entrega final."],
+      ["Foco em resultados", "Trabalhamos com objetivos claros e acompanhamos o desempenho das ações."]
+    ]
+  },
+  "caminho": {
+    "label": "Como trabalhamos",
+    "title": ["Como trabalhamos", "Da pergunta certa ao resultado."],
+    "text": "Cada projeto começa com a compreensão do desafio. A partir disso, conectamos planejamento, criatividade e execução em um processo que evolui junto com cada marca.",
+    "steps": [["01", "Entender", "Negócio e contexto"], ["02", "Planejar", "Objetivos e caminhos"], ["03", "Criar", "Ideias e soluções"], ["04", "Executar", "Projetos e campanhas"], ["05", "Evoluir", "Análise e melhorias"]]
+  },
+  "aaz": {
+    "label": "Brandaz de A a Z",
+    "title": ["Uma agência completa", "para desafios completos."],
+    "text": "O nosso “A a Z” representa mais do que o nome. Representa a capacidade de conectar diferentes especialidades dentro de uma mesma estratégia.",
+    "closing": "Do primeiro insight ao *último detalhe.*",
+    "letters": [["A", "Análise"], ["B", "Branding"], ["C", "Campanhas e conteúdo"], ["D", "Design"], ["E", "Estratégia"]]
+  },
+  "especialidades": {
+    "label": "Nossas especialidades",
+    "title": ["Da ideia à execução.", "Tudo conectado."],
+    "items": [["01", "Estratégia e planejamento", "Diagnóstico, posicionamento e campanhas"], ["02", "Branding e identidade", "Naming, identidade visual e gestão de marcas"], ["03", "Publicidade e criação", "Direção de arte, design e materiais gráficos"], ["04", "Conteúdo e audiovisual", "Social media, fotografia, vídeo e conteúdo"], ["05", "Mídia e performance", "Meta Ads, Google Ads e otimização"], ["06", "Soluções digitais", "Sites, landing pages e campanhas digitais"], ["07", "Comunicação integrada", "Institucional, PDV, interna e promocional"]]
+  },
+  "services": [
+    {"id": "estrategia", "title": "Estratégia e planejamento", "deliverables": "Diagnóstico de marca, posicionamento, planejamento de marketing, campanhas e comunicação.", "description": "Entendemos o cenário e os objetivos do negócio para desenvolver ações alinhadas às necessidades de cada marca.", "scopes": ["Campanha", "Brand Book"]},
+    {"id": "branding", "title": "Branding e identidade visual", "deliverables": "Naming, posicionamento, identidade visual, rebranding e brand book.", "description": "Construímos e desenvolvemos marcas com personalidade, consistência e reconhecimento.", "scopes": ["Branding", "Rebranding"]},
+    {"id": "criacao", "title": "Campanhas e publicidade", "deliverables": "Conceitos criativos, campanhas publicitárias, direção de arte, materiais gráficos e embalagens.", "description": "Criamos campanhas e peças que conectam marcas ao público em diferentes canais e formatos.", "scopes": ["Embalagem", "PDV"]},
+    {"id": "conteudo", "title": "Conteúdo e produção audiovisual", "deliverables": "Gestão de redes sociais, planejamento de conteúdo, fotografia, vídeos e produção audiovisual.", "description": "Desenvolvemos conteúdos que fortalecem a presença das marcas e criam conexões com seus públicos.", "scopes": ["Fotografia", "Audiovisual"]},
+    {"id": "midia", "title": "Tráfego pago e performance", "deliverables": "Meta Ads, Google Ads, planejamento de mídia, gestão de campanhas e otimização.", "description": "Planejamos e gerenciamos campanhas digitais com foco em alcançar o público certo e melhorar os resultados.", "scopes": ["Campanha", "Social Media"]},
+    {"id": "digital", "title": "Sites e soluções digitais", "deliverables": "Sites institucionais, landing pages e experiências digitais.", "description": "Desenvolvemos soluções digitais que ampliam a presença das marcas e facilitam o contato com seus públicos.", "scopes": ["Social Media"]},
+    {"id": "comunicacao-integrada", "title": "Comunicação institucional", "deliverables": "Materiais institucionais, comunicação interna, endomarketing, materiais promocionais e ponto de venda.", "description": "Criamos soluções de comunicação para fortalecer marcas dentro das empresas e nos ambientes em que elas se relacionam com seus públicos.", "scopes": ["PDV", "Encarte"]}
+  ],
+  "faq": [
+    ["O que faz uma agência de comunicação integrada?", "Conecta estratégia, criação e execução nos diferentes canais de uma marca, do digital ao físico."],
+    ["A Brandaz atende empresas fora de Chapecó?", "Sim. Atendemos Chapecó e região, incluindo Xanxerê, Concórdia, São Miguel do Oeste, Pinhalzinho, Palmitos, Seara, Xaxim e o Oeste catarinense."],
+    ["Quais serviços a Brandaz oferece?", "Estratégia, branding, criação, conteúdo, mídia, digital e comunicação integrada."],
+    ["Como começa um projeto com a Brandaz?", "Começa pelo entendimento do desafio e segue o método: Desafio → Estratégia → Ideia → Execução → Resultado."],
+    ["Onde fica a Brandaz?", "Na Rua Borges de Medeiros, 897 – Sala 902, Presidente Médici, Chapecó – SC."]
+  ],
+  "transformamos": {
+    "label": "O que já transformamos",
+    "title": ["Estratégia que", "ganha forma."],
+    "caseSlugs": ["supermercado-royal", "marlos-campos-concursos", "melira-films", "nosso-bpo", "hospital-regional-do-oeste"],
+    "caseFlowLabel": "Do desafio ao resultado",
+    "caseFlowSteps": ["Desafio", "Estratégia", "Ideia", "Execução", "Resultado"]
+  },
+  "method": [["Desafio", "challenge"], ["Estratégia", "strategy"], ["Ideia", "idea"], ["Execução", "solution"], ["Resultado", "outcome"]],
+  "marcas": { "title": ["Marcas que fazem parte", "da nossa história"], "text": "Algumas parcerias atravessam anos. Outras representam novos capítulos. *Cada marca, uma história.*" },
+  "contato": { "title": ["Quer transformar seu", "próximo capítulo em magia?"], "scopes": ["Branding", "Identidade visual", "Estratégia", "Embalagem", "Naming", "Campanha"] },
+  "clients": [
+    ["nexo-contabil", "Nexo Contábil", "nexo-contabil"], ["oeste-home", "Oeste Home Imobiliária", "oeste-home"], ["for-lezz", "For Lezz", "for-lezz"], ["raios-de-sol", "Raios de Sol", ""],
+    ["regenera", "Regenera", "regenera"], ["nosso-bpo", "Nosso BPO", "nosso-bpo"], ["hro", "Hospital Regional do Oeste", "hospital-regional-do-oeste"], ["agronexo", "Agronexo", "agronexo"],
+    ["solvitas", "Solvitas Cursos", "solvitas-cursos"], ["nicos-soft-cream", "Nico's Soft Cream", "nicos-soft-cream"], ["90-graus", "90 Graus Móveis sob Medida", "90-graus"], ["alvf", "ALVF", ""],
+    ["max-10", "Max 10", ""], ["benefatto", "Benefatto", "benefatto"], ["royal", "Supermercado Royal", "supermercado-royal"], ["util-variedades", "Mais Útil", ""],
+    ["melira-films", "Melira Films", "melira-films"], ["rc-investimentos", "RC Investimentos Imobiliários", "rc-investimentos"], ["big-utilidades", "Big Utilidades", ""],
+    ["hns", "HNSS", ""], ["souart", "Souart", ""]
+  ],
+  "films": [
+    {"preview": "croissants", "full": "/assets/video/royal-croissants/01.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Croissants", "slug": "royal-croissants"},
+    {"preview": "cafes-carraro", "full": "/assets/video/royal-cafes-carraro/01.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Cafés Especiais", "slug": "royal-cafes-carraro"},
+    {"preview": "inverno", "full": "/assets/video/royal-inverno/02.mp4", "category": "VAREJO", "client": "Supermercado Royal", "name": "Royal — Receitas de Inverno", "slug": "royal-inverno"},
+    {"preview": "dia-das-maes", "full": "/assets/video/royal-dia-das-maes-filme/01.mp4", "category": "INSTITUCIONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Mães (filme)", "slug": "royal-dia-das-maes-filme"},
+    {"preview": "dia-das-criancas", "full": "/assets/video/royal-dia-das-criancas-2024/02.mp4", "category": "SAZONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Crianças: Massinha", "slug": "royal-dia-das-criancas-2024"},
+    {"preview": "90-graus", "full": "/assets/video/90-graus/01.mp4", "category": "INSTITUCIONAL", "client": "90 Graus", "name": "90 Graus Móveis sob Medida", "slug": "90-graus"},
+    {"preview": "biscoitos", "full": "/assets/video/filmes/biscoitos.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Biscoitos", "slug": "supermercado-royal"},
+    {"preview": "cachaca", "full": "/assets/video/filmes/cachaca.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Cachaça", "slug": "supermercado-royal"},
+    {"preview": "cuca", "full": "/assets/video/filmes/cuca.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Cuca", "slug": "supermercado-royal"},
+    {"preview": "franui", "full": "/assets/video/filmes/franui.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Franuí", "slug": "supermercado-royal"},
+    {"preview": "garibaldi", "full": "/assets/video/filmes/garibaldi.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Garibaldi", "slug": "supermercado-royal"},
+    {"preview": "granolas", "full": "/assets/video/filmes/granolas.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Granolas", "slug": "supermercado-royal"},
+    {"preview": "pratos-prontos", "full": "/assets/video/filmes/pratosprontos.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Pratos Prontos", "slug": "supermercado-royal"}
+  ],
+  "chapters": [
+    ["01", "Início", "/", "Onde a estratégia ganha magia."],
+    ["02", "A Brandaz", "/brandaz/", "Uma nova fase. A mesma essência."],
+    ["03", "Como trabalhamos", "/como-trabalhamos/", "Toda grande ideia precisa de um caminho."],
+    ["04", "Especialidades", "/servicos/", "Da ideia à execução. Tudo conectado."],
+    ["05", "Cases", "/projetos/", "Estratégia que ganha forma."],
+    ["06", "Clientes", "/projetos/", "Cada marca, uma história."],
+    ["07", "Contato", "/contato/", "Seu próximo capítulo começa aqui."]
+  ]
+}

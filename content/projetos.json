@@ -1,0 +1,3588 @@
+[
+ {
+  "order": -5,
+  "featured": true,
+  "slug": "supermercado-royal",
+  "name": "Supermercado Royal",
+  "year": "+12 anos",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Supermercado",
+  "caseNumber": "01",
+  "discipline": "Comunicação integrada",
+  "highlight": "+12 anos de parceria.",
+  "image": "/assets/img/projects/supermercado-royal/cover.webp",
+  "hero": "/assets/img/projects/supermercado-royal/hero.webp",
+  "scope": [
+   "Comunicação integrada",
+   "Campanhas",
+   "Redes sociais",
+   "Tabloides"
+  ],
+  "tagline": "Há mais de 12 anos, uma parceria construída com confiança.",
+  "text": "Comunicação integrada para o varejo, campanha após campanha, há mais de 12 anos.",
+  "intro": "O Supermercado Royal caminha com a Brandaz há mais de 12 anos. Uma parceria que acompanha o calendário do varejo, das campanhas temáticas às redes sociais.",
+  "challenge": "Manter a comunicação da marca relevante e próxima dos consumidores.",
+  "strategy": "Construir uma presença consistente, acompanhando o calendário e as necessidades do varejo.",
+  "idea": "Unir criatividade, tradição e conexão com o público.",
+  "solution": "Campanhas temáticas, gestão de redes sociais, tabloides promocionais e materiais de comunicação.",
+  "outcome": "+12 anos de parceria, confiança e evolução contínua da marca.",
+  "results": [
+   "+12 anos de parceria",
+   "Campanhas temáticas",
+   "Gestão de redes sociais",
+   "Tabloides e materiais de PDV"
+  ],
+  "metrics": [
+   {
+    "value": "+12 anos",
+    "label": "de parceria, confiança e evolução contínua da marca"
+   }
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/01.webp",
+     "width": 2000,
+     "height": 800,
+     "alt": "Supermercado Royal — Dia dos Namorados — painel"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/02.webp",
+     "width": 993,
+     "height": 585,
+     "alt": "Supermercado Royal — Copa Royal — banner de loja"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/03.webp",
+     "width": 993,
+     "height": 585,
+     "alt": "Supermercado Royal — Arraiá Super Royal — tablet"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/04.webp",
+     "width": 949,
+     "height": 977,
+     "alt": "Supermercado Royal — Arraiá Super Royal — banner de loja"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/05.webp",
+     "width": 950,
+     "height": 978,
+     "alt": "Supermercado Royal — Arraiá Super Royal — tablet"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/06.webp",
+     "width": 950,
+     "height": 976,
+     "alt": "Supermercado Royal — Arraiá Super Royal — cartaz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/07.webp",
+     "width": 948,
+     "height": 977,
+     "alt": "Supermercado Royal — Arraiá Super Royal — outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/08.webp",
+     "width": 949,
+     "height": 977,
+     "alt": "Supermercado Royal — Copa Royal — cartaz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/09.webp",
+     "width": 950,
+     "height": 977,
+     "alt": "Supermercado Royal — Copa Royal — notebook"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/10.webp",
+     "width": 950,
+     "height": 976,
+     "alt": "Supermercado Royal — Copa Royal — cartazes"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/11.webp",
+     "width": 948,
+     "height": 976,
+     "alt": "Supermercado Royal — Copa Royal — outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/12.webp",
+     "width": 1906,
+     "height": 1969,
+     "alt": "Supermercado Royal — Dia dos Namorados — cartaz"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/13.webp",
+     "width": 953,
+     "height": 977,
+     "alt": "Supermercado Royal — Dia dos Namorados — notebook"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/14.webp",
+     "width": 953,
+     "height": 977,
+     "alt": "Supermercado Royal — Dia dos Namorados — banner de loja"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/15.webp",
+     "width": 952,
+     "height": 976,
+     "alt": "Supermercado Royal — Dia dos Namorados — tablet"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/16.webp",
+     "width": 952,
+     "height": 488,
+     "alt": "Supermercado Royal — Dia dos Namorados — esboço da ilustração"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/supermercado-royal/17.webp",
+     "width": 952,
+     "height": 488,
+     "alt": "Supermercado Royal — Dia dos Namorados — ilustração final"
+    }
+   ]
+  ]
+ },
+ {
+  "order": -4,
+  "featured": true,
+  "slug": "marlos-campos-concursos",
+  "name": "Marlos Campos Concursos",
+  "year": "2026",
+  "client": "Marlos Campos Concursos",
+  "segment": "Educação · Concursos públicos",
+  "caseNumber": "02",
+  "discipline": "Mídia e performance",
+  "highlight": "9,56x de retorno sobre a mídia.",
+  "image": "/assets/img/projects/marlos-campos-concursos/cover.webp",
+  "hero": "/assets/img/projects/marlos-campos-concursos/hero.webp",
+  "scope": [
+   "Mídia e performance",
+   "Meta Ads",
+   "Google Ads",
+   "YouTube"
+  ],
+  "tagline": "Mais vendas. Menor custo por aquisição.",
+  "text": "Mídia paga com foco em conversão: 119 vendas e ROAS de 9,56x em um mês.",
+  "intro": "A Marlos Campos Concursos prepara candidatos para concursos públicos. A Brandaz assumiu a gestão de mídia paga com um objetivo claro: vender mais, gastando melhor.",
+  "challenge": "Transformar investimentos em tráfego pago em vendas consistentes.",
+  "strategy": "Otimização de campanhas, segmentação de públicos e acompanhamento de conversões.",
+  "idea": "Investir com inteligência para aumentar a eficiência comercial.",
+  "solution": "Gestão de Meta Ads e Google/YouTube, campanhas por concurso e otimização contínua.",
+  "outcome": "Em agosto de 2026: 119 vendas, ROAS de 9,56x e custo por aquisição de R$ 29,02, 22% menor que em julho.",
+  "results": [
+   "119 vendas",
+   "ROAS 9,56x",
+   "CPA R$ 29,02",
+   "CPA 22% menor que em julho"
+  ],
+  "metrics": [
+   {
+    "value": "119",
+    "label": "vendas"
+   },
+   {
+    "value": "9,56x",
+    "label": "ROAS"
+   },
+   {
+    "value": "R$ 29,02",
+    "label": "custo por aquisição"
+   }
+  ],
+  "metricsPeriod": "Agosto de 2026",
+  "metricsNote": "Custo por aquisição 22% menor que em julho.",
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/marlos-campos-concursos/01.webp",
+     "width": 2000,
+     "height": 801,
+     "alt": "Marlos Campos Concursos — Capa do canal no YouTube"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/marlos-campos-concursos/02.webp",
+     "width": 993,
+     "height": 585,
+     "alt": "Marlos Campos Concursos — Banner de vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/marlos-campos-concursos/03.webp",
+     "width": 992,
+     "height": 584,
+     "alt": "Marlos Campos Concursos — Site"
+    }
+   ]
+  ]
+ },
+ {
+  "order": -3,
+  "featured": true,
+  "caseNumber": "03",
+  "discipline": "Branding e identidade",
+  "highlight": "Identidade visual e aplicações.",
+  "slug": "melira-films",
+  "name": "Melira Films",
+  "year": "2026",
+  "client": "Melira Films",
+  "segment": "Produtora audiovisual",
+  "image": "/assets/img/projects/melira-films/cover.webp",
+  "hero": "/assets/img/projects/melira-films/hero.webp",
+  "scope": [
+   "Branding",
+   "Brand Book"
+  ],
+  "tagline": "Seus vídeos não serão mais os mesmos.",
+  "text": "Identidade para uma produtora audiovisual que une estratégia e cinema.",
+  "intro": "A Melira Films produz conteúdo audiovisual estratégico para marcas e profissionais. O nome vem do mel: produção cuidadosa, colaborativa e que gera valor.",
+  "challenge": "Unir o universo da colmeia e o do cinema sem ficar literal ou infantil, e funcionar em telas, equipamentos e equipe.",
+  "strategy": "Apresentar a Melira como produtora estratégica, com uma marca de presença cinematográfica e calor humano.",
+  "idea": "A claquete no acento do 'E', o feixe de projetor no 'A' e hexágonos desfocados que funcionam como bokeh de lente.",
+  "solution": "Criamos o logotipo e suas versões, a paleta café e mel, a tipografia Gearlong, patterns de colmeia e claquete e um conjunto de aplicações para set, equipe e merchandising.",
+  "outcome": "Uma identidade com personalidade própria, que comunica cinema e estratégia ao mesmo tempo.",
+  "results": [
+   "Logotipo e versões",
+   "Patterns",
+   "Paleta e tipografia",
+   "Aplicações"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Capa da identidade visual"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Conceito da marca"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Logotipo sobre imagem"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/04.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Logotipo em destaque"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/05.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Versões cromáticas"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/06.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Selo hexagonal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/07.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Letreiro 3D"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Notebook e garrafa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/09.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Moletom"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Camiseta"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/11.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Boné e caneca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/12.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Melira Films — Placa iluminada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-01.webp",
+     "width": 2400,
+     "height": 1352,
+     "alt": "Melira Films — Key visual com logotipo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-02.webp",
+     "width": 1272,
+     "height": 976,
+     "alt": "Melira Films — Letreiro no estúdio"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-03.webp",
+     "width": 1264,
+     "height": 1968,
+     "alt": "Melira Films — Camiseta da equipe"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-04.webp",
+     "width": 1272,
+     "height": 976,
+     "alt": "Melira Films — Boné"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-05.webp",
+     "width": 1272,
+     "height": 976,
+     "alt": "Melira Films — Caneca"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/melira-films/v3-06.webp",
+     "width": 1272,
+     "height": 976,
+     "alt": "Melira Films — Moletom"
+    }
+   ]
+  ]
+ },
+ {
+  "order": -2,
+  "featured": true,
+  "caseNumber": "04",
+  "discipline": "Branding e identidade",
+  "highlight": "Criação de identidade visual.",
+  "statement": "Uma identidade criada para expressar a essência da marca.",
+  "slug": "nosso-bpo",
+  "name": "Nosso BPO",
+  "year": "2024",
+  "client": "Nosso BPO",
+  "segment": "Terceirização financeira",
+  "image": "/assets/img/projects/nosso-bpo/cover.webp",
+  "hero": "/assets/img/projects/nosso-bpo/hero.webp",
+  "scope": [
+   "Branding"
+  ],
+  "tagline": "A qualidade que sua vida e seu negócio precisam.",
+  "text": "Identidade leve e humana para quem cuida das finanças de outras empresas.",
+  "intro": "O Nosso BPO assume a rotina financeira e contábil de pequenas e médias empresas, devolvendo tempo e tranquilidade ao empresário.",
+  "challenge": "Fugir da sobriedade fria do setor e criar uma marca próxima, que ainda sinalize competência e organização.",
+  "strategy": "Comunicar tranquilidade: o cliente delega a complexidade e foca no que importa.",
+  "idea": "O símbolo 'nb' forma um elefante — força, memória e trabalho em equipe.",
+  "solution": "Criamos o logotipo e o conceito, a paleta azul-petróleo e verde e as aplicações: outdoor, cartaz, flyer, mupi, painel, redes sociais, papelaria, uniformes, crachá e canecas.",
+  "outcome": "Uma marca acessível e confiável, com personalidade própria no setor financeiro.",
+  "results": [
+   "Logotipo e símbolo",
+   "Conceito, paleta e tipografia",
+   "Peças de comunicação",
+   "Papelaria, uniformes e brindes"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Logotipo horizontal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Logotipo vertical"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/03.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Nosso BPO — Construção do símbolo: n + b"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/04.webp",
+     "width": 2400,
+     "height": 1602,
+     "alt": "Nosso BPO — Outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/05.webp",
+     "width": 2052,
+     "height": 1632,
+     "alt": "Nosso BPO — Cartaz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/06.webp",
+     "width": 2400,
+     "height": 1601,
+     "alt": "Nosso BPO — Mupi"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/07.webp",
+     "width": 2400,
+     "height": 1601,
+     "alt": "Nosso BPO — Painel de palco"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Redes sociais"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/09.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Papelaria"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Camisas polo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/11.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Crachá"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/12.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nosso BPO — Canecas"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-01.webp",
+     "width": 1904,
+     "height": 976,
+     "alt": "Nosso BPO — Outdoor"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-02.webp",
+     "width": 953,
+     "height": 1969,
+     "alt": "Nosso BPO — Cartaz vertical"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-03.webp",
+     "width": 953,
+     "height": 977,
+     "alt": "Nosso BPO — Crachá"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-04.webp",
+     "width": 936,
+     "height": 976,
+     "alt": "Nosso BPO — Canecas"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-05.webp",
+     "width": 952,
+     "height": 976,
+     "alt": "Nosso BPO — Papelaria"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-06.webp",
+     "width": 954,
+     "height": 977,
+     "alt": "Nosso BPO — Camisas polo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nosso-bpo/v3-07.webp",
+     "width": 1280,
+     "height": 1112,
+     "alt": "Nosso BPO — Paleta de cores"
+    }
+   ]
+  ]
+ },
+ {
+  "order": -1,
+  "featured": true,
+  "slug": "hospital-regional-do-oeste",
+  "name": "Hospital Regional do Oeste",
+  "year": "2026",
+  "client": "Hospital Regional do Oeste",
+  "segment": "Saúde · Hospital",
+  "caseNumber": "05",
+  "discipline": "Social media e conteúdo",
+  "highlight": "478 mil visualizações em 30 dias.",
+  "image": "/assets/img/projects/hospital-regional-do-oeste/cover.webp",
+  "hero": "/assets/img/projects/hospital-regional-do-oeste/hero.webp",
+  "scope": [
+   "Social media",
+   "Conteúdo",
+   "Podcast",
+   "Campanhas institucionais"
+  ],
+  "tagline": "Uma comunicação que aproxima, informa e gera conexão.",
+  "text": "Redes sociais e conteúdo que humanizam o hospital: 478 mil visualizações em 30 dias.",
+  "intro": "O Hospital Regional do Oeste, em Chapecó, é referência em saúde para toda a região. A Brandaz cuida das redes sociais e da produção de conteúdo, incluindo o podcast HRO Onco.",
+  "challenge": "Fortalecer a presença digital do hospital e ampliar a conexão com a comunidade.",
+  "strategy": "Valorizar pessoas, conquistas e informações relevantes para o público.",
+  "idea": "Humanizar a comunicação e dar visibilidade às histórias do hospital.",
+  "solution": "Gestão de redes sociais, produção de conteúdos, campanhas institucionais e cobertura de acontecimentos.",
+  "outcome": "Em 30 dias: 478 mil visualizações, 6,5 mil interações e +627 seguidores.",
+  "results": [
+   "478 mil visualizações",
+   "6,5 mil interações",
+   "+627 seguidores",
+   "Podcast HRO Onco"
+  ],
+  "metrics": [
+   {
+    "value": "478 mil",
+    "label": "visualizações"
+   },
+   {
+    "value": "6,5 mil",
+    "label": "interações"
+   },
+   {
+    "value": "+627",
+    "label": "seguidores"
+   }
+  ],
+  "metricsPeriod": "Em 30 dias",
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/hospital-regional-do-oeste/01.webp",
+     "width": 2000,
+     "height": 800,
+     "alt": "Hospital Regional do Oeste — Estúdio do podcast HRO Onco"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/hospital-regional-do-oeste/02.webp",
+     "width": 992,
+     "height": 584,
+     "alt": "Hospital Regional do Oeste — Gravação do podcast"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/hospital-regional-do-oeste/03.webp",
+     "width": 992,
+     "height": 584,
+     "alt": "Hospital Regional do Oeste — Identidade do podcast HRO Onco"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 1,
+  "featured": true,
+  "slug": "agronexo",
+  "name": "Agronexo",
+  "year": "2026",
+  "client": "Agronexo Gestão Financeira",
+  "segment": "Agronegócio · Finanças",
+  "image": "/assets/img/projects/agronexo/cover.webp",
+  "hero": "/assets/img/projects/agronexo/hero.webp",
+  "scope": [
+   "Branding",
+   "Brand Book"
+  ],
+  "tagline": "Onde a força do campo encontra a inteligência da gestão.",
+  "text": "Identidade visual e brand book para uma gestão financeira que fala a língua do agronegócio.",
+  "intro": "A Agronexo organiza as finanças de produtores e empresas do agro. Precisava de uma marca que transmitisse solidez para quem vive do campo e clareza para quem decide com números.",
+  "challenge": "Unir dois universos que raramente conversam — a robustez do agronegócio e a precisão da gestão financeira — sem cair no clichê rural nem na frieza bancária.",
+  "strategy": "Posicionar a Agronexo como parceira de decisão: alguém que entende a rotina da propriedade e traduz números em direção.",
+  "idea": "Um nexo: dois traços que se entrelaçam em movimento contínuo, representando terra e gestão caminhando juntas.",
+  "solution": "Criamos símbolo, logotipo e versões de aplicação, a paleta Midnight Space e Sulu Green, a tipografia Neue Kabel e um pattern proprietário. Tudo foi organizado em um brand book com regras de uso, aplicações e papelaria.",
+  "outcome": "Uma marca pronta para crescer com consistência, com regras claras para cada ponto de contato.",
+  "results": [
+   "Logotipo, símbolo e versões",
+   "Paleta, tipografia e pattern",
+   "Brand book de 24 páginas",
+   "Papelaria e aplicações"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Capa do brand book"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Logotipo sobre fotografia"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Versões do logotipo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/04.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Paleta de cores"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/05.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Tipografia Neue Kabel"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/06.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Pattern da marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/07.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Simulação de fachada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Pin e caneca"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/09.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Camisa polo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Boné e garrafa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/agronexo/11.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Agronexo — Papelaria"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 2,
+  "featured": true,
+  "slug": "royal-super-fim-de-ano",
+  "name": "Royal — Super Fim de Ano",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-super-fim-de-ano/cover.webp",
+  "hero": "/assets/img/projects/royal-super-fim-de-ano/hero.webp",
+  "scope": [
+   "Campanha",
+   "PDV",
+   "Social Media"
+  ],
+  "tagline": "Um Natal azul e dourado, do jeito do Royal.",
+  "text": "Campanha de Natal e Ano-Novo com direção de arte em papercraft azul e dourado.",
+  "intro": "O fim de ano é o período de maior fluxo do varejo alimentar. O Royal queria uma campanha natalina própria, reconhecível da loja ao digital.",
+  "challenge": "Fugir do vermelho previsível do Natal e criar um visual festivo e premium que funcionasse em formatos muito diferentes, mantendo a leitura rápida do ponto de venda.",
+  "strategy": "Construir um território natalino exclusivo para o Royal, com uma assinatura forte o suficiente para ser reconhecida em qualquer formato.",
+  "idea": "Um cenário em papercraft azul profundo e dourado — quebra-nozes, árvores estilizadas e balões — emoldurando o lettering 'Super Fim de Ano'.",
+  "solution": "Desenvolvemos o key visual, o lettering exclusivo e os desdobramentos horizontais e verticais, além de uma linha específica para as Cestas de Natal em versões clara e escura.",
+  "outcome": "Uma campanha coesa, com identidade própria e desdobrável para toda a temporada de fim de ano.",
+  "results": [
+   "Key visual e lettering exclusivo",
+   "Peças horizontais e verticais",
+   "Linha Cestas de Natal",
+   "Peças para redes sociais"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/01.webp",
+     "width": 2400,
+     "height": 1379,
+     "alt": "Royal — Super Fim de Ano — Key visual"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/02.webp",
+     "width": 2800,
+     "height": 1152,
+     "alt": "Royal — Super Fim de Ano — Faixa horizontal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/03.webp",
+     "width": 1379,
+     "height": 2400,
+     "alt": "Royal — Super Fim de Ano — Banner vertical"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/04.webp",
+     "width": 2400,
+     "height": 1379,
+     "alt": "Royal — Super Fim de Ano — Versões clara e escura"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/05.webp",
+     "width": 2400,
+     "height": 1379,
+     "alt": "Royal — Super Fim de Ano — Linha Cestas de Natal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-super-fim-de-ano/06.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Super Fim de Ano — Key visual — versão 4:3"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 3,
+  "featured": true,
+  "slug": "regenera",
+  "name": "Regenera",
+  "year": "2026",
+  "client": "Regenera Tecnologia",
+  "segment": "Reciclagem · Tecnologia ambiental",
+  "image": "/assets/img/projects/regenera/cover.webp",
+  "hero": "/assets/img/projects/regenera/hero.webp",
+  "scope": [
+   "Branding",
+   "Brand Book"
+  ],
+  "tagline": "Transformar o que seria descarte em novo começo.",
+  "text": "Marca para uma empresa que transforma resíduos em novos ciclos de valor.",
+  "intro": "A Regenera atua na recuperação de materiais e na criação de novos ciclos produtivos. Precisava de uma identidade com cara de indústria e tecnologia, sem perder o lado humano do negócio.",
+  "challenge": "Evitar os códigos gastos da sustentabilidade e criar um símbolo proprietário, capaz de representar transformação contínua.",
+  "strategy": "Posicionar a Regenera como tecnologia aplicada ao meio ambiente: eficiência industrial com propósito.",
+  "idea": "Um símbolo que funde a inicial R, a folha, o ciclo da reciclagem, a triquetra e o cata-vento — energia em movimento.",
+  "solution": "Criamos o símbolo, uma tipografia desenhada à mão para a marca, a paleta Obsidian Fern, Spring Leaf e Giants Orange e um manual completo com grid, área de proteção, versões e aplicações.",
+  "outcome": "Uma marca proprietária e memorável, preparada para operação, frota e comunicação institucional.",
+  "results": [
+   "Símbolo e tipografia proprietários",
+   "Sistema de cores e versões",
+   "Manual de marca",
+   "Aplicações institucionais"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Capa da apresentação"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Logotipo sobre a operação"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Construção do símbolo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/04.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Simulação de fachada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/05.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Versões de cor"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/06.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Versão laranja"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/07.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Caçambas"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Camiseta, pasta e placa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/09.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Boné e garrafa"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Pin e caneca"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/regenera/11.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Regenera — Síntese conceitual"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 4,
+  "featured": true,
+  "slug": "vo-helena-refeicoes",
+  "name": "Vó Helena — Refeições",
+  "year": "2025",
+  "client": "Supermercado Royal · marca própria Vó Helena",
+  "segment": "Alimentos congelados",
+  "image": "/assets/img/projects/vo-helena-refeicoes/cover.webp",
+  "hero": "/assets/img/projects/vo-helena-refeicoes/hero.webp",
+  "scope": [
+   "Embalagem"
+  ],
+  "tagline": "O gostinho da refeição feita pela vó, em 13 sabores.",
+  "text": "Linha de 13 refeições prontas com a assinatura afetiva da marca própria Vó Helena.",
+  "intro": "Vó Helena é a marca própria de alimentos do Royal, com receitas de família desde 1982. A linha de refeições congeladas precisava organizar 13 sabores na mesma gôndola sem perder o calor caseiro.",
+  "challenge": "Criar uma embalagem econômica de produzir, que diferenciasse cada sabor rapidamente e reforçasse os atributos de receita de família.",
+  "strategy": "Uma única arquitetura para toda a linha, com variação de cor por família de receita e foco no desejo pelo prato servido.",
+  "idea": "Uma cinta com fundo de papel de caderno de receitas, o selo manuscrito da Vó e o prato pronto como protagonista.",
+  "solution": "Desenvolvemos a cinta para bandeja transparente com balões de cor por sabor, fotografia do prato, selos de atributos ('receitas de família', 'ingredientes fresquinhos', 'preparo artesanal') e aplicamos a grade aos 13 sabores.",
+  "outcome": "Uma linha coerente e fácil de escolher, que forma um bloco de cor forte no freezer.",
+  "results": [
+   "Sistema de embalagem",
+   "13 sabores",
+   "Selos de atributos",
+   "Tratamento de imagem dos pratos"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/01.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Lasanha Bolonhesa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/02.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Strogonoff de Frango"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/03.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Escondidinho de Carne"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/04.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Lasanha 4 Queijos"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/05.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Panqueca de Carne"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/06.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Bife à Parmegiana de Frango"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/07.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Tortéi de Moranga"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/08.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Escondidinho de Calabresa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/09.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Strogonoff de Carne"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/10.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Lasanha de Frango"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/11.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Bife à Parmegiana de Gado"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/12.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Escondidinho de Frango"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-refeicoes/13.webp",
+     "width": 2304,
+     "height": 2204,
+     "alt": "Vó Helena — Refeições — Panqueca de Frango"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 6,
+  "slug": "royal-dia-das-criancas-2025",
+  "name": "Royal — Dia das Crianças: Blocos de Montar",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-dia-das-criancas-2025/cover.webp",
+  "hero": "/assets/img/projects/royal-dia-das-criancas-2025/hero.webp",
+  "scope": [
+   "Campanha",
+   "PDV",
+   "Encarte"
+  ],
+  "tagline": "Um universo de montar para as melhores ofertas.",
+  "text": "Campanha de Dia das Crianças construída com blocos de montar.",
+  "intro": "No Dia das Crianças o Royal amplia o mix de brinquedos e precisava de uma campanha que chamasse a atenção das crianças e organizasse as ofertas para os pais.",
+  "challenge": "Criar um visual lúdico, com volume e cor, que funcionasse tanto como cenário quanto como grade de encarte com muitos produtos e preços.",
+  "strategy": "Falar com as crianças pelo imaginário e com os pais pela organização das ofertas.",
+  "idea": "Todo o universo construído em blocos de montar: placa azul, letras coloridas em peças, foguete e nuvens.",
+  "solution": "Desenvolvemos o key visual, faixas horizontais e o encarte com template modular de preços.",
+  "outcome": "Uma campanha alegre e reconhecível, com um sistema de encarte fácil de atualizar.",
+  "results": [
+   "Key visual 3D",
+   "Encarte com grade modular",
+   "Faixas e banners"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2025/01.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Dia das Crianças: Blocos de Montar — Key visual"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2025/02.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "Royal — Dia das Crianças: Blocos de Montar — Encarte"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2025/03.webp",
+     "width": 2800,
+     "height": 1294,
+     "alt": "Royal — Dia das Crianças: Blocos de Montar — Faixa horizontal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2025/04.webp",
+     "width": 2800,
+     "height": 818,
+     "alt": "Royal — Dia das Crianças: Blocos de Montar — Banner"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 7,
+  "featured": true,
+  "slug": "benefatto",
+  "name": "Benefatto",
+  "year": "2024",
+  "client": "Benefatto Distribuidora de Alimentos",
+  "segment": "Distribuição de alimentos",
+  "image": "/assets/img/projects/benefatto/cover.webp",
+  "hero": "/assets/img/projects/benefatto/hero.webp",
+  "scope": [
+   "Branding"
+  ],
+  "tagline": "Logística feita com paixão por comida.",
+  "text": "Marca para uma distribuidora que leva paixão por comida até a cozinha do cliente.",
+  "intro": "A Benefatto distribui alimentos para restaurantes e varejo. O nome, de origem italiana, sugere 'bem-feito' — e a marca precisava traduzir essa promessa.",
+  "challenge": "Sair do visual genérico de logística e criar uma marca calorosa, ligada ao apetite, com presença forte em frota e uniformes.",
+  "strategy": "Aproximar a distribuidora do universo gastronômico dos clientes, sem perder a credibilidade operacional.",
+  "idea": "Um símbolo que une pin de localização, a letra B em ascensão e a forma de um coração — logística com paixão.",
+  "solution": "Criamos o logotipo em versões vertical e horizontal, a paleta vermelho e verde, o key visual e as aplicações em caminhão, camisa polo, cartões de visita e wind banner.",
+  "outcome": "Uma marca próxima e apetitosa, reconhecível em toda a operação de entrega.",
+  "results": [
+   "Logotipo e versões",
+   "Paleta e conceito",
+   "Envelopamento de frota",
+   "Uniforme, cartões e wind banner"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Key visual"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Construção da marca"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Logotipo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/04.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Caminhão"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/05.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Benefatto — Caminhão — envelopamento"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/06.webp",
+     "width": 2400,
+     "height": 2400,
+     "alt": "Benefatto — Camisa polo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/07.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Versão vertical"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/08.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Benefatto — Cartões de visita"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/09.webp",
+     "width": 2400,
+     "height": 1296,
+     "alt": "Benefatto — Wind banner"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/benefatto/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Benefatto — Cores"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 8,
+  "featured": true,
+  "slug": "royal-delivery",
+  "name": "Royal Delivery",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · E-commerce",
+  "image": "/assets/img/projects/royal-delivery/cover.webp",
+  "hero": "/assets/img/projects/royal-delivery/hero.webp",
+  "scope": [
+   "Campanha",
+   "OOH"
+  ],
+  "tagline": "Faça suas compras sem sair de casa.",
+  "text": "Campanha de lançamento do delivery do Royal.",
+  "intro": "Com o lançamento do e-commerce superroyal.com.br, o Royal precisava apresentar o serviço de delivery para toda a cidade.",
+  "challenge": "Comunicar um serviço novo em mídias de leitura rápida, com mensagem curta e chamada clara para o site.",
+  "strategy": "Concentrar a mensagem em um benefício — praticidade — e em uma ação: acessar o site pelo QR Code.",
+  "idea": "O 'i' de DELIVERY vira um pin de localização, e o carrinho com a sacola de compras é o herói visual.",
+  "solution": "Criamos o key visual e as adaptações para outdoor, painel horizontal e anúncio de jornal 26×36, com QR Code e URL em destaque.",
+  "outcome": "Uma campanha direta e reconhecível, que apresenta o serviço e leva o público ao site.",
+  "results": [
+   "Key visual",
+   "Outdoor",
+   "Painel horizontal",
+   "Anúncio de jornal 26×36"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-delivery/01.webp",
+     "width": 2800,
+     "height": 867,
+     "alt": "Royal Delivery — Outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-delivery/02.webp",
+     "width": 2400,
+     "height": 1792,
+     "alt": "Royal Delivery — Outdoor aplicado"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-delivery/03.webp",
+     "width": 1734,
+     "height": 2400,
+     "alt": "Royal Delivery — Anúncio de jornal 26×36"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-delivery/04.webp",
+     "width": 2400,
+     "height": 1771,
+     "alt": "Royal Delivery — Anúncio horizontal"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 9,
+  "featured": true,
+  "slug": "nexo-contabil",
+  "name": "Nexo Contábil",
+  "year": "2024",
+  "client": "Nexo Contábil",
+  "segment": "Contabilidade",
+  "image": "/assets/img/projects/nexo-contabil/cover.webp",
+  "hero": "/assets/img/projects/nexo-contabil/hero.webp",
+  "scope": [
+   "Branding"
+  ],
+  "tagline": "Conectamos finanças, propósito e resultados.",
+  "text": "Identidade para uma contabilidade que conecta números a propósito.",
+  "intro": "A Nexo nasceu para oferecer mais do que obrigações fiscais: uma parceria estratégica para quem quer crescer com clareza.",
+  "challenge": "Comunicar seriedade e confiança sem burocracia, com um símbolo memorável.",
+  "strategy": "Posicionar a Nexo como parceira de crescimento, não apenas prestadora de serviço contábil.",
+  "idea": "O 'exo' de Nexo se transforma no símbolo do infinito: prosperidade contínua e conexão.",
+  "solution": "Criamos logotipo e conceito, paleta roxo e dourado, tipografia e um conjunto de aplicações: outdoor, cartaz, flyer, painel de palco, redes sociais, papelaria, uniformes, crachá e canecas.",
+  "outcome": "Uma marca sofisticada e próxima, que diferencia a Nexo em um setor tradicional.",
+  "results": [
+   "Logotipo e conceito",
+   "Paleta e tipografia",
+   "Peças de comunicação",
+   "Papelaria, uniformes e brindes"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Logotipo horizontal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Logotipo vertical"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/03.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Nexo Contábil — Construção da marca: símbolo do infinito"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/04.webp",
+     "width": 2400,
+     "height": 1602,
+     "alt": "Nexo Contábil — Outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/05.webp",
+     "width": 2052,
+     "height": 1632,
+     "alt": "Nexo Contábil — Cartaz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/06.webp",
+     "width": 926,
+     "height": 1306,
+     "alt": "Nexo Contábil — Flyer"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/07.webp",
+     "width": 2400,
+     "height": 1601,
+     "alt": "Nexo Contábil — Painel de palco"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Redes sociais"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/09.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Papelaria"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/10.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Camisas polo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/11.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Crachá"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nexo-contabil/12.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Nexo Contábil — Canecas"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 10,
+  "slug": "royal-pascoa-2026",
+  "name": "Royal — Super Páscoa",
+  "year": "2026",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Confeitaria",
+  "image": "/assets/img/projects/royal-pascoa-2026/cover.webp",
+  "hero": "/assets/img/projects/royal-pascoa-2026/hero.webp",
+  "scope": [
+   "Campanha",
+   "Fotografia",
+   "Social Media"
+  ],
+  "tagline": "A Páscoa mais doce pra você.",
+  "text": "Campanha de Páscoa e fotografia dos ovos de colher da confeitaria Royal.",
+  "intro": "A Páscoa movimenta a parreira de ovos e a confeitaria própria do Royal, que produz ovos de colher e trufados artesanais.",
+  "challenge": "Criar uma assinatura que se destacasse entre centenas de embalagens coloridas e, ao mesmo tempo, vender os ovos da confeitaria pelo Instagram.",
+  "strategy": "Separar dois papéis: a campanha para a loja e a fotografia de produto para gerar desejo nas redes.",
+  "idea": "Um lettering em pílula de chocolate com textura de massinha e cenoura no selo Royal; e um set fotográfico pastel com coelho e colher dourada.",
+  "solution": "Desenvolvemos o topo de cartazes e o cartaz A3 de cardápio, além da produção fotográfica de mais de 10 sabores, close-ups de recheio e capa de carrossel para stories.",
+  "outcome": "Uma Páscoa com identidade própria na loja e conteúdo de produto pronto para as redes.",
+  "results": [
+   "Key visual e lettering",
+   "Topo de cartazes",
+   "Cartaz A3 de cardápio",
+   "Fotografia de 10+ sabores",
+   "Stories e capa de carrossel"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/01.webp",
+     "width": 2800,
+     "height": 1044,
+     "alt": "Royal — Super Páscoa — Topo de cartazes"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/02.webp",
+     "width": 1696,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Cartaz A3 de cardápio"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/03.webp",
+     "width": 1080,
+     "height": 1919,
+     "alt": "Royal — Super Páscoa — Capa do carrossel"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Super Páscoa — Ovo de colher caramelo salgado"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/05.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Super Páscoa — Ovo trufado creme brûlée"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/06.webp",
+     "width": 1347,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Ovo de colher"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/07.webp",
+     "width": 1599,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Ovo de colher"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/08.webp",
+     "width": 1349,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Ovo de colher"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/09.webp",
+     "width": 1348,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Ovo de colher kids"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/10.webp",
+     "width": 1349,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Ovo de pistache"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/11.webp",
+     "width": 1349,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Seleção de ovos"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/12.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Super Páscoa — Ovo trufado pistache"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/13.webp",
+     "width": 1351,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Detalhe do recheio"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/14.webp",
+     "width": 1347,
+     "height": 2400,
+     "alt": "Royal — Super Páscoa — Detalhe da cobertura"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-pascoa-2026/15.webp",
+     "width": 1080,
+     "height": 1919,
+     "alt": "Royal — Super Páscoa — Ovo trufado doce de leite"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 11,
+  "slug": "oeste-home",
+  "name": "Oeste Home Imobiliária",
+  "year": "2024",
+  "client": "Oeste Home Imobiliária",
+  "segment": "Mercado imobiliário",
+  "image": "/assets/img/projects/oeste-home/cover.webp",
+  "hero": "/assets/img/projects/oeste-home/hero.webp",
+  "scope": [
+   "Branding",
+   "Rebranding"
+  ],
+  "tagline": "Traçando o caminho para a conquista de sonhos.",
+  "text": "Rebranding de imobiliária: do procurar imóvel para conquistar o lar.",
+  "intro": "A Oeste Home tinha uma marca centrada na lupa — a busca. Entendemos que uma imobiliária não vende metros quadrados: ela acompanha a conquista de um sonho.",
+  "challenge": "Atualizar a identidade mantendo as cores conhecidas pelo público, mas reposicionar a marca para o sentimento de conquista.",
+  "strategy": "Trocar o foco da procura pela chegada: a marca passa a representar o momento em que o cliente recebe a chave.",
+  "idea": "O símbolo forma uma chave a partir de O + H, com o caminho e a conquista embutidos no desenho.",
+  "solution": "Redesenhamos o logotipo, ajustamos o azul e o laranja, incluímos um bege de equilíbrio e criamos versões vertical, horizontal e monocromáticas, banner e papelaria.",
+  "outcome": "Uma marca mais emocional e memorável, sem perder o reconhecimento construído pela Oeste Home.",
+  "results": [
+   "Diagnóstico e reposicionamento",
+   "Novo logotipo (antes e depois)",
+   "Paleta e versões",
+   "Banner e papelaria"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Oeste Home Imobiliária — Nova marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/02.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Oeste Home Imobiliária — Antes: marca anterior"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Oeste Home Imobiliária — Depois: nova marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/04.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Oeste Home Imobiliária — Construção do símbolo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/05.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Oeste Home Imobiliária — Cores da marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/06.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Oeste Home Imobiliária — Logotipo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/07.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Oeste Home Imobiliária — Banner"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/oeste-home/08.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Oeste Home Imobiliária — Papelaria"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 12,
+  "slug": "embutidos-lamb",
+  "name": "Embutidos Lamb",
+  "year": "2024",
+  "client": "Embutidos Lamb",
+  "segment": "Indústria de alimentos",
+  "image": "/assets/img/projects/embutidos-lamb/cover.webp",
+  "hero": "/assets/img/projects/embutidos-lamb/hero.webp",
+  "scope": [
+   "Fotografia"
+  ],
+  "tagline": "Sabor que aparece na foto.",
+  "text": "Fotografia gastronômica para a linha de embutidos e defumados.",
+  "intro": "A Lamb produz copa, salame, linguiças e defumados no oeste de Santa Catarina e precisava de um banco de imagens próprio.",
+  "challenge": "Valorizar produtos de cor e textura parecidas, criando variedade entre as cenas e despertando apetite.",
+  "strategy": "Mostrar cada produto em uso, em receitas reais, para que o consumidor imagine a ocasião de consumo.",
+  "idea": "Uma cena e uma receita para cada produto: pizza, feijoada, churrasco, cachorro-quente e tábua de frios.",
+  "solution": "Fizemos direção de arte, food styling e fotografia de 9 cenas em madeira rústica e ardósia, com luz direcional e enquadramentos top-down e 45°.",
+  "outcome": "Um banco de imagens versátil para embalagem, redes sociais e materiais de venda.",
+  "results": [
+   "Direção de arte e food styling",
+   "9 cenas fotografadas",
+   "Tratamento e finalização"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/01.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Embutidos Lamb — Pizza calabresa"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/02.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Embutidos Lamb — Feijoada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/03.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Tábua de frios"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/04.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Espaguete"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/05.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Sanduíche"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/06.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Cachorro-quente"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/07.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Salames"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/08.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Linguiças"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/embutidos-lamb/09.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Embutidos Lamb — Espetinhos"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 14,
+  "slug": "royal-dia-das-maes",
+  "name": "Royal — Dia das Mães",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-dia-das-maes/cover.webp",
+  "hero": "/assets/img/projects/royal-dia-das-maes/hero.webp",
+  "scope": [
+   "Campanha",
+   "PDV"
+  ],
+  "tagline": "Afeto em cada camada.",
+  "text": "Campanha de Dia das Mães em papercraft pastel, com foco na confeitaria.",
+  "intro": "No Dia das Mães, as tortas e bolos da confeitaria Royal são protagonistas. A campanha precisava emocionar e vender.",
+  "challenge": "Equilibrar a cena afetiva com a apresentação dos produtos em formatos tão diferentes quanto um topo panorâmico e um cartaz vertical.",
+  "strategy": "Conectar o afeto da data ao produto da confeitaria, sem tom de oferta.",
+  "idea": "Uma cena em papercraft pastel — mãe e filho na poltrona — com lettering em relevo e selo Royal em origami.",
+  "solution": "Desenvolvemos o key visual, o topo panorâmico de loja e a capa vertical com as tortas em primeiro plano.",
+  "outcome": "Uma campanha delicada e reconhecível, que leva o afeto da data para a vitrine.",
+  "results": [
+   "Key visual 3D",
+   "Topo panorâmico",
+   "Cartaz vertical"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes/01.webp",
+     "width": 2800,
+     "height": 933,
+     "alt": "Royal — Dia das Mães — Topo panorâmico"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes/02.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Dia das Mães — Cartaz vertical"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes/03.webp",
+     "width": 2080,
+     "height": 2400,
+     "alt": "Royal — Dia das Mães — Detalhe do key visual"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 15,
+  "slug": "solvitas-cursos",
+  "name": "Solvitas Cursos",
+  "year": "2024",
+  "client": "Solvitas Cursos",
+  "segment": "Educação · Medicina veterinária",
+  "image": "/assets/img/projects/solvitas-cursos/cover.webp",
+  "hero": "/assets/img/projects/solvitas-cursos/hero.webp",
+  "scope": [
+   "Branding"
+  ],
+  "tagline": "Transforme sua formação em expertise.",
+  "text": "Marca para cursos de capacitação em medicina veterinária.",
+  "intro": "A Solvitas, de Chapecó (SC), oferece cursos práticos para estudantes e profissionais de veterinária. O nome une sol (luz) e vita (vida).",
+  "challenge": "Criar uma marca técnica e confiável para profissionais da saúde animal, mas jovem o bastante para engajar estudantes.",
+  "strategy": "Posicionar a Solvitas como ponte entre a formação acadêmica e a prática profissional.",
+  "idea": "Um S que vira lâmpada com raios de sol — clareza no aprendizado e cuidado com a vida.",
+  "solution": "Criamos o logotipo e o conceito, a paleta roxo e verde-menta e as aplicações: flyer, cartaz, outdoor, mupi, painel, redes sociais, papelaria, uniformes, crachás e canecas.",
+  "outcome": "Uma marca vibrante e profissional, pronta para divulgar cursos em todos os canais.",
+  "results": [
+   "Logotipo e símbolo",
+   "Conceito, cores e tipografia",
+   "Peças de divulgação",
+   "Papelaria, uniformes e brindes"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Solvitas Cursos — Logotipo horizontal"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/02.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "Solvitas Cursos — Logotipo vertical"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/03.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "Solvitas Cursos — Construção do símbolo: sol + vida"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/04.webp",
+     "width": 1632,
+     "height": 1632,
+     "alt": "Solvitas Cursos — Flyer"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/05.webp",
+     "width": 2052,
+     "height": 1632,
+     "alt": "Solvitas Cursos — Cartaz de curso"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/06.webp",
+     "width": 2400,
+     "height": 1602,
+     "alt": "Solvitas Cursos — Outdoor"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/07.webp",
+     "width": 2400,
+     "height": 1601,
+     "alt": "Solvitas Cursos — Mupi"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/08.webp",
+     "width": 2400,
+     "height": 1601,
+     "alt": "Solvitas Cursos — Painel de palco"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/09.webp",
+     "width": 2400,
+     "height": 1368,
+     "alt": "Solvitas Cursos — Redes sociais"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/10.webp",
+     "width": 2400,
+     "height": 1347,
+     "alt": "Solvitas Cursos — Papelaria"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/11.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Solvitas Cursos — Camisas polo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/12.webp",
+     "width": 2400,
+     "height": 1275,
+     "alt": "Solvitas Cursos — Crachás"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/solvitas-cursos/13.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Solvitas Cursos — Canecas"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 16,
+  "slug": "royal-clube-de-selos",
+  "name": "Royal — Clube de Selos",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Fidelização",
+  "image": "/assets/img/projects/royal-clube-de-selos/cover.webp",
+  "hero": "/assets/img/projects/royal-clube-de-selos/hero.webp",
+  "scope": [
+   "Campanha",
+   "Social Media",
+   "Fotografia"
+  ],
+  "tagline": "Suas compras podem valer muito mais.",
+  "text": "Campanha de fidelidade com porcelanas colecionáveis.",
+  "intro": "O Clube de Selos troca compras por selos que dão desconto em uma coleção de 5 porcelanas.",
+  "challenge": "Transformar uma mecânica promocional em desejo e explicar a regra sem poluir a comunicação.",
+  "strategy": "Vender a experiência da mesa posta, não apenas a promoção.",
+  "idea": "As porcelanas em uso, com receitas reais, e uma série editorial: 'Peças que encantam', 'Charmosas e resistentes', 'Escolha a sua'.",
+  "solution": "Produzimos a fotografia das porcelanas com food styling, a identidade do clube e uma série de 7 posts e stories com o selo e a regra como assinatura fixa.",
+  "outcome": "Uma campanha de fidelização com cara de editorial, que valoriza o prêmio.",
+  "results": [
+   "Identidade do Clube de Selos",
+   "Fotografia de produto",
+   "7 posts",
+   "Story"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/01.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Peças que encantam"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/02.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Já começou a juntar os seus?"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/03.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Charmosas e resistentes"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Clube de Selos — Story"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/05.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Sua mesa merece esse cuidado"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/06.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Escolha a sua"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/07.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Suas compras podem valer muito mais"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-clube-de-selos/08.webp",
+     "width": 1620,
+     "height": 2025,
+     "alt": "Royal — Clube de Selos — Detalhes que fazem a diferença"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 17,
+  "slug": "rc-investimentos",
+  "name": "RC Investimentos Imobiliários",
+  "year": "2024",
+  "client": "RC Investimentos Imobiliários",
+  "segment": "Mercado imobiliário",
+  "image": "/assets/img/projects/rc-investimentos/cover.webp",
+  "hero": "/assets/img/projects/rc-investimentos/hero.webp",
+  "scope": [
+   "Branding",
+   "Rebranding"
+  ],
+  "tagline": "Solidez para quem investe em imóveis.",
+  "text": "Rebranding de marca imobiliária para transmitir solidez e valorização.",
+  "intro": "A RC tinha um monograma cursivo elegante, mas pouco legível e sem relação com o negócio.",
+  "challenge": "Construir uma marca com autoridade, aplicável em fachada, adesivos e papelaria, e diferente das casinhas comuns do setor.",
+  "strategy": "Transmitir estabilidade e valorização patrimonial já no primeiro contato.",
+  "idea": "As letras R e C formam uma casa dentro de um bloco sólido.",
+  "solution": "Redesenhamos o símbolo e o logotipo, definimos azul-escuro e verde-oliva dourado e aplicamos a marca em fachada, placas de sala, adesivos de porta e papelaria.",
+  "outcome": "Uma marca sólida e legível, coerente com o posicionamento de investimento.",
+  "results": [
+   "Rebranding (antes e depois)",
+   "Símbolo, paleta e tipografia",
+   "Fachada e placas",
+   "Adesivos e papelaria"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/01.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "RC Investimentos Imobiliários — Nova marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/02.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "RC Investimentos Imobiliários — Antes: marca anterior"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/03.webp",
+     "width": 2400,
+     "height": 1350,
+     "alt": "RC Investimentos Imobiliários — Logotipo vertical"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/04.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "RC Investimentos Imobiliários — Construção do símbolo R + C"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/05.webp",
+     "width": 1799,
+     "height": 1800,
+     "alt": "RC Investimentos Imobiliários — Cores"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/06.webp",
+     "width": 1834,
+     "height": 1556,
+     "alt": "RC Investimentos Imobiliários — Fachada e placas de sala"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/07.webp",
+     "width": 1286,
+     "height": 1324,
+     "alt": "RC Investimentos Imobiliários — Adesivos de porta e diretório"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/rc-investimentos/08.webp",
+     "width": 2400,
+     "height": 1404,
+     "alt": "RC Investimentos Imobiliários — Papelaria"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 18,
+  "slug": "royal-cortes-de-qualidade",
+  "name": "Royal — Cortes de Qualidade",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Açougue",
+  "image": "/assets/img/projects/royal-cortes-de-qualidade/cover.webp",
+  "hero": "/assets/img/projects/royal-cortes-de-qualidade/hero.webp",
+  "scope": [
+   "Campanha",
+   "OOH"
+  ],
+  "tagline": "Qualidade que se vê na brasa.",
+  "text": "Painel de grande formato para posicionar o açougue Royal.",
+  "intro": "O açougue é um dos grandes diferenciais do Royal. A campanha 'Cortes de Qualidade' comunica esse posicionamento em grande formato.",
+  "challenge": "Criar uma peça de 3×5 metros com impacto à distância e um selo capaz de virar assinatura do setor de carnes.",
+  "strategy": "Fazer do selo uma assinatura permanente do açougue, além da campanha.",
+  "idea": "Um tomahawk na brasa como protagonista e um selo circular com touro em ilustração vintage.",
+  "solution": "Desenvolvemos o key visual em grande formato e o selo 'Cortes de Qualidade' para uso independente.",
+  "outcome": "Um posicionamento claro para o açougue, com um selo reutilizável em todo o setor.",
+  "results": [
+   "Painel 3×5 m",
+   "Selo 'Cortes de Qualidade'"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cortes-de-qualidade/01.webp",
+     "width": 1420,
+     "height": 2400,
+     "alt": "Royal — Cortes de Qualidade — Painel 3×5 m"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cortes-de-qualidade/02.webp",
+     "width": 2400,
+     "height": 1922,
+     "alt": "Royal — Cortes de Qualidade — Selo Cortes de Qualidade"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cortes-de-qualidade/03.webp",
+     "width": 2293,
+     "height": 2400,
+     "alt": "Royal — Cortes de Qualidade — Detalhe do key visual"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 19,
+  "slug": "for-lezz",
+  "name": "For Lezz",
+  "year": "2024",
+  "client": "For Lezz",
+  "segment": "Varejo de moda",
+  "image": "/assets/img/projects/for-lezz/cover.webp",
+  "hero": "/assets/img/projects/for-lezz/hero.webp",
+  "scope": [
+   "Branding",
+   "PDV"
+  ],
+  "tagline": "Vestindo com economia.",
+  "text": "Marca e fachada para uma loja de moda com preço baixo.",
+  "intro": "A For Lezz é uma loja de moda para toda a família com foco em preço. O nome brinca com 'for less' — por menos.",
+  "challenge": "Criar uma marca de varejo popular com cara de moda, e não de liquidação, capaz de ocupar uma fachada inteira.",
+  "strategy": "Comunicar economia com atitude, mostrando moda acessível para todas as idades.",
+  "idea": "Blocos azul e rosa formam uma etiqueta, e o triângulo no 'Z' representa o preço caindo.",
+  "solution": "Criamos o logotipo, o slogan, a paleta e a tipografia e o projeto de fachada, aplicado na loja.",
+  "outcome": "Uma fachada de alto impacto e uma marca que comunica a proposta em segundos.",
+  "results": [
+   "Logotipo e slogan",
+   "Paleta e tipografia",
+   "Projeto de fachada aplicado"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/01.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Apresentação da marca"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/02.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Logotipo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/03.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Construção: LEZZ = por menos"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/04.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Versões"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/05.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Slogan"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/06.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Cores"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/07.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Tipografia"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/08.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Fachada aplicada"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/for-lezz/09.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "For Lezz — Fachada aplicada — vista frontal"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 20,
+  "slug": "royal-chapeco-108-anos",
+  "name": "Royal — Chapecó 108 anos",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-chapeco-108-anos/cover.webp",
+  "hero": "/assets/img/projects/royal-chapeco-108-anos/hero.webp",
+  "scope": [
+   "Campanha",
+   "Social Media"
+  ],
+  "tagline": "Orgulho de estar junto.",
+  "text": "Homenagem ilustrada ao aniversário de Chapecó.",
+  "intro": "No aniversário de 108 anos de Chapecó, o Royal quis celebrar a cidade onde nasceu.",
+  "challenge": "Criar uma homenagem afetiva e institucional, sem tom de oferta, para jornal, loja e redes.",
+  "strategy": "Reforçar o vínculo do Royal com a cidade por meio dos seus símbolos.",
+  "idea": "Os ícones de Chapecó — a Catedral e o Monumento O Desbravador — em aquarela.",
+  "solution": "Desenvolvemos a ilustração, o anúncio de página inteira 26×36, o topo de loja e o story.",
+  "outcome": "Uma homenagem institucional que aproxima a marca da comunidade.",
+  "results": [
+   "Ilustração em aquarela",
+   "Anúncio de página inteira",
+   "Topo de loja",
+   "Story"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-chapeco-108-anos/01.webp",
+     "width": 2800,
+     "height": 1114,
+     "alt": "Royal — Chapecó 108 anos — Topo de loja"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-chapeco-108-anos/02.webp",
+     "width": 1733,
+     "height": 2400,
+     "alt": "Royal — Chapecó 108 anos — Anúncio de página inteira"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-chapeco-108-anos/03.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Chapecó 108 anos — Story"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 21,
+  "slug": "nicos-soft-cream",
+  "name": "Nico's Soft Cream",
+  "year": "2024",
+  "client": "Nico's Soft Cream",
+  "segment": "Food service · Sorveteria",
+  "image": "/assets/img/projects/nicos-soft-cream/cover.webp",
+  "hero": "/assets/img/projects/nicos-soft-cream/hero.webp",
+  "scope": [
+   "Branding",
+   "PDV"
+  ],
+  "tagline": "Doçura que chama de longe.",
+  "text": "Identidade retrô e quiosque para uma sorveteria de soft.",
+  "intro": "A Nico's chegou ao shopping com um quiosque de soft cream e milk-shakes e precisava ser vista em meio ao fluxo do corredor.",
+  "challenge": "Criar uma identidade com personalidade e um quiosque que funcionasse como vitrine 360º do produto.",
+  "strategy": "Apostar na nostalgia divertida das sorveterias clássicas, com cores que se destacam no shopping.",
+  "idea": "Um lettering vintage em marrom chocolate com selo azul e casquinha rosa, e um pattern de casquinhas e milk-shakes.",
+  "solution": "Criamos o logotipo, o pattern ilustrado, o projeto 3D do quiosque, o luminoso de balcão e o cartaz de inauguração 120×200.",
+  "outcome": "Uma marca alegre e um ponto de venda que atrai pelo visual.",
+  "results": [
+   "Logotipo e selo",
+   "Pattern ilustrado",
+   "Projeto de quiosque",
+   "Luminoso e cartaz 120×200"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nicos-soft-cream/01.webp",
+     "width": 2400,
+     "height": 1371,
+     "alt": "Nico's Soft Cream — Projeto do quiosque"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nicos-soft-cream/02.webp",
+     "width": 2400,
+     "height": 1939,
+     "alt": "Nico's Soft Cream — Luminoso de balcão"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nicos-soft-cream/03.webp",
+     "width": 1440,
+     "height": 2400,
+     "alt": "Nico's Soft Cream — Cartaz 120×200"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/nicos-soft-cream/04.webp",
+     "width": 2400,
+     "height": 1275,
+     "alt": "Nico's Soft Cream — Pattern ilustrado"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 22,
+  "slug": "royal-black-friday",
+  "name": "Royal — Black Friday",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-black-friday/cover.webp",
+  "hero": "/assets/img/projects/royal-black-friday/hero.webp",
+  "scope": [
+   "Campanha"
+  ],
+  "tagline": "Uma assinatura que acende.",
+  "text": "Assinatura em neon para a Black Friday e a Black Weekend do Royal.",
+  "intro": "Na Black Friday o Royal disputa atenção com todo o varejo e precisava de uma assinatura própria.",
+  "challenge": "Criar uma identidade de campanha reconhecível em segundos e adaptável para a extensão Black Weekend.",
+  "strategy": "Ter uma marca de campanha própria, em vez de usar a estética genérica de Black Friday.",
+  "idea": "Um letreiro neon 3D com o selo Royal integrado.",
+  "solution": "Desenvolvemos o logotipo neon da Black Friday e a versão Black Weekend em ciano, com base para as peças da campanha.",
+  "outcome": "Uma assinatura marcante, reutilizável a cada edição.",
+  "results": [
+   "Logotipo neon 3D",
+   "Versão Black Weekend"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-black-friday/01.webp",
+     "width": 2400,
+     "height": 1441,
+     "alt": "Royal — Black Friday — Logotipo neon Black Friday"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-black-friday/02.webp",
+     "width": 2400,
+     "height": 1428,
+     "alt": "Royal — Black Friday — Versão Black Weekend"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 23,
+  "slug": "vo-helena-pizzas",
+  "name": "Vó Helena — Pizzas",
+  "year": "2025",
+  "client": "Supermercado Royal · marca própria Vó Helena",
+  "segment": "Alimentos congelados",
+  "image": "/assets/img/projects/vo-helena-pizzas/cover.webp",
+  "hero": "/assets/img/projects/vo-helena-pizzas/hero.webp",
+  "scope": [
+   "Embalagem"
+  ],
+  "tagline": "Dois sabores, um só carinho.",
+  "text": "Embalagem octogonal para a linha de pizzas meio a meio.",
+  "intro": "A linha de pizzas Vó Helena oferece dois sabores na mesma pizza. A embalagem precisava mostrar o produto e reforçar a origem caseira.",
+  "challenge": "Garantir grande área de visualização, informações claras de preparo e um elemento gráfico forte para a gôndola refrigerada.",
+  "strategy": "Deixar o produto falar, emoldurado pela personalidade da marca.",
+  "idea": "Uma moldura ilustrada em doodle de ingredientes ao redor de uma tampa transparente octogonal.",
+  "solution": "Projetamos a embalagem com o selo Vó Helena ao centro, ilustração de moldura e aba kraft com modo de preparo, aplicada a 3 sabores.",
+  "outcome": "Uma embalagem diferenciada que valoriza o produto na gôndola.",
+  "results": [
+   "Projeto de embalagem",
+   "Ilustração de moldura",
+   "3 sabores"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-pizzas/01.webp",
+     "width": 2400,
+     "height": 2400,
+     "alt": "Vó Helena — Pizzas — Calabresa e bacon"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-pizzas/02.webp",
+     "width": 2400,
+     "height": 2400,
+     "alt": "Vó Helena — Pizzas — Estrogonofe de frango e 4 queijos"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/vo-helena-pizzas/03.webp",
+     "width": 2400,
+     "height": 2400,
+     "alt": "Vó Helena — Pizzas — Tomate seco e rúcula com milho"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 24,
+  "slug": "90-graus",
+  "name": "90 Graus Móveis sob Medida",
+  "year": "2025",
+  "client": "90 Graus",
+  "segment": "Móveis planejados",
+  "image": "/assets/img/projects/90-graus/cover.webp",
+  "hero": "/assets/img/projects/90-graus/hero.webp",
+  "scope": [
+   "Audiovisual",
+   "Fotografia"
+  ],
+  "tagline": "O cuidado que está em cada detalhe.",
+  "text": "Filme institucional, fotografia de showroom e placa de entrada.",
+  "intro": "A 90 Graus fabrica móveis sob medida de alto padrão e queria mostrar o cuidado de cada etapa, do projeto à marcenaria.",
+  "challenge": "Contar a história da empresa com emoção, sem perder o tom premium, e valorizar materiais e iluminação do showroom.",
+  "strategy": "Mostrar pessoas e processo: quem faz e como faz.",
+  "idea": "Um filme de bastidores com os sócios, a fábrica e os detalhes de usinagem.",
+  "solution": "Roteirizamos e produzimos o filme institucional, fotografamos o showroom e criamos a placa de entrada.",
+  "outcome": "Conteúdo institucional que traduz o padrão da marca em imagem.",
+  "results": [
+   "Filme institucional",
+   "Fotografia de showroom",
+   "Placa de entrada"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/90-graus/01.mp4",
+     "poster": "/assets/img/projects/90-graus/01-poster.webp",
+     "width": 1600,
+     "height": 900,
+     "alt": "90 Graus Móveis sob Medida — filme"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/02.webp",
+     "width": 2800,
+     "height": 1245,
+     "alt": "90 Graus Móveis sob Medida — Showroom — sala de reunião"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/03.webp",
+     "width": 1080,
+     "height": 1440,
+     "alt": "90 Graus Móveis sob Medida — Showroom"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/04.webp",
+     "width": 1080,
+     "height": 1440,
+     "alt": "90 Graus Móveis sob Medida — Showroom — detalhe"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/05.webp",
+     "width": 1080,
+     "height": 1440,
+     "alt": "90 Graus Móveis sob Medida — Showroom — prateleira iluminada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/06.webp",
+     "width": 2800,
+     "height": 687,
+     "alt": "90 Graus Móveis sob Medida — Placa de entrada"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/07.webp",
+     "width": 1920,
+     "height": 1080,
+     "alt": "90 Graus Móveis sob Medida — Frame do filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/90-graus/08.webp",
+     "width": 1920,
+     "height": 1080,
+     "alt": "90 Graus Móveis sob Medida — Frame do filme"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 25,
+  "slug": "royal-dia-da-mulher",
+  "name": "Royal — Dia da Mulher",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-dia-da-mulher/cover.webp",
+  "hero": "/assets/img/projects/royal-dia-da-mulher/hero.webp",
+  "scope": [
+   "Campanha",
+   "Social Media"
+  ],
+  "tagline": "Mulheres inspiram.",
+  "text": "Homenagem ao Dia da Mulher com convite às flores do Royal.",
+  "intro": "O Dia Internacional da Mulher é uma oportunidade de homenagem e de impulsionar a floricultura do Royal.",
+  "challenge": "Celebrar sem estereótipos, com mulheres reais e diversas, e ainda assim gerar vendas de flores.",
+  "strategy": "Homenagear primeiro, oferecer depois: o produto entra como forma de presentear.",
+  "idea": "Margaridas e girassóis em grande escala, fundos aqua e laranja e retratos de mulheres de diferentes idades.",
+  "solution": "Desenvolvemos o carrossel 'Mulheres inspiram' e o cartaz A3 'Presenteie com flores do Royal'.",
+  "outcome": "Uma homenagem sensível que também ativa a floricultura.",
+  "results": [
+   "Carrossel para redes",
+   "Cartaz A3"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-da-mulher/01.webp",
+     "width": 2800,
+     "height": 877,
+     "alt": "Royal — Dia da Mulher — Carrossel Mulheres inspiram"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-da-mulher/02.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Dia da Mulher — Cartaz A3"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-da-mulher/03.webp",
+     "width": 1915,
+     "height": 2400,
+     "alt": "Royal — Dia da Mulher — Carrossel — detalhe"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-da-mulher/04.webp",
+     "width": 1915,
+     "height": 2400,
+     "alt": "Royal — Dia da Mulher — Carrossel — detalhe"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 26,
+  "slug": "royal-feirao-dose-dupla",
+  "name": "Royal — Feirão Dose Dupla & Fim de Semana",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-feirao-dose-dupla/cover.webp",
+  "hero": "/assets/img/projects/royal-feirao-dose-dupla/hero.webp",
+  "scope": [
+   "Campanha",
+   "PDV",
+   "Encarte"
+  ],
+  "tagline": "Duas ações, duas personalidades, uma marca.",
+  "text": "Hortifrúti no meio da semana e churrasco no fim de semana.",
+  "intro": "O Royal mantém duas ações semanais: o Feirão Dose Dupla (hortifrúti) e o Fim de Semana (carnes e bebidas). As campanhas evoluíram de 2024 para 2025.",
+  "challenge": "Dar identidade própria a cada ação, reconhecível semana após semana, e organizar dezenas de ofertas.",
+  "strategy": "Criar dois territórios visuais fixos, que o cliente reconhece de longe e associa ao dia da oferta.",
+  "idea": "Em 2025, colagem ilustrada: placa de feira com toldo listrado para o Feirão e churrasqueira com fogo em papel para o Fim de Semana.",
+  "solution": "Desenvolvemos os key visuals de 2024 e 2025, os backgrounds de PDV e um encarte de 6 páginas com cores próprias por ação.",
+  "outcome": "Ações recorrentes com identidade forte e operação de encarte padronizada.",
+  "results": [
+   "Key visuals 2024 e 2025",
+   "Backgrounds de PDV",
+   "Encarte de 6 páginas"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/01.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Feirão Dose Dupla 2025"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/02.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Fim de Semana 2025"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/03.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — capa Vó Helena"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/04.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — capa Feirão"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/05.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — capa Fim de Semana"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/06.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Feirão 2024"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/07.webp",
+     "width": 2400,
+     "height": 1800,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Fim de Semana 2024"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/08.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — página interna"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/09.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — página interna"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-feirao-dose-dupla/10.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Feirão Dose Dupla & Fim de Semana — Encarte — página interna"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 28,
+  "slug": "royal-inverno",
+  "name": "Royal — Receitas de Inverno",
+  "year": "2024",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Bebidas e gastronomia",
+  "image": "/assets/img/projects/royal-inverno/cover.webp",
+  "hero": "/assets/img/projects/royal-inverno/hero.webp",
+  "scope": [
+   "Fotografia",
+   "Audiovisual",
+   "Social Media"
+  ],
+  "tagline": "O frio pede uma boa receita.",
+  "text": "Receitas em vídeo e fotografia de cervejas e vinhos para o inverno.",
+  "intro": "No inverno, o Royal quis inspirar clientes com receitas e harmonizações, valorizando cervejas especiais, vinhos e queijos.",
+  "challenge": "Produzir conteúdo de receita com ritmo para vídeo vertical e imagens de bebidas com acabamento publicitário.",
+  "strategy": "Gerar conteúdo útil — receitas e harmonizações — que leva o produto para a mesa do cliente.",
+  "idea": "A série 'Receitas de Inverno', começando pelo brie folhado com mel e castanhas.",
+  "solution": "Gravamos o vídeo de receita em top-down com legendas de ingredientes, criamos a capa da série e fotografamos cervejas, vinhos e petiscos.",
+  "outcome": "Uma série de conteúdo sazonal com produção de qualidade.",
+  "results": [
+   "Vídeo de receita",
+   "Capa da série",
+   "Fotografia de cervejas e vinhos"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/01.webp",
+     "width": 2400,
+     "height": 1711,
+     "alt": "Royal — Receitas de Inverno — Cerveja e petiscos"
+    }
+   ],
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/royal-inverno/02.mp4",
+     "poster": "/assets/img/projects/royal-inverno/02-poster.webp",
+     "width": 900,
+     "height": 1600,
+     "alt": "Royal — Receitas de Inverno — filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/03.webp",
+     "width": 1350,
+     "height": 2400,
+     "alt": "Royal — Receitas de Inverno — Capa da série Receitas de Inverno"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Receitas de Inverno — Brie folhado — preparo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/05.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Royal — Receitas de Inverno — IPA"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/06.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Royal — Receitas de Inverno — Cerveja"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/07.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Royal — Receitas de Inverno — Stout"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/08.webp",
+     "width": 1600,
+     "height": 2400,
+     "alt": "Royal — Receitas de Inverno — Vinho tinto"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/09.webp",
+     "width": 2400,
+     "height": 1600,
+     "alt": "Royal — Receitas de Inverno — Cervejas e petiscos"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/10.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Receitas de Inverno — Preparo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/11.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Receitas de Inverno — Preparo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-inverno/12.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Receitas de Inverno — Finalização"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 29,
+  "slug": "royal-dia-das-maes-filme",
+  "name": "Royal — Dia das Mães (filme)",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-dia-das-maes-filme/cover.webp",
+  "hero": "/assets/img/projects/royal-dia-das-maes-filme/hero.webp",
+  "scope": [
+   "Audiovisual",
+   "Social Media"
+  ],
+  "tagline": "Da nossa família para a sua.",
+  "text": "Filme de Dia das Mães com a confeitaria Royal.",
+  "intro": "Para o Dia das Mães, o Royal quis contar uma história de afeto ligada às receitas que passam de geração em geração.",
+  "challenge": "Emocionar em menos de um minuto, em formato vertical, sem perder a conexão com a confeitaria.",
+  "strategy": "Contar uma história real de afeto, em que o produto é o ponto de encontro da família.",
+  "idea": "Uma confeiteira monta um bolo até o momento em que mãe e filha se encontram em volta dele.",
+  "solution": "Fizemos roteiro, direção e produção de um filme vertical de 56 segundos, com assinatura 'Da nossa família para a sua'.",
+  "outcome": "Um filme emocional que reforça o vínculo do Royal com as famílias.",
+  "results": [
+   "Roteiro e direção",
+   "Filme vertical (56s)"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/royal-dia-das-maes-filme/01.mp4",
+     "poster": "/assets/img/projects/royal-dia-das-maes-filme/01-poster.webp",
+     "width": 900,
+     "height": 1600,
+     "alt": "Royal — Dia das Mães (filme) — filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/02.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Frame do filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/03.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Frame do filme"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Frame do filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/05.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Frame do filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/06.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Frame do filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-maes-filme/07.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Dia das Mães (filme) — Assinatura"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 30,
+  "slug": "drinks-autorais",
+  "name": "Drinks — Fotografia de Bebidas",
+  "year": "2025",
+  "client": "Série autoral de drinks",
+  "segment": "Bebidas",
+  "image": "/assets/img/projects/drinks-autorais/cover.webp",
+  "hero": "/assets/img/projects/drinks-autorais/hero.webp",
+  "scope": [
+   "Fotografia",
+   "Social Media"
+  ],
+  "tagline": "Doze drinks, doze universos.",
+  "text": "Série de 12 drinks com cenografia própria para cada receita.",
+  "intro": "Uma série de drinks clássicos e autorais para inspirar o consumo de destilados e espumantes em casa.",
+  "challenge": "Criar 12 cenas diferentes sem repetir fundo ou luz, mantendo as garrafas reconhecíveis.",
+  "strategy": "Dar a cada drink uma personalidade própria, como se fosse uma campanha individual.",
+  "idea": "Um universo por receita: jardim tropical, bar escuro, beira de piscina, ardósia e romã.",
+  "solution": "Fizemos direção de arte, cenografia e fotografia dos 12 drinks, com tratamento para formato vertical.",
+  "outcome": "Uma série coesa e variada, pronta para redes sociais.",
+  "results": [
+   "Direção de arte e cenografia",
+   "12 drinks fotografados"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/01.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Aperol Spritz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/02.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Campari Spritz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/03.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Limoncello Spritz"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/04.webp",
+     "width": 1350,
+     "height": 2400,
+     "alt": "Drinks — Fotografia de Bebidas — Margarita"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/05.webp",
+     "width": 1080,
+     "height": 1921,
+     "alt": "Drinks — Fotografia de Bebidas — Basil Smash"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/06.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Carajillo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/07.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Clericot"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/08.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Pink Love"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/09.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Rio Negro"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/10.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Royal Blue"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/11.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Drinks — Fotografia de Bebidas — Tinto de Verano"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/drinks-autorais/12.webp",
+     "width": 1080,
+     "height": 1921,
+     "alt": "Drinks — Fotografia de Bebidas — Whisky Sour"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 31,
+  "slug": "royal-dia-das-criancas-2024",
+  "name": "Royal — Dia das Crianças: Massinha",
+  "year": "2024",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-dia-das-criancas-2024/cover.webp",
+  "hero": "/assets/img/projects/royal-dia-das-criancas-2024/hero.webp",
+  "scope": [
+   "Campanha",
+   "Audiovisual",
+   "Social Media"
+  ],
+  "tagline": "As melhores ofertas para crianças de todas as idades.",
+  "text": "Universo de massinha e foguete para o Dia das Crianças.",
+  "intro": "Em 2024 o Dia das Crianças do Royal levou guloseimas e brinquedos para um universo de massinha de modelar.",
+  "challenge": "Criar um visual tátil e alegre e animá-lo para vídeo, mantendo consistência em site, encarte e stories.",
+  "strategy": "Um único universo visual que funciona parado e em movimento.",
+  "idea": "Texturas de massinha, nuvens fofinhas e um foguete 3D.",
+  "solution": "Desenvolvemos o key visual, a animação para stories, banners de site e as páginas de encarte com fotografia de produto.",
+  "outcome": "Uma campanha divertida e consistente em todos os canais.",
+  "results": [
+   "Key visual 3D",
+   "Animação para stories",
+   "Banners de site",
+   "Páginas de encarte"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/01.webp",
+     "width": 2800,
+     "height": 1030,
+     "alt": "Royal — Dia das Crianças: Massinha — Key visual"
+    }
+   ],
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/royal-dia-das-criancas-2024/02.mp4",
+     "poster": "/assets/img/projects/royal-dia-das-criancas-2024/02-poster.webp",
+     "width": 902,
+     "height": 1600,
+     "alt": "Royal — Dia das Crianças: Massinha — filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/03.webp",
+     "width": 1346,
+     "height": 2400,
+     "alt": "Royal — Dia das Crianças: Massinha — Story"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/04.webp",
+     "width": 1344,
+     "height": 2400,
+     "alt": "Royal — Dia das Crianças: Massinha — Story"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/05.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Dia das Crianças: Massinha — Encarte — página 1"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/06.webp",
+     "width": 1697,
+     "height": 2400,
+     "alt": "Royal — Dia das Crianças: Massinha — Encarte — página 2"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-dia-das-criancas-2024/07.webp",
+     "width": 1920,
+     "height": 364,
+     "alt": "Royal — Dia das Crianças: Massinha — Banner de site"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 32,
+  "slug": "royal-fotografia-de-produto",
+  "name": "Royal — Fotografia de Produto",
+  "year": "2024",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Bebidas e confeitaria",
+  "image": "/assets/img/projects/royal-fotografia-de-produto/cover.webp",
+  "hero": "/assets/img/projects/royal-fotografia-de-produto/hero.webp",
+  "scope": [
+   "Fotografia",
+   "Social Media"
+  ],
+  "tagline": "Cada produto com a luz que merece.",
+  "text": "Still publicitário para bebidas, energéticos, panetones e confeitaria.",
+  "intro": "O Royal mantém uma rotina de conteúdo com fotografia própria para destacar produtos sazonais e de alto giro.",
+  "challenge": "Dar acabamento de campanha a produtos muito diferentes entre si.",
+  "strategy": "Uma linguagem visual por categoria, sempre com qualidade de campanha.",
+  "idea": "Bokeh natalino para espumantes, fumaça e rocha para energéticos, close de mão para muffins e luz quente para panetone.",
+  "solution": "Produzimos o still de produto, capas sazonais e peças para posts e stories.",
+  "outcome": "Um acervo próprio de imagens que eleva a comunicação do dia a dia.",
+  "results": [
+   "Still de produto",
+   "Capas sazonais",
+   "Posts e stories"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/01.webp",
+     "width": 1698,
+     "height": 2400,
+     "alt": "Royal — Fotografia de Produto — Capa Especial Bebidas Fim de Ano"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/02.webp",
+     "width": 1350,
+     "height": 2400,
+     "alt": "Royal — Fotografia de Produto — Cervejas especiais"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/03.webp",
+     "width": 1341,
+     "height": 2400,
+     "alt": "Royal — Fotografia de Produto — Cerveja IPA"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/04.webp",
+     "width": 1345,
+     "height": 2400,
+     "alt": "Royal — Fotografia de Produto — Energético — No Royal tem"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/05.webp",
+     "width": 1350,
+     "height": 2400,
+     "alt": "Royal — Fotografia de Produto — Muffins Vó Helena"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-fotografia-de-produto/06.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Fotografia de Produto — Panetone trufado"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 33,
+  "slug": "royal-semana-farroupilha",
+  "name": "Royal — Semana Farroupilha",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo supermercadista",
+  "image": "/assets/img/projects/royal-semana-farroupilha/cover.webp",
+  "hero": "/assets/img/projects/royal-semana-farroupilha/hero.webp",
+  "scope": [
+   "Campanha",
+   "Encarte"
+  ],
+  "tagline": "Setembro, o mês mais gaúcho do ano.",
+  "text": "Encarte especial celebrando a tradição gaúcha.",
+  "intro": "O Royal celebra a Semana Farroupilha com ofertas de erva-mate, carnes, carvão e bebidas.",
+  "challenge": "Criar um encarte temático que respeitasse a tradição e organizasse muitas ofertas.",
+  "strategy": "Unir celebração cultural e oferta, com um texto institucional sobre a data.",
+  "idea": "Céu de pampa, fitas nas cores do Rio Grande do Sul e madeira.",
+  "solution": "Desenvolvemos o encarte A3 de 4 páginas com texto sobre a data e ofertas em caixas de madeira.",
+  "outcome": "Um encarte temático que conecta a marca às tradições do público.",
+  "results": [
+   "Conceito do encarte",
+   "Encarte A3 (4 páginas)",
+   "Texto institucional"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-semana-farroupilha/01.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "Royal — Semana Farroupilha — Encarte — capa e contracapa"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-semana-farroupilha/02.webp",
+     "width": 2400,
+     "height": 1697,
+     "alt": "Royal — Semana Farroupilha — Encarte — páginas internas"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 34,
+  "slug": "royal-croissants",
+  "name": "Royal — Croissants",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Padaria",
+  "image": "/assets/img/projects/royal-croissants/cover.webp",
+  "hero": "/assets/img/projects/royal-croissants/hero.webp",
+  "scope": [
+   "Audiovisual",
+   "Social Media"
+  ],
+  "tagline": "Crocância que dá vontade.",
+  "text": "Vídeo de produto para a linha de croissants recheados.",
+  "intro": "A padaria Royal lançou croissants recheados e confeitados e precisava gerar vontade imediata no feed.",
+  "challenge": "Mostrar variedade de sabores e recheios em poucos segundos, em formato vertical.",
+  "strategy": "Apetite em primeiro lugar: textura, recheio e variedade.",
+  "idea": "Ardósia escura para os coloridos brilharem e macros de recheio.",
+  "solution": "Fizemos direção de arte e produção de um vídeo vertical de 47 segundos.",
+  "outcome": "Um conteúdo de produto pronto para redes sociais.",
+  "results": [
+   "Direção de arte",
+   "Vídeo vertical (47s)"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/royal-croissants/01.mp4",
+     "poster": "/assets/img/projects/royal-croissants/01-poster.webp",
+     "width": 900,
+     "height": 1600,
+     "alt": "Royal — Croissants — filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/02.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/03.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/05.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/06.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-croissants/07.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Croissants — Frame do vídeo"
+    }
+   ]
+  ]
+ },
+ {
+  "order": 35,
+  "slug": "royal-cafes-carraro",
+  "name": "Royal — Cafés Especiais",
+  "year": "2025",
+  "client": "Supermercado Royal",
+  "segment": "Varejo · Cafés",
+  "image": "/assets/img/projects/royal-cafes-carraro/cover.webp",
+  "hero": "/assets/img/projects/royal-cafes-carraro/hero.webp",
+  "scope": [
+   "Audiovisual",
+   "Social Media"
+  ],
+  "tagline": "Cafés especiais? No Royal tem!",
+  "text": "Vídeo para a linha de cafés especiais e cápsulas.",
+  "intro": "O Royal ampliou a linha de cafés especiais e cápsulas e quis comunicar a novidade com a assinatura 'No Royal tem!'.",
+  "challenge": "Despertar desejo por um produto muito conhecido usando apenas imagem.",
+  "strategy": "Transformar o preparo do café em um ritual sensorial.",
+  "idea": "Luz baixa, caneca azul e crema em close; a assinatura entra quando o café enche a xícara.",
+  "solution": "Produzimos um vídeo vertical de 21 segundos com a assinatura da campanha.",
+  "outcome": "Um conteúdo curto e eficiente para redes sociais.",
+  "results": [
+   "Vídeo vertical (21s)",
+   "Assinatura 'No Royal tem!'"
+  ],
+  "gallery": [
+   [
+    {
+     "type": "video",
+     "src": "/assets/video/royal-cafes-carraro/01.mp4",
+     "poster": "/assets/img/projects/royal-cafes-carraro/01-poster.webp",
+     "width": 900,
+     "height": 1600,
+     "alt": "Royal — Cafés Especiais — filme"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/02.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/03.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    }
+   ],
+   [
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/04.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/05.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/06.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    },
+    {
+     "type": "image",
+     "src": "/assets/img/projects/royal-cafes-carraro/07.webp",
+     "width": 1080,
+     "height": 1920,
+     "alt": "Royal — Cafés Especiais — Frame do vídeo"
+    }
+   ]
+  ]
+ }
+]

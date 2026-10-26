@@ -1,0 +1,1538 @@
+{
+"/assets/img/projects/90-graus/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/90-graus/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/90-graus/01-poster.webp": [
+1600,
+900
+],
+"/assets/img/projects/90-graus/02.webp": [
+2800,
+1245
+],
+"/assets/img/projects/90-graus/03.webp": [
+1080,
+1440
+],
+"/assets/img/projects/90-graus/04.webp": [
+1080,
+1440
+],
+"/assets/img/projects/90-graus/05.webp": [
+1080,
+1440
+],
+"/assets/img/projects/90-graus/06.webp": [
+2800,
+687
+],
+"/assets/img/projects/90-graus/07.webp": [
+1920,
+1080
+],
+"/assets/img/projects/90-graus/08.webp": [
+1920,
+1080
+],
+"/assets/img/projects/agronexo/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/agronexo/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/agronexo/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/04.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/05.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/06.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/07.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/09.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/agronexo/11.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/benefatto/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/benefatto/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/04.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/05.webp": [
+2400,
+1600
+],
+"/assets/img/projects/benefatto/06.webp": [
+2400,
+2400
+],
+"/assets/img/projects/benefatto/07.webp": [
+2400,
+1350
+],
+"/assets/img/projects/benefatto/08.webp": [
+2400,
+1600
+],
+"/assets/img/projects/benefatto/09.webp": [
+2400,
+1296
+],
+"/assets/img/projects/benefatto/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/drinks-autorais/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/drinks-autorais/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/drinks-autorais/01.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/02.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/03.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/04.webp": [
+1350,
+2400
+],
+"/assets/img/projects/drinks-autorais/05.webp": [
+1080,
+1921
+],
+"/assets/img/projects/drinks-autorais/06.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/07.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/08.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/09.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/10.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/11.webp": [
+1080,
+1920
+],
+"/assets/img/projects/drinks-autorais/12.webp": [
+1080,
+1921
+],
+"/assets/img/projects/embutidos-lamb/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/embutidos-lamb/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/embutidos-lamb/01.webp": [
+2400,
+1600
+],
+"/assets/img/projects/embutidos-lamb/02.webp": [
+2400,
+1600
+],
+"/assets/img/projects/embutidos-lamb/03.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/04.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/05.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/06.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/07.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/08.webp": [
+1600,
+2400
+],
+"/assets/img/projects/embutidos-lamb/09.webp": [
+1600,
+2400
+],
+"/assets/img/projects/for-lezz/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/for-lezz/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/for-lezz/01.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/02.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/03.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/04.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/05.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/06.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/07.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/08.webp": [
+2400,
+1697
+],
+"/assets/img/projects/for-lezz/09.webp": [
+2400,
+1697
+],
+"/assets/img/projects/hospital-regional-do-oeste/cover.webp": [
+1866,
+1400
+],
+"/assets/img/projects/hospital-regional-do-oeste/hero.webp": [
+1866,
+800
+],
+"/assets/img/projects/hospital-regional-do-oeste/01.webp": [
+2000,
+800
+],
+"/assets/img/projects/hospital-regional-do-oeste/02.webp": [
+992,
+584
+],
+"/assets/img/projects/hospital-regional-do-oeste/03.webp": [
+992,
+584
+],
+"/assets/img/projects/marlos-campos-concursos/cover.webp": [
+1866,
+1400
+],
+"/assets/img/projects/marlos-campos-concursos/hero.webp": [
+1869,
+801
+],
+"/assets/img/projects/marlos-campos-concursos/01.webp": [
+2000,
+801
+],
+"/assets/img/projects/marlos-campos-concursos/02.webp": [
+993,
+585
+],
+"/assets/img/projects/marlos-campos-concursos/03.webp": [
+992,
+584
+],
+"/assets/img/projects/melira-films/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/melira-films/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/melira-films/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/04.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/05.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/06.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/07.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/09.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/11.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/12.webp": [
+2400,
+1350
+],
+"/assets/img/projects/melira-films/v3-01.webp": [
+2400,
+1352
+],
+"/assets/img/projects/melira-films/v3-02.webp": [
+1272,
+976
+],
+"/assets/img/projects/melira-films/v3-03.webp": [
+1264,
+1968
+],
+"/assets/img/projects/melira-films/v3-04.webp": [
+1272,
+976
+],
+"/assets/img/projects/melira-films/v3-05.webp": [
+1272,
+976
+],
+"/assets/img/projects/melira-films/v3-06.webp": [
+1272,
+976
+],
+"/assets/img/projects/nexo-contabil/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/nexo-contabil/hero.webp": [
+2452,
+1050
+],
+"/assets/img/projects/nexo-contabil/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/03.webp": [
+1799,
+1800
+],
+"/assets/img/projects/nexo-contabil/04.webp": [
+2400,
+1602
+],
+"/assets/img/projects/nexo-contabil/05.webp": [
+2052,
+1632
+],
+"/assets/img/projects/nexo-contabil/06.webp": [
+926,
+1306
+],
+"/assets/img/projects/nexo-contabil/07.webp": [
+2400,
+1601
+],
+"/assets/img/projects/nexo-contabil/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/09.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/11.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nexo-contabil/12.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nicos-soft-cream/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/nicos-soft-cream/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/nicos-soft-cream/01.webp": [
+2400,
+1371
+],
+"/assets/img/projects/nicos-soft-cream/02.webp": [
+2400,
+1939
+],
+"/assets/img/projects/nicos-soft-cream/03.webp": [
+1440,
+2400
+],
+"/assets/img/projects/nicos-soft-cream/04.webp": [
+2400,
+1275
+],
+"/assets/img/projects/nosso-bpo/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/nosso-bpo/hero.webp": [
+2452,
+1050
+],
+"/assets/img/projects/nosso-bpo/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/03.webp": [
+1799,
+1800
+],
+"/assets/img/projects/nosso-bpo/04.webp": [
+2400,
+1602
+],
+"/assets/img/projects/nosso-bpo/05.webp": [
+2052,
+1632
+],
+"/assets/img/projects/nosso-bpo/06.webp": [
+2400,
+1601
+],
+"/assets/img/projects/nosso-bpo/07.webp": [
+2400,
+1601
+],
+"/assets/img/projects/nosso-bpo/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/09.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/11.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/12.webp": [
+2400,
+1350
+],
+"/assets/img/projects/nosso-bpo/v3-01.webp": [
+1904,
+976
+],
+"/assets/img/projects/nosso-bpo/v3-02.webp": [
+953,
+1969
+],
+"/assets/img/projects/nosso-bpo/v3-03.webp": [
+953,
+977
+],
+"/assets/img/projects/nosso-bpo/v3-04.webp": [
+936,
+976
+],
+"/assets/img/projects/nosso-bpo/v3-05.webp": [
+952,
+976
+],
+"/assets/img/projects/nosso-bpo/v3-06.webp": [
+954,
+977
+],
+"/assets/img/projects/nosso-bpo/v3-07.webp": [
+1280,
+1112
+],
+"/assets/img/projects/oeste-home/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/oeste-home/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/oeste-home/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/oeste-home/02.webp": [
+1799,
+1800
+],
+"/assets/img/projects/oeste-home/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/oeste-home/04.webp": [
+1799,
+1800
+],
+"/assets/img/projects/oeste-home/05.webp": [
+1799,
+1800
+],
+"/assets/img/projects/oeste-home/06.webp": [
+2400,
+1350
+],
+"/assets/img/projects/oeste-home/07.webp": [
+2400,
+1350
+],
+"/assets/img/projects/oeste-home/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/rc-investimentos/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/rc-investimentos/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/rc-investimentos/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/rc-investimentos/02.webp": [
+1799,
+1800
+],
+"/assets/img/projects/rc-investimentos/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/rc-investimentos/04.webp": [
+1799,
+1800
+],
+"/assets/img/projects/rc-investimentos/05.webp": [
+1799,
+1800
+],
+"/assets/img/projects/rc-investimentos/06.webp": [
+1834,
+1556
+],
+"/assets/img/projects/rc-investimentos/07.webp": [
+1286,
+1324
+],
+"/assets/img/projects/rc-investimentos/08.webp": [
+2400,
+1404
+],
+"/assets/img/projects/regenera/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/regenera/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/regenera/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/03.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/04.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/05.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/06.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/07.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/08.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/09.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/10.webp": [
+2400,
+1350
+],
+"/assets/img/projects/regenera/11.webp": [
+2400,
+1350
+],
+"/assets/img/projects/royal-black-friday/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-black-friday/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-black-friday/01.webp": [
+2400,
+1441
+],
+"/assets/img/projects/royal-black-friday/02.webp": [
+2400,
+1428
+],
+"/assets/img/projects/royal-cafes-carraro/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-cafes-carraro/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-cafes-carraro/01-poster.webp": [
+900,
+1600
+],
+"/assets/img/projects/royal-cafes-carraro/02.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-cafes-carraro/03.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-cafes-carraro/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-cafes-carraro/05.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-cafes-carraro/06.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-cafes-carraro/07.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-chapeco-108-anos/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-chapeco-108-anos/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-chapeco-108-anos/01.webp": [
+2800,
+1114
+],
+"/assets/img/projects/royal-chapeco-108-anos/02.webp": [
+1733,
+2400
+],
+"/assets/img/projects/royal-chapeco-108-anos/03.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-clube-de-selos/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-clube-de-selos/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-clube-de-selos/01.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/02.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/03.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-clube-de-selos/05.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/06.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/07.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-clube-de-selos/08.webp": [
+1620,
+2025
+],
+"/assets/img/projects/royal-cortes-de-qualidade/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-cortes-de-qualidade/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-cortes-de-qualidade/01.webp": [
+1420,
+2400
+],
+"/assets/img/projects/royal-cortes-de-qualidade/02.webp": [
+2400,
+1922
+],
+"/assets/img/projects/royal-cortes-de-qualidade/03.webp": [
+2293,
+2400
+],
+"/assets/img/projects/royal-croissants/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-croissants/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-croissants/01-poster.webp": [
+900,
+1600
+],
+"/assets/img/projects/royal-croissants/02.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-croissants/03.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-croissants/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-croissants/05.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-croissants/06.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-croissants/07.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-delivery/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-delivery/hero.webp": [
+2400,
+1028
+],
+"/assets/img/projects/royal-delivery/01.webp": [
+2800,
+867
+],
+"/assets/img/projects/royal-delivery/02.webp": [
+2400,
+1792
+],
+"/assets/img/projects/royal-delivery/03.webp": [
+1734,
+2400
+],
+"/assets/img/projects/royal-delivery/04.webp": [
+2400,
+1771
+],
+"/assets/img/projects/royal-dia-da-mulher/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-dia-da-mulher/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-dia-da-mulher/01.webp": [
+2800,
+877
+],
+"/assets/img/projects/royal-dia-da-mulher/02.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-dia-da-mulher/03.webp": [
+1915,
+2400
+],
+"/assets/img/projects/royal-dia-da-mulher/04.webp": [
+1915,
+2400
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/cover.webp": [
+1024,
+768
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/01.webp": [
+2800,
+1030
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/02-poster.webp": [
+902,
+1600
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/03.webp": [
+1346,
+2400
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/04.webp": [
+1344,
+2400
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/05.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/06.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-dia-das-criancas-2024/07.webp": [
+1920,
+364
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/hero.webp": [
+2181,
+935
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/01.webp": [
+2400,
+1800
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/02.webp": [
+2400,
+1697
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/03.webp": [
+2800,
+1294
+],
+"/assets/img/projects/royal-dia-das-criancas-2025/04.webp": [
+2800,
+818
+],
+"/assets/img/projects/royal-dia-das-maes-filme/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-dia-das-maes-filme/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-dia-das-maes-filme/01-poster.webp": [
+900,
+1600
+],
+"/assets/img/projects/royal-dia-das-maes-filme/02.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes-filme/03.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes-filme/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes-filme/05.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes-filme/06.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes-filme/07.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-dia-das-maes/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-dia-das-maes/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-dia-das-maes/01.webp": [
+2800,
+933
+],
+"/assets/img/projects/royal-dia-das-maes/02.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-dia-das-maes/03.webp": [
+2080,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-feirao-dose-dupla/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-feirao-dose-dupla/01.webp": [
+2400,
+1800
+],
+"/assets/img/projects/royal-feirao-dose-dupla/02.webp": [
+2400,
+1800
+],
+"/assets/img/projects/royal-feirao-dose-dupla/03.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/04.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/05.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/06.webp": [
+2400,
+1800
+],
+"/assets/img/projects/royal-feirao-dose-dupla/07.webp": [
+2400,
+1800
+],
+"/assets/img/projects/royal-feirao-dose-dupla/08.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/09.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-feirao-dose-dupla/10.webp": [
+1697,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-fotografia-de-produto/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-fotografia-de-produto/01.webp": [
+1698,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/02.webp": [
+1350,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/03.webp": [
+1341,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/04.webp": [
+1345,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/05.webp": [
+1350,
+2400
+],
+"/assets/img/projects/royal-fotografia-de-produto/06.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-inverno/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-inverno/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-inverno/01.webp": [
+2400,
+1711
+],
+"/assets/img/projects/royal-inverno/02-poster.webp": [
+900,
+1600
+],
+"/assets/img/projects/royal-inverno/03.webp": [
+1350,
+2400
+],
+"/assets/img/projects/royal-inverno/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-inverno/05.webp": [
+1600,
+2400
+],
+"/assets/img/projects/royal-inverno/06.webp": [
+1600,
+2400
+],
+"/assets/img/projects/royal-inverno/07.webp": [
+1600,
+2400
+],
+"/assets/img/projects/royal-inverno/08.webp": [
+1600,
+2400
+],
+"/assets/img/projects/royal-inverno/09.webp": [
+2400,
+1600
+],
+"/assets/img/projects/royal-inverno/10.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-inverno/11.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-inverno/12.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-pascoa-2026/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-pascoa-2026/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-pascoa-2026/01.webp": [
+2800,
+1044
+],
+"/assets/img/projects/royal-pascoa-2026/02.webp": [
+1696,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/03.webp": [
+1080,
+1919
+],
+"/assets/img/projects/royal-pascoa-2026/04.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-pascoa-2026/05.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-pascoa-2026/06.webp": [
+1347,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/07.webp": [
+1599,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/08.webp": [
+1349,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/09.webp": [
+1348,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/10.webp": [
+1349,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/11.webp": [
+1349,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/12.webp": [
+1080,
+1920
+],
+"/assets/img/projects/royal-pascoa-2026/13.webp": [
+1351,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/14.webp": [
+1347,
+2400
+],
+"/assets/img/projects/royal-pascoa-2026/15.webp": [
+1080,
+1919
+],
+"/assets/img/projects/royal-semana-farroupilha/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-semana-farroupilha/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-semana-farroupilha/01.webp": [
+2400,
+1697
+],
+"/assets/img/projects/royal-semana-farroupilha/02.webp": [
+2400,
+1697
+],
+"/assets/img/projects/royal-super-fim-de-ano/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/royal-super-fim-de-ano/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/royal-super-fim-de-ano/01.webp": [
+2400,
+1379
+],
+"/assets/img/projects/royal-super-fim-de-ano/02.webp": [
+2800,
+1152
+],
+"/assets/img/projects/royal-super-fim-de-ano/03.webp": [
+1379,
+2400
+],
+"/assets/img/projects/royal-super-fim-de-ano/04.webp": [
+2400,
+1379
+],
+"/assets/img/projects/royal-super-fim-de-ano/05.webp": [
+2400,
+1379
+],
+"/assets/img/projects/royal-super-fim-de-ano/06.webp": [
+2400,
+1800
+],
+"/assets/img/projects/solvitas-cursos/cover.webp": [
+1632,
+1224
+],
+"/assets/img/projects/solvitas-cursos/hero.webp": [
+2448,
+1049
+],
+"/assets/img/projects/solvitas-cursos/01.webp": [
+2400,
+1350
+],
+"/assets/img/projects/solvitas-cursos/02.webp": [
+2400,
+1350
+],
+"/assets/img/projects/solvitas-cursos/03.webp": [
+1799,
+1800
+],
+"/assets/img/projects/solvitas-cursos/04.webp": [
+1632,
+1632
+],
+"/assets/img/projects/solvitas-cursos/05.webp": [
+2052,
+1632
+],
+"/assets/img/projects/solvitas-cursos/06.webp": [
+2400,
+1602
+],
+"/assets/img/projects/solvitas-cursos/07.webp": [
+2400,
+1601
+],
+"/assets/img/projects/solvitas-cursos/08.webp": [
+2400,
+1601
+],
+"/assets/img/projects/solvitas-cursos/09.webp": [
+2400,
+1368
+],
+"/assets/img/projects/solvitas-cursos/10.webp": [
+2400,
+1347
+],
+"/assets/img/projects/solvitas-cursos/11.webp": [
+2400,
+1600
+],
+"/assets/img/projects/solvitas-cursos/12.webp": [
+2400,
+1275
+],
+"/assets/img/projects/solvitas-cursos/13.webp": [
+2400,
+1600
+],
+"/assets/img/projects/supermercado-royal/cover.webp": [
+1866,
+1400
+],
+"/assets/img/projects/supermercado-royal/hero.webp": [
+1866,
+800
+],
+"/assets/img/projects/supermercado-royal/01.webp": [
+2000,
+800
+],
+"/assets/img/projects/supermercado-royal/02.webp": [
+993,
+585
+],
+"/assets/img/projects/supermercado-royal/03.webp": [
+993,
+585
+],
+"/assets/img/projects/supermercado-royal/04.webp": [
+949,
+977
+],
+"/assets/img/projects/supermercado-royal/05.webp": [
+950,
+978
+],
+"/assets/img/projects/supermercado-royal/06.webp": [
+950,
+976
+],
+"/assets/img/projects/supermercado-royal/07.webp": [
+948,
+977
+],
+"/assets/img/projects/supermercado-royal/08.webp": [
+949,
+977
+],
+"/assets/img/projects/supermercado-royal/09.webp": [
+950,
+977
+],
+"/assets/img/projects/supermercado-royal/10.webp": [
+950,
+976
+],
+"/assets/img/projects/supermercado-royal/11.webp": [
+948,
+976
+],
+"/assets/img/projects/supermercado-royal/12.webp": [
+1906,
+1969
+],
+"/assets/img/projects/supermercado-royal/13.webp": [
+953,
+977
+],
+"/assets/img/projects/supermercado-royal/14.webp": [
+953,
+977
+],
+"/assets/img/projects/supermercado-royal/15.webp": [
+952,
+976
+],
+"/assets/img/projects/supermercado-royal/16.webp": [
+952,
+488
+],
+"/assets/img/projects/supermercado-royal/17.webp": [
+952,
+488
+],
+"/assets/img/projects/vo-helena-pizzas/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/vo-helena-pizzas/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/vo-helena-pizzas/01.webp": [
+2400,
+2400
+],
+"/assets/img/projects/vo-helena-pizzas/02.webp": [
+2400,
+2400
+],
+"/assets/img/projects/vo-helena-pizzas/03.webp": [
+2400,
+2400
+],
+"/assets/img/projects/vo-helena-refeicoes/cover.webp": [
+2000,
+1500
+],
+"/assets/img/projects/vo-helena-refeicoes/hero.webp": [
+2800,
+1200
+],
+"/assets/img/projects/vo-helena-refeicoes/01.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/02.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/03.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/04.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/05.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/06.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/07.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/08.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/09.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/10.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/11.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/12.webp": [
+2304,
+2204
+],
+"/assets/img/projects/vo-helena-refeicoes/13.webp": [
+2304,
+2204
+],
+"/assets/img/blog/diego-malinski.webp": [
+1304,
+1074
+],
+"/assets/img/site/office-reception-v2.webp": [
+1933,
+2400
+],
+"/assets/img/site/office-workstation-v2.webp": [
+1933,
+2400
+],
+"/assets/img/site/office-meeting-v2.webp": [
+1610,
+2400
+],
+"/assets/img/site/office-shelf-v2.webp": [
+2400,
+1610
+],
+"/assets/img/site/office-lounge-v2.webp": [
+2400,
+1933
+],
+"/assets/img/site/diego-malinski-ceo.webp": [
+1497,
+2160
+],
+"/assets/img/site/wizard-character.webp": [
+1651,
+1880
+],
+"/assets/img/site/cover-slide.webp": [
+2400,
+1350
+]
+}
