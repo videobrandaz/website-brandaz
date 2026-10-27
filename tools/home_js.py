@@ -82,21 +82,22 @@ function place(sec){const n=sec.dataset.shape;
   if(n==='flow')return[0,0,1,1];
   const an=sec.querySelector('.dust-anchor');if(MOB()&&!(an&&an.offsetWidth)){const r=sec.getBoundingClientRect();return[innerWidth*.72,Math.max(120,Math.min(innerHeight-120,r.top+140)),innerWidth*.48,.3]}
   const a=sec.querySelector('.dust-anchor');if(!a)return[innerWidth*.8,innerHeight*.5,220,.6];const b=a.getBoundingClientRect();return[b.left+b.width/2,b.top+b.height/2,Math.max(b.width,b.height),ALPHA[n]??.8]}
-// pó que flui pelo caminho já percorrido até o ponto de magia
+// pó que flui por todo o caminho já percorrido, do primeiro item até o ponto de magia
 function flowPos(i,time){const f=SH.flow[i];if(!table.length)return[BZ.orbXY[0],BZ.orbXY[1]];const r=wrap.getBoundingClientRect();
-  const u=(f[0]+time*.06)%1,end=table[BZ.orbK][0],back=Math.min(end,260);const L=end-back*(1-u*u);
+  const u=(f[0]+time*.05)%1,end=table[BZ.orbK][0],back=Math.max(0,end-Math.max(0,L0-24));const L=end-back*(1-Math.pow(u,.8));
   let lo=0,hi=table.length-1;while(lo<hi){const m=(lo+hi)>>1;if(table[m][0]<L)lo=m+1;else hi=m}const q=table[lo];
-  const spread=f[1]*(6+18*(1-u));return[r.left+q[1]+spread,r.top+q[2]+f[1]*4]}
+  const spread=f[1]*(5+11*(1-u));return[r.left+q[1]+spread,r.top+q[2]+f[1]*4]}
 function pos(sec,pl,arr,i,time){if(sec.dataset.shape==='flow')return flowPos(i,time);return[pl[0]+arr[i][0]*pl[2],pl[1]+arr[i][1]*pl[2]]}
 let mx=-999,my=-999;addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY},{passive:true});addEventListener('pointerleave',()=>{mx=my=-999});
-const caps=$$('.dust-cap');
-function frame(t){requestAnimationFrame(frame);if(!ready)return;const [sa,sb,k]=state();caps.forEach(c=>{const on=!!c.offsetParent&&k>.85&&sb.contains(c);c.classList.toggle('on',on);c.parentElement.classList.toggle('on',on)});const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
+const caps=$$('.dust-cap');let lastSY=scrollY;
+function frame(t){requestAnimationFrame(frame);if(!ready)return;
+  const dS=lastSY-scrollY;lastSY=scrollY; // as partículas andam junto com a página (sem atraso em relação às imagens)const [sa,sb,k]=state();caps.forEach(c=>{const on=!!c.offsetParent&&k>.85&&sb.contains(c);c.classList.toggle('on',on);c.parentElement.classList.toggle('on',on)});const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
   const al=pa[3]+(pb[3]-pa[3])*k;ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);if(al<.01){P.forEach(p=>p.init=false);return}
   ctx.globalCompositeOperation='lighter';const time=t/1000;
   for(let i=0;i<P.length;i++){const p=P[i];const lag=Math.max(0,Math.min(1,k*1.3-(i/P.length)*.3));
     const a=pos(sa,pa,A,i,time),b=pos(sb,pb,B,i,time);let tx=a[0]+(b[0]-a[0])*lag,ty=a[1]+(b[1]-a[1])*lag;
     if(!BZ.still&&sb.dataset.shape!=='flow'){tx+=Math.sin(time*.9+p.ph)*1.2;ty+=Math.cos(time*.8+p.ph)*1.2}
-    if(!p.init){p.x=tx;p.y=ty+40;p.init=true}
+    if(!p.init){p.x=tx;p.y=ty+40;p.init=true}else p.y+=dS;
     p.x+=(tx-p.x)*.12;p.y+=(ty-p.y)*.12; // desliza até o alvo, sem passar do ponto
     const dx=p.x+p.ox-mx,dy=p.y+p.oy-my,d2=dx*dx+dy*dy;let px=0,py=0;if(d2<9000){const d=Math.sqrt(d2)||1,f=(1-d2/9000)*22;px=dx/d*f;py=dy/d*f}
     p.ox+=(px-p.ox)*.1;p.oy+=(py-p.oy)*.1;
