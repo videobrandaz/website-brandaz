@@ -258,8 +258,8 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
     else:
         SITEMAP.append(canon)
     head_assets = (f'<link rel="icon" type="image/png" href="{U("/favicon.png")}"><link rel="apple-touch-icon" href="{U("/apple-touch-icon.png")}">'
-                   f'<link rel="preload" href="{U("/assets/fonts/karibu-800.woff2")}" as="font" type="font/woff2" crossorigin>'
-                   f'<link rel="preload" href="{U("/assets/fonts/karibu-400.woff2")}" as="font" type="font/woff2" crossorigin>'
+                   f'<link rel="preload" href="{U("/assets/fonts/grift-800.woff2")}" as="font" type="font/woff2" crossorigin>'
+                   f'<link rel="preload" href="{U("/assets/fonts/grift-400.woff2")}" as="font" type="font/woff2" crossorigin>'
                    f'<link rel="stylesheet" href="{U("/assets/css/site.css")}?v={CSS_V}">')
     wrapper_less = PREVIEW and out_file(canon) == 'index.html'  # a página principal da prévia recebe o esqueleto do publicador
     top = '' if wrapper_less else '<!doctype html>\n<html lang="pt-BR"><head>'
@@ -330,7 +330,7 @@ def testimonials(cls='', book=False):
     cards = ''
     for i, d in enumerate(items):
         ini = ''.join(w[0] for w in d['nome'].split()[:2]).upper()
-        foto = (f'<img class="t-photo" src="{U(d["foto"])}" alt="{E(d["nome"])}" width="112" height="112" loading="lazy" decoding="async">' if d.get('foto')
+        foto = (f'<img class="t-photo" src="{U(d["foto"])}" alt="{E(d["nome"])}" width="168" height="168" loading="lazy" decoding="async">' if d.get('foto')
                 else f'<span class="t-photo t-ini" aria-hidden="true">{E(ini)}</span>')
         role = ' · '.join(x for x in (d.get('cargo'), d.get('empresa')) if x)
         case = (f'<a class="t-case" href="{U("/projetos/" + d["case"] + "/")}">Ver o case {ARROW}</a>' if d.get('case') in BY_SLUG else '')

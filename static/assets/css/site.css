@@ -1,11 +1,11 @@
-/* Brandaz — site estático. Layout e escalas da última versão; fonte Karibu e as 4 cores da marca. */
-@font-face{font-family:"Karibu";font-weight:300;font-style:normal;font-display:swap;src:url(../fonts/karibu-300.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:300;font-style:italic;font-display:swap;src:url(../fonts/karibu-300i.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/karibu-400.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/karibu-600.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:600;font-style:italic;font-display:swap;src:url(../fonts/karibu-600i.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/karibu-700.woff2) format("woff2")}
-@font-face{font-family:"Karibu";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/karibu-800.woff2) format("woff2")}
+/* Brandaz — site estático. Layout e escalas da última versão; fonte Grift e as 4 cores da marca. */
+@font-face{font-family:"Grift";font-weight:300;font-style:normal;font-display:swap;src:url(../fonts/grift-300.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/grift-400.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/grift-500.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/grift-600.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/grift-700.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/grift-800.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:900;font-style:normal;font-display:swap;src:url(../fonts/grift-900.woff2) format("woff2")}
 
 :root{
   --background:#341131;--depth:#261527;--accent:#D77F4E;--fg:#EAE8EE;
@@ -19,7 +19,7 @@
 *{box-sizing:border-box}
 html{overflow-x:clip;scroll-padding-top:104px}
 [hidden]{display:none!important}
-body{margin:0;overflow-x:clip;background:var(--background);color:var(--fg);font:400 17px/1.7 "Karibu",system-ui,sans-serif}
+body{margin:0;overflow-x:clip;background:var(--background);color:var(--fg);font:400 17px/1.7 "Grift",system-ui,sans-serif}
 a{color:inherit;text-decoration:none}
 img,video{max-width:100%;height:auto;display:block}
 p,h1,h2,h3,h4,ol,ul,dl,dd,figure,blockquote{margin:0}
@@ -46,9 +46,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .editorial-container{width:100%;max-width:1500px;margin-inline:auto;padding-inline:var(--gutter)}
 .editorial-band{padding-block:80px;position:relative}
 .editorial-opening{padding-top:144px;padding-bottom:80px}
-.editorial-label{display:flex;align-items:center;gap:12px;font:600 11px/1.3 "Karibu",sans-serif;text-transform:uppercase;color:var(--accent)}
+.editorial-label{display:flex;align-items:center;gap:12px;font:600 11px/1.3 "Grift",sans-serif;text-transform:uppercase;color:var(--accent)}
 .editorial-label::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
-.section-label{display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid color-mix(in oklab,currentColor 18%,transparent);font:600 13px "Karibu",sans-serif;text-transform:uppercase;letter-spacing:.2em}
+.section-label{display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid color-mix(in oklab,currentColor 18%,transparent);font:600 13px "Grift",sans-serif;text-transform:uppercase;letter-spacing:.2em}
 .section-label::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
 .editorial-title{font-size:36px;line-height:1.08;overflow-wrap:break-word}
 .editorial-title.up,.editorial-title.up *{text-transform:uppercase}
@@ -67,7 +67,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media (min-width:1024px){.editorial-title{font-size:56px}.editorial-title-hero{font-size:88px}.editorial-band{padding-block:120px}.editorial-opening{padding-top:176px}}
 
 /* ---------- botões ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);font:600 12px/1 "Karibu",sans-serif;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:translate .18s ease-out,color .2s,background-color .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);font:600 12px/1 "Grift",sans-serif;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:translate .18s ease-out,color .2s,background-color .2s,border-color .2s}
 .btn:hover,.btn[aria-pressed=true]{background:var(--accent);color:var(--depth)}
 .btn.px5{padding:0 20px}.btn.wrap{white-space:normal;height:auto;min-height:48px;padding-block:12px;text-align:left}
 .btn.ghost{border-color:transparent;padding:0}.btn.ghost:hover{background:none;color:var(--fg)}
@@ -89,7 +89,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .hlogo img{height:62px;width:auto;transition:transform .5s}.hlogo:hover img{transform:rotate(-2deg)}
 .site-header[data-home="true"][data-scrolled="false"] .hlogo{display:none}
 .site-header nav.main{display:none;align-items:center;gap:24px}
-.nav-link{font:600 16px "Karibu",sans-serif;color:var(--fg);padding-block:8px;border-bottom:2px solid transparent;transition:color .25s,transform .25s}
+.nav-link{font:600 16px "Grift",sans-serif;color:var(--fg);padding-block:8px;border-bottom:2px solid transparent;transition:color .25s,transform .25s}
 .nav-link:hover{transform:translateY(-2px);color:var(--accent)}
 .nav-link.current{border-bottom-color:var(--accent)}
 .hright{margin-left:auto;display:flex;gap:12px;align-items:center}
@@ -100,7 +100,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .mobile-menu.open{transform:none;visibility:visible}
 .mobile-menu .top{display:flex;align-items:center;justify-content:space-between}.mobile-menu .top img{height:64px;width:auto}
 .mobile-menu nav{margin-block:auto;display:flex;flex-direction:column}
-.mobile-menu nav a{display:flex;align-items:center;border-bottom:1px solid var(--border);padding-block:8px;font:300 clamp(30px,8vw,56px)/1.15 "Karibu",sans-serif}
+.mobile-menu nav a{display:flex;align-items:center;border-bottom:1px solid var(--border);padding-block:8px;font:300 clamp(30px,8vw,56px)/1.15 "Grift",sans-serif}
 .mobile-menu nav a:hover,.mobile-menu nav a.current{color:var(--accent)}
 
 /* ---------- rodapé ---------- */
@@ -116,7 +116,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .map>img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .5s}.map:hover>img{filter:none}
 .pin{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-46px 0 0 -23px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--background);border:3px solid var(--accent);box-shadow:0 8px 20px rgba(38,21,39,.45);display:grid;place-items:center}
 .pin img{height:26px;width:auto;transform:rotate(45deg)}
-.map .tag{position:absolute;left:50%;top:50%;margin-top:10px;transform:translateX(-50%);padding:6px 12px;border-radius:999px;background:var(--depth);color:var(--fg);font:600 12px "Karibu",sans-serif;white-space:nowrap}
+.map .tag{position:absolute;left:50%;top:50%;margin-top:10px;transform:translateX(-50%);padding:6px 12px;border-radius:999px;background:var(--depth);color:var(--fg);font:600 12px "Grift",sans-serif;white-space:nowrap}
 .map small{position:absolute;right:10px;bottom:6px;font-size:10px;color:#333;background:rgba(255,255,255,.7);padding:1px 6px;border-radius:4px}
 .f-full{max-width:1500px;margin:0 auto;padding:48px var(--gutter) 80px}
 .f-grid{display:grid;gap:48px}
@@ -168,10 +168,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .case-marquee-card:hover,.case-marquee-card:focus-visible{translate:0 -5px;border-color:var(--accent);box-shadow:var(--glow)}
 .case-cover{aspect-ratio:4/3;width:100%;height:auto;object-fit:contain;background:var(--depth)}
 .case-marquee-caption{padding:18px}
-.cap-k{font:400 italic 12px/1.4 "Karibu",sans-serif;text-transform:uppercase;color:var(--accent)}
-.cap-l{margin-top:8px;font:700 24px/1.2 "Karibu",sans-serif;text-transform:uppercase}
+.cap-k{font: 12px/1.4 "Grift",sans-serif;text-transform:uppercase;color:var(--accent)}
+.cap-l{margin-top:8px;font:700 24px/1.2 "Grift",sans-serif;text-transform:uppercase}
 .cap-h{margin-top:8px;font-size:14px;line-height:1.5;color:var(--muted)}
-.cap-s{font:600 16px/1.4 "Karibu",sans-serif;text-transform:uppercase}
+.cap-s{font:600 16px/1.4 "Grift",sans-serif;text-transform:uppercase}
 @media (max-width:639px){.case-marquee-row.is-large .case-marquee-card{width:290px}.case-marquee-card{width:200px}.case-marquee-group{gap:16px;padding-right:16px}.case-marquee-caption{padding:14px}}
 .client-marquee{display:grid;gap:40px;overflow:hidden}
 .client-marquee-row{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
@@ -189,8 +189,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .films-belt .belt-group{gap:20px;padding-right:20px}
 .cinema-reel-link{width:clamp(170px,16vw,240px);flex:none;min-width:0}
 .cinema-reel-link.wide{width:calc(clamp(170px,16vw,240px)*3.1605)}.cinema-reel-link.wide .cinema-reel{aspect-ratio:16/9}
-.film-title{margin-top:16px;font:700 19px/1.25 "Karibu",sans-serif}.film-title span{font-weight:300;color:var(--accent)}
-.film-client{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font:400 italic 11px/1.5 "Karibu",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.film-title{margin-top:16px;font:700 19px/1.25 "Grift",sans-serif}.film-title span{font-weight:300;color:var(--accent)}
+.film-client{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font: 11px/1.5 "Grift",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);transition:color .2s}
 .film-client .ic{width:12px;height:12px}.film-client:hover{color:var(--accent)}
 .cinema-reel{all:unset;box-sizing:border-box;position:relative;display:block;width:100%;aspect-ratio:9/16;overflow:hidden;border-radius:8px;background:var(--depth);border:1px solid var(--border);cursor:pointer;transition:border-color .3s}
 .cinema-reel:hover,.cinema-reel:focus-visible{border-color:var(--accent)}
@@ -204,8 +204,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .dbox.film{width:min(92vw,460px);padding:16px;border-radius:12px;border:1px solid var(--accent);background:var(--background)}
 .dbox img,.dbox video{max-width:100%;max-height:80svh;width:auto;border-radius:8px;background:#000}
 .dbox.film video{width:100%}
-.dbox .cap{justify-self:start;font:400 italic 12px "Karibu",sans-serif;text-transform:uppercase;color:var(--fg)}
-.dlg .x{position:absolute;right:8px;top:4px;z-index:2;background:none;border:0;color:var(--fg);font:400 34px/1 "Karibu",sans-serif;cursor:pointer}
+.dbox .cap{justify-self:start;font: 12px "Grift",sans-serif;text-transform:uppercase;color:var(--fg)}
+.dlg .x{position:absolute;right:8px;top:4px;z-index:2;background:none;border:0;color:var(--fg);font:400 34px/1 "Grift",sans-serif;cursor:pointer}
 .dlg .nav{position:fixed;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid var(--accent);background:rgba(38,21,39,.8);color:var(--accent);cursor:pointer;display:grid;place-items:center}
 .dlg .prev{left:16px}.dlg .next{right:16px}
 
@@ -227,7 +227,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .stat{display:flex;flex-direction:column;justify-content:center;min-height:250px;border-radius:14px;border:1px solid rgba(255,255,255,.35);padding:28px;backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);box-shadow:0 18px 40px rgba(52,17,49,.16),inset 0 1px 0 rgba(255,255,255,.3)}
 .stat.a{background:rgba(215,127,78,.84);color:var(--depth)}.stat.b{background:rgba(52,17,49,.84);color:var(--fg);border-color:rgba(234,232,238,.18)}
 .stat .btn{align-self:flex-start}
-.stat .n{font:800 clamp(56px,6vw,72px)/1 "Karibu",sans-serif}.stat.b .n{color:var(--accent)}
+.stat .n{font:800 clamp(56px,6vw,72px)/1 "Grift",sans-serif}.stat.b .n{color:var(--accent)}
 .stat .t{margin-top:16px;font-size:12px;font-weight:600;text-transform:uppercase}
 .stat .btn{margin-top:24px}
 @media (min-width:1024px){.stat{padding:40px}}
@@ -350,9 +350,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media (min-width:1440px){.result-metrics .result-number{font-size:36px}}
 .result-block .out{margin-top:20px;font-weight:600}.result-block .note{margin-top:24px;font-size:14px}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
-.filters button{border:0;border-radius:999px;padding:8px 20px;background:var(--surface);color:var(--muted);font:600 11px "Karibu",sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:color .2s,background .2s}
+.filters button{border:0;border-radius:999px;padding:8px 20px;background:var(--surface);color:var(--muted);font:600 11px "Grift",sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:color .2s,background .2s}
 .filters button:hover{color:var(--accent)}.filters button[aria-pressed=true]{background:var(--accent);color:var(--depth)}
-.select{margin-top:12px;max-width:100%;border-radius:6px;border:1px solid var(--border);background:var(--background);color:var(--fg);padding:12px 16px;font:400 16px "Karibu",sans-serif}
+.select{margin-top:12px;max-width:100%;border-radius:6px;border:1px solid var(--border);background:var(--background);color:var(--fg);padding:12px 16px;font:400 16px "Grift",sans-serif}
 .project-grid{display:grid;gap:20px;margin-top:40px}
 @media (min-width:640px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:1280px){.project-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .proj-item{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);transition:border-color .3s,translate .3s}
@@ -439,7 +439,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media (min-width:768px){.next-chapter a{grid-template-columns:1.3fr 1fr}}@media (min-width:1024px){.next-chapter a{padding-block:96px}}
 .next-chapter .cover{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:8px}
 .next-chapter .cover img{width:100%;height:100%;object-fit:cover;transition:transform 1s}.next-chapter a:hover .cover img{transform:scale(1.04)}
-.next-chapter .cover b{position:absolute;inset:0;display:grid;place-items:center;font:900 clamp(40px,7vw,96px)/1 "Karibu",sans-serif;font-weight:800;color:var(--accent);background:rgba(52,17,49,.55);text-transform:uppercase}
+.next-chapter .cover b{position:absolute;inset:0;display:grid;place-items:center;font:800 clamp(40px,7vw,96px)/1 "Grift",sans-serif;font-weight:800;color:var(--accent);background:rgba(52,17,49,.55);text-transform:uppercase}
 
 /* ---------- contato ---------- */
 .contact-grid{display:grid;gap:64px;padding-bottom:96px}@media (min-width:1024px){.contact-grid{grid-template-columns:1fr 1fr;padding-bottom:144px}}
@@ -451,7 +451,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .wa-form h2{font-size:24px;font-weight:700;margin-bottom:12px}
 .wa-form label{display:block;margin-top:24px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:rgba(234,232,238,.6)}
 .wa-form label:first-of-type{margin-top:32px}
-.wa-form input,.wa-form select,.wa-form textarea{display:block;width:100%;margin-top:8px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--fg);padding:12px 16px;font:400 15px "Karibu",sans-serif;outline:none}
+.wa-form input,.wa-form select,.wa-form textarea{display:block;width:100%;margin-top:8px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--fg);padding:12px 16px;font:400 15px "Grift",sans-serif;outline:none}
 .wa-form select option{background:var(--background)}
 .wa-form input:focus,.wa-form select:focus,.wa-form textarea:focus{border-color:var(--accent)}
 .wa-form .btn{margin-top:32px;width:100%}
@@ -474,7 +474,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .projection-hero{position:absolute;inset:0;z-index:0;overflow:hidden;background:var(--depth)}
 .projection-gradient{position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,21,39,.9),rgba(38,21,39,.72) 34%,rgba(38,21,39,.18) 58%,rgba(38,21,39,0) 70%)}
 .hero-bottom{position:absolute;inset:auto 0 0;height:22%;background:linear-gradient(0deg,var(--background),transparent)}
-.film-credit{position:absolute;z-index:3;right:4vw;bottom:28px;font:400 italic 11px/1.5 "Karibu",sans-serif;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}
+.film-credit{position:absolute;z-index:3;right:4vw;bottom:28px;font: 11px/1.5 "Grift",sans-serif;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}
 .v3-hero-content{position:relative;z-index:4;min-height:94svh;display:flex;flex-direction:column;justify-content:center;padding-top:140px;padding-bottom:90px;width:min(620px,44%);margin-left:max(var(--gutter),calc((100% - 1500px)/2 + var(--gutter)))}
 .v3-hero-content .hero-logo{width:220px;height:auto;margin-bottom:40px;animation:arrive .55s .05s both}
 .v3-hero-content .editorial-title-hero{font-size:clamp(40px,3.7vw,60px);max-width:100%;line-height:1.02}
@@ -514,7 +514,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 #ahead{stroke:rgba(234,232,238,.3);stroke-width:3;stroke-linecap:round;stroke-dasharray:0 12}
 #trail{stroke:var(--accent);stroke-width:5;stroke-linecap:round;stroke-dasharray:0 12}
 .orb{position:absolute;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--fg);box-shadow:0 0 0 5px rgba(215,127,78,.3),0 0 22px 7px rgba(215,127,78,.85),0 0 60px 22px rgba(215,127,78,.28);pointer-events:none;z-index:2}
-.home-specialties li{position:relative;padding-block:12px;border-bottom:1px solid rgba(234,232,238,.18);font:600 18px/1.5 "Karibu",sans-serif;transition:color .35s,transform .35s}
+.home-specialties li{position:relative;padding-block:12px;border-bottom:1px solid rgba(234,232,238,.18);font:600 18px/1.5 "Grift",sans-serif;transition:color .35s,transform .35s}
 .home-specialties li.lit{color:var(--accent);transform:translateX(6px)}
 .home-specialties .node{position:absolute;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--background);border:2px solid var(--accent);transition:background .3s,transform .3s}
 .home-specialties li.past .node{background:var(--accent)}.home-specialties li.lit .node{transform:scale(1.35)}
@@ -541,10 +541,10 @@ main>section{position:relative}main>section>*:not(.projection-hero){position:rel
 @keyframes breathe{50%{filter:brightness(1.18) drop-shadow(0 0 18px rgba(215,127,78,.35))}}
 .cm-right .dust-anchor{right:calc(100% + 40px);bottom:-30px;width:200px;height:200px}
 .films-head{position:relative}.films-head .dust-anchor{right:120px;top:50%;transform:translateY(-50%);width:200px;height:200px}
-.dust-cap{position:absolute;left:-40px;right:-40px;top:calc(100% + 14px);text-align:center;font:600 18px/1 "Karibu",sans-serif;letter-spacing:.3em;white-space:nowrap;text-transform:uppercase;color:var(--fg);opacity:0;transform:translateY(8px);transition:opacity .6s .35s,transform .6s .35s}
+.dust-cap{position:absolute;left:-40px;right:-40px;top:calc(100% + 14px);text-align:center;font:600 18px/1 "Grift",sans-serif;letter-spacing:.3em;white-space:nowrap;text-transform:uppercase;color:var(--fg);opacity:0;transform:translateY(8px);transition:opacity .6s .35s,transform .6s .35s}
 .dust-cap.on{opacity:1;transform:none}
 .dock{position:fixed;z-index:40;left:max(14px,env(safe-area-inset-left,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:8px}
-.vsw,.mot{padding:9px 14px;border-radius:999px;border:1px solid var(--accent);background:rgba(38,21,39,.85);color:var(--accent);font:600 italic 11px "Karibu",sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.vsw,.mot{padding:9px 14px;border-radius:999px;border:1px solid var(--accent);background:rgba(38,21,39,.85);color:var(--accent);font: 11px "Grift",sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
 .vsw:hover{background:var(--accent);color:var(--depth)}.mot{border-color:var(--border);color:var(--muted)}.mot[aria-pressed=true]{color:var(--accent);border-color:var(--accent)}
 html.still *{animation-play-state:paused!important}
 @media (max-width:767px){
@@ -602,15 +602,15 @@ html.still *{animation-play-state:paused!important}
 .t-card{position:relative;margin:0;display:flex;flex-direction:column;gap:20px;padding:28px;border:1px solid var(--border);border-radius:8px;background:var(--surface);transition:border-color .3s,translate .3s}
 .t-card:hover{border-color:var(--accent);translate:0 -4px}
 .t-card.modelo{border-style:dashed;background:transparent}
-.t-tag{position:absolute;top:-11px;left:24px;padding:2px 10px;border-radius:999px;background:var(--background);border:1px dashed var(--accent);color:var(--accent);font:600 10px "Karibu",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.t-tag{position:absolute;top:-11px;left:24px;padding:2px 10px;border-radius:999px;background:var(--background);border:1px dashed var(--accent);color:var(--accent);font:600 10px "Grift",sans-serif;letter-spacing:.12em;text-transform:uppercase}
 .t-card .quoted{flex:1}
 .t-card blockquote{margin:0;font-size:19px;font-weight:300;line-height:1.6}
 .t-card.modelo blockquote{color:var(--muted)}
 .t-card figcaption{display:flex;align-items:center;gap:16px;padding-top:20px;border-top:1px solid var(--border)}
-.t-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--accent)}
-.t-ini{display:grid;place-items:center;background:var(--depth);color:var(--accent);font-weight:800;font-size:18px}
+.t-photo{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--accent)}
+.t-ini{display:grid;place-items:center;background:var(--depth);color:var(--accent);font-weight:800;font-size:24px}
 .t-card figcaption b{display:block;font-weight:700}.t-card figcaption small{display:block;font-size:14px;color:var(--muted)}
-.t-case{display:inline-flex;align-items:center;gap:8px;font:600 12px "Karibu",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.t-case{display:inline-flex;align-items:center;gap:8px;font:600 12px "Grift",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 .t-case:hover{color:var(--fg)}
 
 /* material protegido: sem arrastar nem selecionar fotos e vídeos */

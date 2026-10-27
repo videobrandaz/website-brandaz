@@ -9,7 +9,7 @@ Site estático da Brandaz (brandaz.com.br). Roda sem Lovable e sem Hostinger: o 
   - `projetos.json`: os 37 cases (textos, métricas, galeria)
   - `blog.json`: os posts (corpo em Markdown simples: `##`, listas, `**negrito**`, `[link](/projetos/slug)`)
   - `dimensoes.json`: largura/altura das imagens (evita saltos no carregamento)
-- `static/` — imagens, vídeos, fontes Karibu, CSS e JS (copiados como estão)
+- `static/` — imagens, vídeos, fontes Grift, CSS e JS (copiados como estão)
 - `tools/build.py` — gera as páginas em `site/` (só Python padrão, nada para instalar)
 - `tools/home_js.py` — movimento da home (partículas, trajeto, capas)
 

@@ -38,12 +38,12 @@ function sample(draw){const S=420,c=document.createElement('canvas');c.width=c.h
   return Array.from({length:N},()=>{const p=pts[(Math.random()*pts.length)|0]||[0,0];return[p[0]+(Math.random()-.5)*.003,p[1]+(Math.random()-.5)*.003]})}
 const SH={};let P=[],ready=false;
 const rr=(g,x,y,w,h,r)=>{g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath();g.fill()};
-async function init(){try{await document.fonts.load('800 200px Karibu')}catch(e){}
+async function init(){try{await document.fonts.load('800 200px Grift')}catch(e){}
   const img=new Image();img.src=cv.dataset.mark;await img.decode().catch(()=>{});
   SH.mark=sample((g,S)=>{const h=S*.96,w=h*img.naturalWidth/img.naturalHeight;g.drawImage(img,(S-w)/2,(S-h)/2,w,h)});
   // número compacto: "+" encostado nos dígitos, centrado no box
-  const num=t=>(g,S)=>{let f=200;g.textBaseline='alphabetic';g.textAlign='left';g.font=`800 ${f}px Karibu`;
-    const pw=g.measureText('+').width,gap=-f*.07,dw=g.measureText(t).width,sc=S*.8/(pw+gap+dw);f*=sc;g.font=`800 ${f}px Karibu`;
+  const num=t=>(g,S)=>{let f=200;g.textBaseline='alphabetic';g.textAlign='left';g.font=`800 ${f}px Grift`;
+    const pw=g.measureText('+').width,gap=-f*.07,dw=g.measureText(t).width,sc=S*.8/(pw+gap+dw);f*=sc;g.font=`800 ${f}px Grift`;
     const m=g.measureText(t),base=S/2+(m.actualBoundingBoxAscent-m.actualBoundingBoxDescent)/2,x0=(S-(pw+gap+dw)*sc)/2;g.fillText('+',x0,base);g.fillText(t,x0+(pw+gap)*sc,base)};
   SH['20']=sample(num('20'));SH['21']=sample(num('21'));
   // resultados: barras que crescem + seta de tendência
