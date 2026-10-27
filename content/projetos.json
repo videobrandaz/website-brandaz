@@ -2651,7 +2651,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/90-graus/01.mp4",
+     "src": "/assets/video/90-graus/01/master.m3u8",
      "poster": "/assets/img/projects/90-graus/01-poster.webp",
      "width": 1600,
      "height": 900,
@@ -2925,7 +2925,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/royal-inverno/02.mp4",
+     "src": "/assets/video/royal-inverno/02/master.m3u8",
      "poster": "/assets/img/projects/royal-inverno/02-poster.webp",
      "width": 900,
      "height": 1600,
@@ -3039,7 +3039,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/royal-dia-das-maes-filme/01.mp4",
+     "src": "/assets/video/royal-dia-das-maes-filme/01/master.m3u8",
      "poster": "/assets/img/projects/royal-dia-das-maes-filme/01-poster.webp",
      "width": 900,
      "height": 1600,
@@ -3251,7 +3251,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/royal-dia-das-criancas-2024/02.mp4",
+     "src": "/assets/video/royal-dia-das-criancas-2024/02/master.m3u8",
      "poster": "/assets/img/projects/royal-dia-das-criancas-2024/02-poster.webp",
      "width": 902,
      "height": 1600,
@@ -3450,7 +3450,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/royal-croissants/01.mp4",
+     "src": "/assets/video/royal-croissants/01/master.m3u8",
      "poster": "/assets/img/projects/royal-croissants/01-poster.webp",
      "width": 900,
      "height": 1600,
@@ -3532,7 +3532,7 @@
    [
     {
      "type": "video",
-     "src": "/assets/video/royal-cafes-carraro/01.mp4",
+     "src": "/assets/video/royal-cafes-carraro/01/master.m3u8",
      "poster": "/assets/img/projects/royal-cafes-carraro/01-poster.webp",
      "width": 900,
      "height": 1600,

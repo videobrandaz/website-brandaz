@@ -123,22 +123,40 @@
     cp.innerHTML = BZ.casePaused ? cp.dataset.play : cp.dataset.pause;
   };
 
+  // filmes em streaming (HLS): Safari toca direto; os outros navegadores carregam o hls.js só quando um filme é aberto
+  const HLS_SRC = ((document.currentScript && document.currentScript.src) || '').replace(/site\.js(\?.*)?$/, 'vendor/hls.min.js');
+  let hlsLib = null;
+  const loadHls = () => window.Hls ? Promise.resolve(window.Hls) : (hlsLib = hlsLib || new Promise((ok, err) => {
+    const s = document.createElement('script'); s.src = HLS_SRC; s.onload = () => ok(window.Hls); s.onerror = err; document.head.appendChild(s);
+  }));
+  BZ.playStream = (video, src) => {
+    if (!/\.m3u8$/.test(src) || video.canPlayType('application/vnd.apple.mpegurl')) { video.src = src; video.play().catch(() => {}); return }
+    loadHls().then(Hls => {
+      if (!Hls.isSupported()) return;
+      // começa na qualidade máxima em conexões boas e ajusta sozinho se a internet cair
+      const h = new Hls({ abrEwmaDefaultEstimate: 8e6, capLevelToPlayerSize: false, maxBufferLength: 30 });
+      h.loadSource(src); h.attachMedia(video); video._hls = h;
+      h.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}));
+    });
+  };
+  const stopMedia = () => { const v = media && media.querySelector('video'); if (v && v._hls) v._hls.destroy(); if (v) v.pause() };
+
   // janela de mídia: fotos e filmes (com som) ampliados, com navegação
   const dlg = document.createElement('div'); dlg.className = 'dlg'; dlg.hidden = true;
   dlg.innerHTML = '<div class="dbox" role="dialog" aria-modal="true" aria-label="Mídia ampliada"><button type="button" class="x" aria-label="Fechar">×</button><div class="media"></div><p class="cap"></p></div><button type="button" class="nav prev" aria-label="Anterior">‹</button><button type="button" class="nav next" aria-label="Próximo">›</button>';
   document.body.appendChild(dlg);
   const box = $('.dbox', dlg), media = $('.media', dlg), cap = $('.cap', dlg); let group = [], gi = 0, opener = null;
   function show(i) {
-    gi = (i + group.length) % group.length; const it = group[gi], d = it.dataset;
+    stopMedia(); gi = (i + group.length) % group.length; const it = group[gi], d = it.dataset;
     box.classList.toggle('film', 'vertical' in d);
     media.innerHTML = d.type === 'video'
-      ? `<video src="${d.src}" ${d.poster ? `poster="${d.poster}"` : ''} controls autoplay playsinline></video>`
+      ? `<video ${d.poster ? `poster="${d.poster}"` : ''} controls controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture disableremoteplayback autoplay playsinline></video>`
       : `<img src="${d.src}" alt="">`;
     const im = media.firstElementChild; if (d.type !== 'video') im.alt = d.cap || '';
     cap.textContent = d.cap || ''; $$('.nav', dlg).forEach(b => b.hidden = group.length < 2);
-    if (d.type === 'video') im.play().catch(() => {});
+    if (d.type === 'video') BZ.playStream(im, d.src);
   }
-  function close() { dlg.hidden = true; media.innerHTML = ''; document.body.style.overflow = ''; opener && opener.focus() }
+  function close() { stopMedia(); dlg.hidden = true; media.innerHTML = ''; document.body.style.overflow = ''; opener && opener.focus() }
   document.addEventListener('click', e => {
     const t = e.target.closest('[data-lb]'); if (!t) return; e.preventDefault();
     group = $$(`[data-lb="${t.dataset.lb}"]`).filter(x => !x.closest('[aria-hidden="true"]'));
@@ -181,6 +199,11 @@
     const url = `${form.dataset.wa}?text=${encodeURIComponent(msg)}`, link = $('#waOut');
     link.href = url; link.hidden = false; link.click();
   });
+
+  // proteção do material: sem "salvar como" no clique direito e sem arrastar fotos e vídeos para fora da página
+  const media_sel = 'img,video,picture,.g-item,.cinema-reel,.wf,.office-portal,.case-marquee-card,.project-media,.dlg .media';
+  document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest(media_sel)) e.preventDefault() });
+  document.addEventListener('dragstart', e => { if (e.target.closest && e.target.closest(media_sel)) e.preventDefault() });
 
   // botões magnéticos
   if (matchMedia('(hover: hover) and (pointer: fine)').matches) {

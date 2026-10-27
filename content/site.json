@@ -122,19 +122,19 @@
     ["hns", "HNSS", ""], ["souart", "Souart", ""]
   ],
   "films": [
-    {"preview": "croissants", "full": "/assets/video/royal-croissants/01.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Croissants", "slug": "royal-croissants"},
-    {"preview": "cafes-carraro", "full": "/assets/video/royal-cafes-carraro/01.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Cafés Especiais", "slug": "royal-cafes-carraro"},
-    {"preview": "inverno", "full": "/assets/video/royal-inverno/02.mp4", "category": "VAREJO", "client": "Supermercado Royal", "name": "Royal — Receitas de Inverno", "slug": "royal-inverno"},
-    {"preview": "dia-das-maes", "full": "/assets/video/royal-dia-das-maes-filme/01.mp4", "category": "INSTITUCIONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Mães (filme)", "slug": "royal-dia-das-maes-filme"},
-    {"preview": "dia-das-criancas", "full": "/assets/video/royal-dia-das-criancas-2024/02.mp4", "category": "SAZONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Crianças: Massinha", "slug": "royal-dia-das-criancas-2024"},
-    {"preview": "90-graus", "full": "/assets/video/90-graus/01.mp4", "category": "INSTITUCIONAL", "client": "90 Graus", "name": "90 Graus Móveis sob Medida", "slug": "90-graus"},
-    {"preview": "biscoitos", "full": "/assets/video/filmes/biscoitos.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Biscoitos", "slug": "supermercado-royal"},
-    {"preview": "cachaca", "full": "/assets/video/filmes/cachaca.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Cachaça", "slug": "supermercado-royal"},
-    {"preview": "cuca", "full": "/assets/video/filmes/cuca.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Cuca", "slug": "supermercado-royal"},
-    {"preview": "franui", "full": "/assets/video/filmes/franui.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Franuí", "slug": "supermercado-royal"},
-    {"preview": "garibaldi", "full": "/assets/video/filmes/garibaldi.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Garibaldi", "slug": "supermercado-royal"},
-    {"preview": "granolas", "full": "/assets/video/filmes/granolas.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Granolas", "slug": "supermercado-royal"},
-    {"preview": "pratos-prontos", "full": "/assets/video/filmes/pratosprontos.mp4", "category": "FOOD", "client": "Supermercado Royal", "name": "Pratos Prontos", "slug": "supermercado-royal"}
+    {"preview": "croissants", "full": "/assets/video/royal-croissants/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Croissants", "slug": "royal-croissants"},
+    {"preview": "cafes-carraro", "full": "/assets/video/royal-cafes-carraro/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Cafés Especiais", "slug": "royal-cafes-carraro"},
+    {"preview": "inverno", "full": "/assets/video/royal-inverno/02/master.m3u8", "category": "VAREJO", "client": "Supermercado Royal", "name": "Royal — Receitas de Inverno", "slug": "royal-inverno"},
+    {"preview": "dia-das-maes", "full": "/assets/video/royal-dia-das-maes-filme/01/master.m3u8", "category": "INSTITUCIONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Mães (filme)", "slug": "royal-dia-das-maes-filme"},
+    {"preview": "dia-das-criancas", "full": "/assets/video/royal-dia-das-criancas-2024/02/master.m3u8", "category": "SAZONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Crianças: Massinha", "slug": "royal-dia-das-criancas-2024"},
+    {"preview": "90-graus", "full": "/assets/video/90-graus/01/master.m3u8", "category": "INSTITUCIONAL", "client": "90 Graus", "name": "90 Graus Móveis sob Medida", "slug": "90-graus"},
+    {"preview": "biscoitos", "full": "/assets/video/filmes/biscoitos/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Biscoitos", "slug": "supermercado-royal"},
+    {"preview": "cachaca", "full": "/assets/video/filmes/cachaca/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Cachaça", "slug": "supermercado-royal"},
+    {"preview": "cuca", "full": "/assets/video/filmes/cuca/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Cuca", "slug": "supermercado-royal"},
+    {"preview": "franui", "full": "/assets/video/filmes/franui/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Franuí", "slug": "supermercado-royal"},
+    {"preview": "garibaldi", "full": "/assets/video/filmes/garibaldi/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Garibaldi", "slug": "supermercado-royal"},
+    {"preview": "granolas", "full": "/assets/video/filmes/granolas/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Granolas", "slug": "supermercado-royal"},
+    {"preview": "pratos-prontos", "full": "/assets/video/filmes/pratosprontos/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Pratos Prontos", "slug": "supermercado-royal"}
   ],
   "chapters": [
     ["01", "Início", "/", "Onde a estratégia ganha magia."],

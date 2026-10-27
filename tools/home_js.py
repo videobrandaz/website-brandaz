@@ -23,8 +23,8 @@ $$('.cinema-reel').forEach(b=>reelIO.observe(b));
 const inView=x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth};
 BZ.onStill.push(v=>$$('.cinema-reel video,.wf video').forEach(x=>v||!inView(x)?x.pause():x.play().catch(()=>{})));
 // clientes embaralhados a cada visita
-(()=>{const t=$('#clientTrack'),items=[...t.children].slice(0,t.children.length/2);for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]]}
-  t.innerHTML='';[...items,...items.map(n=>n.cloneNode(true))].forEach((n,i)=>{if(i>=items.length){n.setAttribute('aria-hidden','true');n.tabIndex=-1;n.querySelector('img').alt=''}t.appendChild(n)})})();
+$$('[data-shuffle]').forEach(t=>{const items=[...t.children].slice(0,t.children.length/2);for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]]}
+  t.innerHTML='';[...items,...items.map(n=>n.cloneNode(true))].forEach((n,i)=>{if(i>=items.length){n.setAttribute('aria-hidden','true');n.tabIndex=-1;n.querySelector('img').alt=''}t.appendChild(n)})});
 
 // ---- partículas: começam no +20, deslizam (sem elástico) e trocam de forma conforme o assunto do capítulo
 const cv=$('#dust'),ctx=cv.getContext('2d'),DPR=Math.min(2,devicePixelRatio||1),MOB=()=>innerWidth<768,N=innerWidth<768?1100:2400;

@@ -177,14 +177,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 @media (max-width:639px){.case-marquee-row.is-large .case-marquee-card{width:290px}.case-marquee-card{width:200px}.case-marquee-group{gap:16px;padding-right:16px}.case-marquee-caption{padding:14px}}
 .client-marquee{display:grid;gap:40px;overflow:hidden}
 .client-marquee-row{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
-.client-marquee-track{display:flex;width:max-content;animation:cmf 24s linear infinite}
+.client-marquee-track{display:flex;width:max-content;animation:cmf 70s linear infinite}
 .client-marquee-track.rev{animation-name:cmr}
 .client-marquee-row:hover .client-marquee-track{animation-play-state:paused}
 @keyframes cmf{to{transform:translate3d(-50%,0,0)}}@keyframes cmr{from{transform:translate3d(-50%,0,0)}to{transform:none}}
-.client-marquee-item{display:grid;place-items:center;width:clamp(10rem,18vw,14rem);height:7rem;flex:none}
-.client-marquee-logo{max-width:65%;max-height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);opacity:.7;transition:opacity .3s}
-.client-marquee-item:hover .client-marquee-logo{opacity:1}
-@media (max-width:639px){.client-marquee{gap:24px}.client-marquee-track{animation-duration:30s}.client-marquee-item{width:clamp(7.5rem,30vw,10rem);height:5rem}.client-marquee-logo{max-height:2.75rem}}
+.client-marquee-item{display:grid;place-items:center;width:clamp(11rem,19vw,16rem);height:8rem;flex:none}
+.client-marquee-logo{max-width:72%;max-height:4.5rem;object-fit:contain;filter:brightness(0) invert(1);opacity:.85;transition:opacity .3s,transform .3s}
+.client-marquee-item:hover .client-marquee-logo{opacity:1;transform:scale(1.06)}
+@media (max-width:639px){.client-marquee{gap:24px}.client-marquee-track{animation-duration:55s}.client-marquee-item{width:clamp(7.5rem,30vw,10rem);height:5rem}.client-marquee-logo{max-height:2.75rem}}
 
 /* ---------- filmes ---------- */
 .films-belt{margin-top:48px}
@@ -443,7 +443,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .home-specialties li.lit{color:var(--accent);transform:translateX(6px)}
 .home-specialties .node{position:absolute;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--background);border:2px solid var(--accent);transition:background .3s,transform .3s}
 .home-specialties li.past .node{background:var(--accent)}.home-specialties li.lit .node{transform:scale(1.35)}
-.home-logos{margin-top:40px;overflow:hidden}
+.home-brands{margin-top:64px;position:relative;z-index:2}
 .contact-links{margin-top:32px;display:grid;gap:12px;font-size:18px}
 .contact-links a{display:flex;align-items:center;gap:12px;transition:color .2s}.contact-links a:hover{color:var(--accent)}.contact-links a.b{font-weight:700}
 .contact-links svg{width:20px;height:20px;flex:none}
@@ -523,3 +523,7 @@ html.still *{animation-play-state:paused!important}
 .t-card figcaption b{display:block;font-weight:700}.t-card figcaption small{display:block;font-size:14px;color:var(--muted)}
 .t-case{display:inline-flex;align-items:center;gap:8px;font:600 12px "Karibu",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 .t-case:hover{color:var(--fg)}
+
+/* material protegido: sem arrastar nem selecionar fotos e vídeos */
+img,video{-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
+video::-internal-media-controls-download-button{display:none}

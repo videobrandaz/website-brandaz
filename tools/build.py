@@ -279,6 +279,8 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
 {f"<script>{extra_js}</script>" if extra_js else ""}
 {'' if wrapper_less else '</body></html>'}
 '''
+    # nenhum vídeo oferece "baixar", picture-in-picture ou transmissão
+    doc = doc.replace('<video ', '<video controlslist="nodownload noremoteplayback" disablepictureinpicture disableremoteplayback ')
     path = os.path.join(OUT, out_file(canon))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8') as f:
@@ -428,8 +430,13 @@ def home(variant):
 <section class="editorial-band home-chapter cinema-band" id="clientes" data-ch="Clientes" data-shape="21">
   <div class="editorial-container home-chapter-grid reveal">
     <div class="home-chapter-body">{title(*C['marcas']['title'])}
-      <div class="home-logos"><div class="client-marquee" aria-label="Marcas atendidas pela Brandaz"><div class="client-marquee-row"><div class="client-marquee-track" id="clientTrack">{clients}{clients}</div></div></div></div></div>
+      <p class="type-lead muted mt6">{accent(C['marcas']['text'])}</p></div>
     <div class="home-chapter-cta"><i class="dust-anchor num" aria-hidden="true"><b class="dust-cap">marcas</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
+  </div>
+  <!-- duas fileiras de ponta a ponta, como no Portfólio, em ritmo mais lento para cada marca ser reconhecida -->
+  <div class="client-marquee home-brands" aria-label="Marcas atendidas pela Brandaz">
+    <div class="client-marquee-row"><div class="client-marquee-track" data-shuffle>{clients}{clients}</div></div>
+    <div class="client-marquee-row"><div class="client-marquee-track rev" data-shuffle>{clients}{clients}</div></div>
   </div>
 </section>
 
