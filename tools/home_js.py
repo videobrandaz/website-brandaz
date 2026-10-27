@@ -61,15 +61,15 @@ async function init(){try{await document.fonts.load('800 200px Karibu')}catch(e)
     if(r<.84){const e=pick(ED),t=Math.random(),a=ST[e[0]],b=ST[e[1]];return[a[0]+(b[0]-a[0])*t+G()*.003,a[1]+(b[1]-a[1])*t+G()*.003]}
     return[Math.random(),.02+Math.random()*.96]});
   // livro de magia aberto, com faíscas subindo das páginas
-  const BK=[],TOP=[.5,.64,.38,.47,.2,.45,.03,.5];[1,-1].forEach(d=>{const X=x=>.5+d*(x-.5),c=a=>a.map((v,i)=>i%2?v:X(v));
-    BK.push(c(TOP),c([.03,.5,.03,.62,.03,.74,.03,.86]),c([.03,.86,.2,.81,.38,.83,.5,.95]),c([.5,.99,.36,.9,.18,.89,0,.92]));
-    [.1,.18,.26].forEach(o=>BK.push(c([.45,.66+o,.36,.5+o,.22,.48+o,.1,.52+o])))});
-  BK.push([.5,.64,.5,.74,.5,.84,.5,.95]);
-  const SP=[[.5,.22,.028],[.34,.12,.018],[.68,.1,.02],[.62,.36,.014],[.37,.34,.013]];
+  const BK=[],TOP=[.5,.7,.42,.6,.24,.57,.05,.63];[1,-1].forEach(d=>{const X=x=>.5+d*(x-.5),c=a=>a.map((v,i)=>i%2?v:X(v));
+    BK.push(c(TOP),c([.05,.63,.045,.69,.045,.75,.05,.8]),c([.05,.8,.22,.77,.4,.79,.5,.87]),c([-.01,.85,.2,.84,.38,.88,.5,.935]));
+    [.06,.11].forEach(o=>BK.push(c([.45,.71+o,.38,.62+o,.24,.6+o,.1,.65+o])))});
+  BK.push([.5,.7,.5,.76,.5,.82,.5,.87]);
+  const SP=[[.5,.26,.028],[.35,.14,.018],[.66,.1,.02],[.62,.38,.014],[.37,.36,.013]];
   SH.book=gen(()=>{const r=Math.random();
     if(r<.64){const c=pick(BK),p=bez(c,Math.random());return[p[0]+G()*.0025,p[1]+G()*.0025]}
     if(r<.78){const s=pick(SP);return[s[0]+G()*s[2],s[1]+G()*s[2]]}
-    const t=Math.pow(Math.random(),.7),w=.03+t*.26;return[.5+G()*w,.62-t*.58]});
+    const t=Math.pow(Math.random(),1.2),w=.03+t*.3;return[.5+G()*w,.66-t*.62]});
   SH.play=sample((g,S)=>{g.beginPath();g.moveTo(S*.28,S*.16);g.lineTo(S*.84,S*.5);g.lineTo(S*.28,S*.84);g.closePath();g.fill()});
   SH.none=Array.from({length:N},()=>[(Math.random()-.5)*2.4,.8+Math.random()*1.2]);
   SH.flow=Array.from({length:N},()=>[Math.random(),(Math.random()-.5)]);
@@ -80,7 +80,7 @@ const ALPHA={'20':.95,growth:.8,play:.8,stars:.95,book:.95,mark:.9,flow:1};
 function place(sec){const n=sec.dataset.shape;
   if(n==='none'){const b=secs[1].querySelector('.dust-anchor').getBoundingClientRect();return[b.left+b.width/2,b.top+b.height*2,260,0]}
   if(n==='flow')return[0,0,1,1];
-  if(MOB()){const r=sec.getBoundingClientRect();return[innerWidth*.72,Math.max(120,Math.min(innerHeight-120,r.top+140)),innerWidth*.48,.3]}
+  const an=sec.querySelector('.dust-anchor');if(MOB()&&!(an&&an.offsetWidth)){const r=sec.getBoundingClientRect();return[innerWidth*.72,Math.max(120,Math.min(innerHeight-120,r.top+140)),innerWidth*.48,.3]}
   const a=sec.querySelector('.dust-anchor');if(!a)return[innerWidth*.8,innerHeight*.5,220,.6];const b=a.getBoundingClientRect();return[b.left+b.width/2,b.top+b.height/2,Math.max(b.width,b.height),ALPHA[n]??.8]}
 // pó que flui pelo caminho já percorrido até o ponto de magia
 function flowPos(i,time){const f=SH.flow[i];if(!table.length)return[BZ.orbXY[0],BZ.orbXY[1]];const r=wrap.getBoundingClientRect();
@@ -90,7 +90,7 @@ function flowPos(i,time){const f=SH.flow[i];if(!table.length)return[BZ.orbXY[0],
 function pos(sec,pl,arr,i,time){if(sec.dataset.shape==='flow')return flowPos(i,time);return[pl[0]+arr[i][0]*pl[2],pl[1]+arr[i][1]*pl[2]]}
 let mx=-999,my=-999;addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY},{passive:true});addEventListener('pointerleave',()=>{mx=my=-999});
 const caps=$$('.dust-cap');
-function frame(t){requestAnimationFrame(frame);if(!ready)return;const [sa,sb,k]=state();caps.forEach(c=>c.classList.toggle('on',!MOB()&&k>.85&&sb.contains(c)));const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
+function frame(t){requestAnimationFrame(frame);if(!ready)return;const [sa,sb,k]=state();caps.forEach(c=>{const on=!!c.offsetParent&&k>.85&&sb.contains(c);c.classList.toggle('on',on);c.parentElement.classList.toggle('on',on)});const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
   const al=pa[3]+(pb[3]-pa[3])*k;ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);if(al<.01){P.forEach(p=>p.init=false);return}
   ctx.globalCompositeOperation='lighter';const time=t/1000;
   for(let i=0;i<P.length;i++){const p=P[i];const lag=Math.max(0,Math.min(1,k*1.3-(i/P.length)*.3));

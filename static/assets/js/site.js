@@ -66,7 +66,7 @@
     }
     function draw() {
       if (!len) return; const r = box.getBoundingClientRect();
-      const a = innerHeight * .6, b = innerHeight * .3, p = Math.min(1, Math.max(0, (a - r.top) / ((a - b) + r.height))), l = p * len;
+      const a = innerHeight * .88, b = innerHeight * .78, p = Math.min(1, Math.max(0, (a - r.top) / ((a - b) + r.height))), l = p * len;
       act.style.strokeDashoffset = len - l; nodes.forEach((n, i) => n.classList.toggle('on', l >= stops[i] - 2));
     }
     return { build, draw };
@@ -81,6 +81,20 @@
       const t = setInterval(() => { i++; z.textContent = run[Math.min(i, run.length - 1)]; if (i >= run.length - 1) clearInterval(t) }, 70);
     };
     new IntersectionObserver(([e], o) => { if (e.isIntersecting) { o.disconnect(); setTimeout(go, 650) } }, { threshold: .5 }).observe(box);
+  });
+
+  // diferenciais: brilho e faíscas acompanham o mouse dentro de cada cartão
+  $$('.diff').forEach(card => {
+    let last = 0;
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      card.style.setProperty('--mx', x + 'px'); card.style.setProperty('--my', y + 'px');
+      const t = performance.now(); if (BZ.still || t - last < 26) return; last = t;
+      const s = document.createElement('i'), big = Math.random() < .55;
+      s.className = 'spk' + (big ? '' : ' dot');
+      s.style.cssText = `left:${x}px;top:${y}px;--sz:${big ? 10 + Math.random() * 14 : 3 + Math.random() * 4}px;--dx:${(Math.random() - .5) * 80}px;--dy:${-30 - Math.random() * 60}px;--t:${.8 + Math.random() * .6}s`;
+      card.appendChild(s); s.addEventListener('animationend', () => s.remove());
+    });
   });
 
   // números dos resultados contam até o valor final

@@ -339,7 +339,7 @@ def testimonials(cls='', book=False):
                   f'<figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
     return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos"{' data-shape="book"' if book else ''} aria-labelledby="dep-title"><div class="editorial-container">
   <div class="t-head"><div><div id="dep-title">{title(*DEP['titulo'])}</div><p class="type-lead muted mt6 measure">{E(DEP['texto'])}</p></div>
-    {f'<i class="dust-anchor book" aria-hidden="true"><b class="dust-cap">{E(DEP["legenda"])}</b></i>' if book else ''}</div>
+    {f'<i class="dust-anchor book" aria-hidden="true"><img class="sym" src="{U('/assets/site/simbolos/livro.webp')}" alt="" width="800" height="800" loading="lazy" decoding="async"><b class="dust-cap">{E(DEP["legenda"])}</b></i>' if book else ''}</div>
   <div class="t-grid">{cards}</div>
 </div></section>'''
 
@@ -442,7 +442,7 @@ def home(variant):
   <div class="editorial-container home-chapter-grid reveal">
     <div class="home-chapter-body">{title(*C['marcas']['title'])}
       <p class="type-lead muted mt6">{accent(C['marcas']['text'])}</p></div>
-    <div class="home-chapter-cta"><i class="dust-anchor stars" aria-hidden="true"><b class="dust-cap">{E(C['marcas']['caption'])}</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
+    <div class="home-chapter-cta"><i class="dust-anchor stars" aria-hidden="true"><img class="sym" src="{U('/assets/site/simbolos/universo.webp')}" alt="" width="800" height="800" loading="lazy" decoding="async"><b class="dust-cap">{E(C['marcas']['caption'])}</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
   </div>
   <!-- duas fileiras de ponta a ponta, como no Portfólio, em ritmo mais lento para cada marca ser reconhecida -->
   <div class="client-marquee home-brands" aria-label="Marcas atendidas pela Brandaz">
@@ -510,7 +510,7 @@ def brandaz():
 </div></section>
 
 {cta_band("Portfólio", "Ideias que", "ganharam forma.", "Conheça projetos de branding, campanhas, conteúdo e audiovisual que desenvolvemos ao lado de nossos clientes.", btn("Ver portfólio", "/projetos/"), "Portfólio", belt=True)}
-{cta_band("Vamos conversar", "Qual é o próximo desafio", "da sua marca?", "Conte para a gente. Estamos prontos para conversar.", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
+{cta_band("Vamos conversar", "Qual é o próximo desafio", "da sua marca?", "Conte para a gente. Estamos prontos para conversar.", btn("Falar no WhatsApp", WA, ext=True), "Contato", paper=True)}'''
     page('/brandaz/', 'A Brandaz | Mais de 20 anos de comunicação em Chapecó',
          'Conheça a Brandaz: mais de 20 anos de história, marcas e conexões em Chapecó. Novo espaço, nova equipe e o mesmo propósito: criatividade com estratégia e resultado.',
          body, current='/brandaz/', schema=[{"@context": "https://schema.org", "@type": "AboutPage", "url": BASE + "/brandaz/", "about": {"@id": f"{BASE}/#organization"}}, crumbs([("A Brandaz", "/brandaz/")])])
@@ -543,7 +543,7 @@ def como():
   <ol class="svc-links">{specs}</ol>
 </div></section>
 
-{cta_band("Vamos conversar", "Qual é o próximo desafio", "da sua marca?", "", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
+{cta_band("Vamos conversar", "Qual é o próximo desafio", "da sua marca?", "", btn("Falar no WhatsApp", WA, ext=True), "Contato", paper=True)}'''
     page('/como-trabalhamos/', 'Como trabalhamos | Estratégia e criatividade em Chapecó – Brandaz',
          'Do desafio ao resultado: entender, planejar, criar, executar e evoluir. Conheça o método da Brandaz para projetos de marketing, branding e comunicação em Chapecó.',
          body, current='/como-trabalhamos/', schema=[crumbs([("Como trabalhamos", "/como-trabalhamos/")])])
@@ -556,8 +556,8 @@ def related_for(scopes, n=2):
 def servicos():
     a = C['aaz']
     letters = ''.join(f'<div class="service-letter-item" data-reveal style="--d:{i * 90}ms"><span class="services-letter">{L}</span><p>{E(t)}</p></div>' for i, (L, t) in enumerate(a['letters']))
-    letters += ('<div class="service-letter-item z" data-reveal style="--d:450ms"><span class="services-letter"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>'
-                '<span class="zl" data-run="FGHIJKLMNOPQRSTUVWXYZ">Z</span></span><p>Do insight ao último detalhe</p></div>')
+    letters += ('<div class="service-letter-item" data-reveal style="--d:450ms" aria-hidden="true"><span class="services-letter dots"><i></i><i></i><i></i></span><p></p></div>'
+                '<div class="service-letter-item" data-reveal style="--d:540ms"><span class="services-letter"><span class="zl" data-run="FGHIJKLMNOPQRSTUVWXYZ">Z</span></span><p>Do insight ao último detalhe</p></div>')
     items = ''
     for i, s in enumerate(C['services']):
         rel = ''.join(f'<a href="{U("/projetos/" + p["slug"] + "/")}">{img(p["image"], p["name"])}<h4>{E(p["name"])}</h4><p>{E(p["segment"])}</p></a>' for p in related_for(s['scopes']))
@@ -635,7 +635,7 @@ def projetos():
 
 {testimonials('tight')}
 
-{cta_band("Vamos conversar", "Sua marca pode ser", "nosso próximo case.", "", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
+{cta_band("Vamos conversar", "Sua marca pode ser", "nosso próximo case.", "", btn("Falar no WhatsApp", WA, ext=True), "Contato", paper=True)}'''
     lst = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Portfólio Brandaz", "url": BASE + "/projetos/",
            "hasPart": [{"@type": "CreativeWork", "name": p['name'], "url": f"{BASE}/projetos/{p['slug']}/"} for p in PROJECTS]}
     page('/projetos/', 'Portfólio e Cases | Brandaz – Agência em Chapecó',
@@ -743,7 +743,7 @@ def post(b):
 <div class="wrap-1200"><aside class="related-posts" data-ch="Leia também"><p class="section-label">Leia também</p><div class="grid">{"".join(post_card(x) for x in rel)}</div></aside></div>
 </article>
 
-{cta_band("Vamos conversar", "Você traz o desafio.", "A gente encontra o caminho.", "", btn("Fale com a Brandaz", "/contato/"), "Contato")}
+{cta_band("Vamos conversar", "Você traz o desafio.", "A gente encontra o caminho.", "", btn("Fale com a Brandaz", "/contato/"), "Contato", paper=True)}
 
 <section class="next-chapter" data-ch="Próximo capítulo"><div class="wrap-1500"><a href="{U('/contato/')}"><div><p class="type-label text-accent">Próximo capítulo</p><h2 class="type-h2 fw8 mt4">Seu próximo capítulo começa aqui.</h2><p class="muted mt4">Conte o que sua marca precisa e vamos conversar.</p></div>
   <div class="cover">{img(office[0], office[1])}<b>Contato</b></div></a></div></section>'''
