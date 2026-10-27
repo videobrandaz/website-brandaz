@@ -130,14 +130,16 @@
     const s = document.createElement('script'); s.src = HLS_SRC; s.onload = () => ok(window.Hls); s.onerror = err; document.head.appendChild(s);
   }));
   BZ.playStream = (video, src) => {
-    if (!/\.m3u8$/.test(src) || video.canPlayType('application/vnd.apple.mpegurl')) { video.src = src; video.play().catch(() => {}); return }
+    const native = () => { video.src = src; video.play().catch(() => {}) };
+    // player próprio sempre que o navegador permitir (abre direto em 1080p); iPhone usa o player nativo de HLS
+    if (!/\.m3u8$/.test(src) || !window.MediaSource) return native();
     loadHls().then(Hls => {
-      if (!Hls.isSupported()) return;
+      if (!Hls.isSupported()) return native();
       // começa na qualidade máxima em conexões boas e ajusta sozinho se a internet cair
       const h = new Hls({ abrEwmaDefaultEstimate: 8e6, capLevelToPlayerSize: false, maxBufferLength: 30 });
       h.loadSource(src); h.attachMedia(video); video._hls = h;
       h.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}));
-    });
+    }).catch(native);
   };
   const stopMedia = () => { const v = media && media.querySelector('video'); if (v && v._hls) v._hls.destroy(); if (v) v.pause() };
 
