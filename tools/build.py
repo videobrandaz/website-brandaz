@@ -36,6 +36,13 @@ E = html.escape
 WA = SITE['phone']['whatsapp']
 MAPS = SITE['maps']
 
+def _ver(rel):
+    """Versão curta do arquivo (muda quando o conteúdo muda): força o navegador a buscar o CSS/JS novo."""
+    import hashlib
+    with open(os.path.join(ROOT, 'static', rel), 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
+CSS_V, JS_V = _ver('assets/css/site.css'), _ver('assets/js/site.js')
+
 # ---------------------------------------------------------------- URLs
 def U(p):
     """Converte um caminho do site ("/projetos/x/", "/assets/...") no link certo para o modo atual."""
@@ -252,7 +259,7 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
     head_assets = (f'<link rel="icon" type="image/png" href="{U("/favicon.png")}"><link rel="apple-touch-icon" href="{U("/apple-touch-icon.png")}">'
                    f'<link rel="preload" href="{U("/assets/fonts/karibu-800.woff2")}" as="font" type="font/woff2" crossorigin>'
                    f'<link rel="preload" href="{U("/assets/fonts/karibu-400.woff2")}" as="font" type="font/woff2" crossorigin>'
-                   f'<link rel="stylesheet" href="{U("/assets/css/site.css")}">')
+                   f'<link rel="stylesheet" href="{U("/assets/css/site.css")}?v={CSS_V}">')
     wrapper_less = PREVIEW and out_file(canon) == 'index.html'  # a página principal da prévia recebe o esqueleto do publicador
     top = '' if wrapper_less else '<!doctype html>\n<html lang="pt-BR"><head>'
     doc = f'''{top}<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -268,7 +275,7 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
 {footer(full_footer)}
 <a class="float-wa" id="floatWa" href="{WA}" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Brandaz pelo WhatsApp" tabindex="-1">{I_WA}</a>
 {dock}
-<script src="{U('/assets/js/site.js')}"></script>
+<script src="{U('/assets/js/site.js')}?v={JS_V}"></script>
 {f"<script>{extra_js}</script>" if extra_js else ""}
 {'' if wrapper_less else '</body></html>'}
 '''

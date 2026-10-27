@@ -82,12 +82,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .site-header[data-home="true"][data-scrolled="false"]{background:linear-gradient(180deg,var(--depth),transparent)}
 .site-header[data-scrolled="true"]{background:rgba(38,21,39,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 6px 24px rgba(38,21,39,.4)}
 .site-header.hide{transform:translateY(-100%)}
-.site-header-inner{display:flex;gap:20px;margin-inline:4vw;height:96px;align-items:flex-start;padding-top:24px;transition:height .5s,padding .5s}
-.site-header[data-scrolled="true"] .site-header-inner{height:80px;align-items:center;padding-top:0}
-.hlogo img{height:48px;width:auto;transition:transform .5s}.hlogo:hover img{transform:rotate(-2deg)}
+.site-header-inner{display:flex;gap:20px;margin-inline:4vw;height:104px;align-items:center;transition:height .5s}
+.site-header[data-scrolled="true"] .site-header-inner{height:84px}
+.hlogo{flex:none;margin-right:28px}
+.hlogo img{height:62px;width:auto;transition:transform .5s}.hlogo:hover img{transform:rotate(-2deg)}
 .site-header[data-home="true"][data-scrolled="false"] .hlogo{display:none}
-.site-header nav.main{display:none;align-items:center;gap:24px;padding-top:8px}
-.site-header[data-scrolled="true"] nav.main{padding-top:0}
+.site-header nav.main{display:none;align-items:center;gap:24px}
 .nav-link{font:600 16px "Karibu",sans-serif;color:var(--fg);padding-block:8px;border-bottom:2px solid transparent;transition:color .25s,transform .25s}
 .nav-link:hover{transform:translateY(-2px);color:var(--accent)}
 .nav-link.current{border-bottom-color:var(--accent)}
