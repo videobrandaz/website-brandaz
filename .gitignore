@@ -1,6 +1,6 @@
-site/
+/site/
 __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
-_site/
+/_site/
