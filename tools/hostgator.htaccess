@@ -1,7 +1,7 @@
-# Brandaz na HostGator (Apache): tipos de arquivo do streaming, cache, compressão e sem listagem de pastas
+# Brandaz na HostGator (Apache, subdomínio novo.brandaz.com.br): tipos do streaming, cache, compressão e sem listagem de pastas
 Options -Indexes
 DirectoryIndex index.html
-ErrorDocument 404 /novo/index.html
+ErrorDocument 404 /index.html
 
 AddType application/vnd.apple.mpegurl .m3u8
 AddType video/mp2t .ts

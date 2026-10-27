@@ -1,6 +1,6 @@
-# Publica a mesma prévia na HostGator (brandaz.com.br/novo) por FTPS, a cada push na main.
+# Publica a mesma prévia na HostGator (subdomínio novo.brandaz.com.br) por FTPS, a cada push na main.
 # Segredos (Settings → Secrets and variables → Actions): FTP_SERVER, FTP_USERNAME, FTP_PASSWORD.
-# A conta FTP deve ser criada no cPanel apontando só para public_html/novo.
+# A conta FTP deve ser criada no cPanel apontando só para a pasta do subdomínio (ex.: public_html/novo).
 name: Publicar na HostGator
 on:
   push:
