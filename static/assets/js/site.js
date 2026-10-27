@@ -1,4 +1,4 @@
-// Brandaz — comportamento comum a todas as páginas (cabeçalho, régua A–Z, revelações, esteiras, janela de mídia, filtros, formulário).
+// Brandaz — comportamento comum a todas as páginas (cabeçalho, revelações, esteiras, janela de mídia, filtros, formulário).
 (() => {
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const BZ = window.BZ = { $, $$, still: false, onStill: [], onScroll: [], casePaused: false };
@@ -40,18 +40,6 @@
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } }), { threshold: .15 });
   $$('.editorial-title,.reveal,[data-reveal],[data-deck]').forEach(el => io.observe(el));
 
-  // régua A–Z: avança com a leitura e mostra o capítulo atual
-  const letters = $$('.az i'), hudL = $('#hudL'), hudT = $('#hudT'), chs = $$('[data-ch]'), rail = $('.az-rail');
-  function hud() {
-    if (!rail) return;
-    const max = document.documentElement.scrollHeight - innerHeight, p = max > 0 ? scrollY / max : 0, n = Math.min(25, Math.floor(p * 25.999));
-    letters.forEach((l, i) => { l.classList.toggle('on', i < n); l.classList.toggle('cur', i === n) });
-    hudL.textContent = String.fromCharCode(65 + n);
-    let cur = chs.length ? chs[0].dataset.ch : ''; chs.forEach(c => { if (c.getBoundingClientRect().top < innerHeight * .5) cur = c.dataset.ch }); hudT.textContent = cur;
-    const under = document.elementFromPoint(innerWidth - 24, innerHeight / 2);
-    rail.classList.toggle('on-paper', !!(under && under.closest('.bg-paper')));
-  }
-
   // frases que acendem palavra por palavra
   const scrubs = $$('[data-scrub]').map(el => ({ el, w: $$('.w', el) }));
   function scrub() {
@@ -78,10 +66,21 @@
     }
     function draw() {
       if (!len) return; const r = box.getBoundingClientRect();
-      const p = Math.min(1, Math.max(0, (innerHeight * .78 - r.top) / (r.height * .9))), l = p * len;
+      const a = innerHeight * .6, b = innerHeight * .3, p = Math.min(1, Math.max(0, (a - r.top) / ((a - b) + r.height))), l = p * len;
       act.style.strokeDashoffset = len - l; nodes.forEach((n, i) => n.classList.toggle('on', l >= stops[i] - 2));
     }
     return { build, draw };
+  });
+
+  // Serviços: os pontos piscam em sequência e a última letra corre de F até o Z
+  $$('[data-az]').forEach(box => {
+    const z = $('.zl', box), run = z.dataset.run;
+    const go = () => {
+      box.classList.add('run'); if (BZ.still) return;
+      let i = 0; z.textContent = run[0];
+      const t = setInterval(() => { i++; z.textContent = run[Math.min(i, run.length - 1)]; if (i >= run.length - 1) clearInterval(t) }, 70);
+    };
+    new IntersectionObserver(([e], o) => { if (e.isIntersecting) { o.disconnect(); setTimeout(go, 650) } }, { threshold: .5 }).observe(box);
   });
 
   // números dos resultados contam até o valor final
@@ -217,7 +216,7 @@
     });
   }
 
-  function onScroll() { header(); hud(); scrub(); paths.forEach(p => p.draw()); BZ.onScroll.forEach(f => f()) }
+  function onScroll() { header(); scrub(); paths.forEach(p => p.draw()); BZ.onScroll.forEach(f => f()) }
   addEventListener('scroll', onScroll, { passive: true });
   const relayout = () => { paths.forEach(p => p.build()); onScroll() };
   addEventListener('resize', () => { clearTimeout(BZ._rt); BZ._rt = setTimeout(relayout, 150) });

@@ -106,12 +106,12 @@
   "transformamos": {
     "label": "O que já transformamos",
     "title": ["Estratégia que", "ganha forma."],
-    "caseSlugs": ["supermercado-royal", "marlos-campos-concursos", "melira-films", "nosso-bpo", "hospital-regional-do-oeste"],
+    "caseSlugs": ["supermercado-royal", "marlos-campos-concursos", "nosso-bpo", "hospital-regional-do-oeste"],
     "caseFlowLabel": "Do desafio ao resultado",
     "caseFlowSteps": ["Desafio", "Estratégia", "Ideia", "Execução", "Resultado"]
   },
   "method": [["Desafio", "challenge"], ["Estratégia", "strategy"], ["Ideia", "idea"], ["Execução", "solution"], ["Resultado", "outcome"]],
-  "marcas": { "title": ["Marcas que fazem parte", "da nossa história"], "text": "Algumas parcerias atravessam anos. Outras representam novos capítulos. *Cada marca, uma história.*" },
+  "marcas": { "title": ["Marcas que fazem parte", "da nossa história"], "text": "Algumas parcerias atravessam anos. Outras representam novos capítulos. *Cada marca, uma história.*", "caption": "Nosso universo" },
   "contato": { "title": ["Quer transformar seu", "próximo capítulo em magia?"], "scopes": ["Branding", "Identidade visual", "Estratégia", "Embalagem", "Naming", "Campanha"] },
   "clients": [
     ["nexo-contabil", "Nexo Contábil", "nexo-contabil"], ["oeste-home", "Oeste Home Imobiliária", "oeste-home"], ["for-lezz", "For Lezz", "for-lezz"], ["raios-de-sol", "Raios de Sol", ""],
@@ -122,12 +122,12 @@
     ["hns", "HNSS", ""], ["souart", "Souart", ""]
   ],
   "films": [
-    {"preview": "croissants", "full": "/assets/video/royal-croissants/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Croissants", "slug": "royal-croissants"},
-    {"preview": "cafes-carraro", "full": "/assets/video/royal-cafes-carraro/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Cafés Especiais", "slug": "royal-cafes-carraro"},
-    {"preview": "inverno", "full": "/assets/video/royal-inverno/02/master.m3u8", "category": "VAREJO", "client": "Supermercado Royal", "name": "Royal — Receitas de Inverno", "slug": "royal-inverno"},
-    {"preview": "dia-das-maes", "full": "/assets/video/royal-dia-das-maes-filme/01/master.m3u8", "category": "INSTITUCIONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Mães (filme)", "slug": "royal-dia-das-maes-filme"},
-    {"preview": "dia-das-criancas", "full": "/assets/video/royal-dia-das-criancas-2024/02/master.m3u8", "category": "SAZONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Crianças: Massinha", "slug": "royal-dia-das-criancas-2024"},
-    {"preview": "90-graus", "full": "/assets/video/90-graus/01/master.m3u8", "category": "INSTITUCIONAL", "client": "90 Graus", "name": "90 Graus Móveis sob Medida", "slug": "90-graus"},
+    {"preview": "croissants", "full": "/assets/video/royal-croissants/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Croissants", "title": "Croissants", "slug": "royal-croissants"},
+    {"preview": "cafes-carraro", "full": "/assets/video/royal-cafes-carraro/01/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Royal — Cafés Especiais", "title": "Cafés Especiais", "slug": "royal-cafes-carraro"},
+    {"preview": "inverno", "full": "/assets/video/royal-inverno/02/master.m3u8", "category": "VAREJO", "client": "Supermercado Royal", "name": "Royal — Receitas de Inverno", "title": "Receitas de Inverno", "slug": "royal-inverno"},
+    {"preview": "dia-das-maes", "full": "/assets/video/royal-dia-das-maes-filme/01/master.m3u8", "category": "INSTITUCIONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Mães (filme)", "title": "Dia das Mães", "slug": "royal-dia-das-maes-filme"},
+    {"preview": "dia-das-criancas", "full": "/assets/video/royal-dia-das-criancas-2024/02/master.m3u8", "category": "SAZONAL", "client": "Supermercado Royal", "name": "Royal — Dia das Crianças: Massinha", "title": "Dia das Crianças: Massinha", "slug": "royal-dia-das-criancas-2024"},
+    {"preview": "90-graus", "full": "/assets/video/90-graus/01/master.m3u8", "category": "INSTITUCIONAL", "client": "90 Graus", "name": "90 Graus Móveis sob Medida", "title": "Móveis sob Medida", "slug": "90-graus"},
     {"preview": "biscoitos", "full": "/assets/video/filmes/biscoitos/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Biscoitos", "slug": "supermercado-royal"},
     {"preview": "cachaca", "full": "/assets/video/filmes/cachaca/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Cachaça", "slug": "supermercado-royal"},
     {"preview": "cuca", "full": "/assets/video/filmes/cuca/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Cuca", "slug": "supermercado-royal"},

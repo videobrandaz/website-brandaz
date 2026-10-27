@@ -1,6 +1,7 @@
 {
   "label": "Depoimentos",
   "titulo": ["O que dizem", "nossos clientes."],
+  "legenda": "Nossos parceiros",
   "texto": "Parcerias que atravessam anos contam a nossa história melhor do que ninguém.",
   "_como_usar": "Preencha um item por cliente. 'foto': envie a imagem (quadrada, mín. 400x400) para static/assets/img/depoimentos/ e informe o caminho, ex.: /assets/img/depoimentos/joao-silva.webp. 'case': slug do case em content/projetos.json (opcional). Itens com \"modelo\": true são só exemplos de layout: aparecem nas prévias e nunca no site oficial. Apague-os quando houver depoimentos reais.",
   "depoimentos": [

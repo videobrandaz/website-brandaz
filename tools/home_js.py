@@ -5,14 +5,18 @@ HOME = r'''
 (()=>{const {$,$$}=BZ;
 // especialidades: o ponto de magia percorre o trajeto ao lado da lista
 const wrap=$('.spec-wrap'),road=$('#road'),ahead=$('#ahead'),trail=$('#trail'),mpath=$('#mpath'),orb=$('#orb'),specs=$$('#specs li');
-let table=[],total=0;BZ.orbXY=[-999,-999];BZ.orbK=0;
+const pin=$('.spec-pin'),stick=$('.spec-stick'),scta=$('.spec-cta'),pinned=()=>getComputedStyle(stick).position==='sticky';
+let table=[],total=0,L0=0,L1=0;BZ.orbXY=[-999,-999];BZ.orbK=0;
 function buildRoad(){const W=64,H=wrap.offsetHeight,top=wrap.getBoundingClientRect().top;road.setAttribute('width',W);road.setAttribute('height',H);road.setAttribute('viewBox',`0 0 ${W} ${H}`);
   const pts=[[32,-30]];specs.forEach((li,i)=>{const r=li.getBoundingClientRect();const x=i%2?14:46;pts.push([x,r.top-top+r.height/2]);li.querySelector('.node').style.left=(x-64-6)+'px'});pts.push([32,H+30]);
   let d=`M${pts[0][0]},${pts[0][1]}`;for(let i=0;i<pts.length-1;i++){const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
     d+=` C${p1[0]+(p2[0]-p0[0])/6},${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6},${p2[1]-(p3[1]-p1[1])/6} ${p2[0]},${p2[1]}`}
   [ahead,trail,mpath].forEach(p=>p.setAttribute('d',d));total=ahead.getTotalLength();mpath.style.strokeDasharray=total;
-  table=[];for(let l=0;l<=total;l+=3){const q=ahead.getPointAtLength(l);table.push([l,q.x,q.y])}BZ.roadTable=table}
-function moveOrb(){if(!table.length)return;const r=wrap.getBoundingClientRect();const target=innerHeight*.55-r.top;let k=0;while(k+1<table.length&&table[k+1][2]<=target)k++;
+  table=[];for(let l=0;l<=total;l+=3){const q=ahead.getPointAtLength(l);table.push([l,q.x,q.y])}BZ.roadTable=table;
+  const at=y=>{let b=table[0];table.forEach(t=>{if(Math.abs(t[2]-y)<Math.abs(b[2]-y))b=t});return b[0]};L0=at(pts[1][1]);L1=at(pts[pts.length-2][1])}
+function moveOrb(){if(!table.length)return;const r=wrap.getBoundingClientRect();let k=0;
+  if(pinned()){const pr=pin.getBoundingClientRect(),p=Math.max(0,Math.min(1,-pr.top/(pr.height-innerHeight))),L=L0+(L1-L0)*p;while(k+1<table.length&&table[k+1][0]<=L)k++;scta.classList.toggle('done',p>.97)}
+  else{const target=innerHeight*.55-r.top;while(k+1<table.length&&table[k+1][2]<=target)k++;scta.classList.add('done')}
   const [len,x,y]=table[k];orb.style.transform=`translate(${x}px,${y}px)`;mpath.style.strokeDashoffset=total-len;BZ.orbXY=[r.left+x,r.top+y];BZ.orbK=k;
   specs.forEach(li=>{const b=li.getBoundingClientRect(),c=b.top+b.height/2-r.top;li.classList.toggle('past',c<y-4);li.classList.toggle('lit',Math.abs(c-y)<b.height*.6)})}
 BZ.onScroll.push(moveOrb);
@@ -46,13 +50,33 @@ async function init(){try{await document.fonts.load('800 200px Karibu')}catch(e)
   SH.growth=sample((g,S)=>{const b=S*.13,gap=S*.07,base=S*.9,hs=[.16,.27,.38,.49];hs.forEach((h,i)=>rr(g,S*.12+i*(b+gap),base-S*h,b,S*h,S*.02));
     g.lineWidth=S*.032;g.beginPath();g.moveTo(S*.1,S*.34);g.lineTo(S*.34,S*.22);g.lineTo(S*.5,S*.27);g.lineTo(S*.86,S*.06);g.stroke();
     g.beginPath();g.moveTo(S*.86,S*.06);g.lineTo(S*.74,S*.06);g.moveTo(S*.86,S*.06);g.lineTo(S*.84,S*.18);g.stroke()});
+  // formas desenhadas ponto a ponto (coordenadas 0–1): aglomerados brilhantes, linhas finas e poeira
+  const G=()=>(Math.random()+Math.random()+Math.random()-1.5)/1.5,pick=a=>a[(Math.random()*a.length)|0];
+  const bez=(c,t)=>{const u=1-t;return[u*u*u*c[0]+3*u*u*t*c[2]+3*u*t*t*c[4]+t*t*t*c[6],u*u*u*c[1]+3*u*u*t*c[3]+3*u*t*t*c[5]+t*t*t*c[7]]};
+  const gen=f=>Array.from({length:N},()=>{const p=f();return[p[0]-.5,p[1]-.5]});
+  // constelação: estrelas ligadas por linhas finas + poeira em volta
+  const ST=[[.08,.58],[.28,.44],[.46,.12],[.64,.44],[.56,.78],[.36,.7],[.9,.3],[.82,.72]],ED=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,1],[3,6],[4,7]],BIG=[1,2,3,6];
+  SH.stars=gen(()=>{const r=Math.random();
+    if(r<.5){const i=(Math.random()*ST.length)|0,s=BIG.includes(i)?.022:.014;return[ST[i][0]+G()*s,ST[i][1]+G()*s]}
+    if(r<.84){const e=pick(ED),t=Math.random(),a=ST[e[0]],b=ST[e[1]];return[a[0]+(b[0]-a[0])*t+G()*.003,a[1]+(b[1]-a[1])*t+G()*.003]}
+    return[Math.random(),.02+Math.random()*.96]});
+  // livro de magia aberto, com faíscas subindo das páginas
+  const BK=[],TOP=[.5,.64,.38,.47,.2,.45,.03,.5];[1,-1].forEach(d=>{const X=x=>.5+d*(x-.5),c=a=>a.map((v,i)=>i%2?v:X(v));
+    BK.push(c(TOP),c([.03,.5,.03,.62,.03,.74,.03,.86]),c([.03,.86,.2,.81,.38,.83,.5,.95]),c([.5,.99,.36,.9,.18,.89,0,.92]));
+    [.1,.18,.26].forEach(o=>BK.push(c([.45,.66+o,.36,.5+o,.22,.48+o,.1,.52+o])))});
+  BK.push([.5,.64,.5,.74,.5,.84,.5,.95]);
+  const SP=[[.5,.22,.028],[.34,.12,.018],[.68,.1,.02],[.62,.36,.014],[.37,.34,.013]];
+  SH.book=gen(()=>{const r=Math.random();
+    if(r<.64){const c=pick(BK),p=bez(c,Math.random());return[p[0]+G()*.0025,p[1]+G()*.0025]}
+    if(r<.78){const s=pick(SP);return[s[0]+G()*s[2],s[1]+G()*s[2]]}
+    const t=Math.pow(Math.random(),.7),w=.03+t*.26;return[.5+G()*w,.62-t*.58]});
   SH.play=sample((g,S)=>{g.beginPath();g.moveTo(S*.28,S*.16);g.lineTo(S*.84,S*.5);g.lineTo(S*.28,S*.84);g.closePath();g.fill()});
   SH.none=Array.from({length:N},()=>[(Math.random()-.5)*2.4,.8+Math.random()*1.2]);
   SH.flow=Array.from({length:N},()=>[Math.random(),(Math.random()-.5)]);
   P=SH.none.map(()=>({x:-99,y:-99,ox:0,oy:0,s:Math.random()<.15?2.1:1.4,c:Math.random()<.7?0:1,ph:Math.random()*6.28,init:false}));ready=true}
 const secs=$$('[data-shape]'),ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
 function state(){let idx=0,k=1;secs.forEach((s,i)=>{const t=s.getBoundingClientRect().top;const kk=Math.max(0,Math.min(1,(innerHeight*.55-t)/(innerHeight*.35)));if(kk>0){idx=i;k=kk}});return[secs[Math.max(0,idx-1)],secs[idx],idx===0?1:ease(k)]}
-const ALPHA={'20':.95,growth:.8,play:.8,'21':.85,mark:.9,flow:1};
+const ALPHA={'20':.95,growth:.8,play:.8,stars:.95,book:.95,mark:.9,flow:1};
 function place(sec){const n=sec.dataset.shape;
   if(n==='none'){const b=secs[1].querySelector('.dust-anchor').getBoundingClientRect();return[b.left+b.width/2,b.top+b.height*2,260,0]}
   if(n==='flow')return[0,0,1,1];

@@ -87,7 +87,9 @@ I_BE = svg('<path d="M3 6h5.2c2 0 3.3 1 3.3 2.7 0 1.1-.6 1.9-1.5 2.2 1.2.3 2 1.3
 I_PIN = svg('<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>', 'ic5', extra=LINE)
 I_PHONE = svg('<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/>', 'ic5', extra=LINE)
 I_CHECK = svg('<circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/>', 'ic5', extra=LINE)
-I_QUOTE = svg('<path d="M10 7H6a2 2 0 0 0-2 2v4h5v5H4M20 7h-4a2 2 0 0 0-2 2v4h5v5h-5"/>', 'quote-mark', extra=LINE)
+QUOTE_D = ('M3 21v-6.6C3 9 5.9 5.2 10.6 3.4l1.1 2.3C9 7 7.6 9.2 7.4 12H11v9zm12 0v-6.6c0-5.4 2.9-9.2 7.6-11l1.1 2.3'
+           'C21 7 19.6 9.2 19.4 12H23v9z')
+QUOTE = svg(f'<path d="{QUOTE_D}"/>', 'qmark', vb='0 0 26 24', extra=' fill="currentColor"')
 I_MENU = svg('<path d="M4 7h16M4 12h16M4 17h16"/>', 'ic6', extra=LINE)
 DIFF_ICONS = [
     '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
@@ -110,7 +112,7 @@ def title(first, second, tag='h2', hero=False, up=True, cls=''):
             f'<span class="ln"><span class="l2">{E(second)}</span></span></{tag}>')
 
 def label(text):
-    return f'<p class="editorial-label"><span aria-hidden="true">•</span>{E(text)}</p>'
+    return f'<p class="editorial-label">{E(text)}</p>'
 
 def btn(text, href, cls='', ext=False):
     tgt = ' target="_blank" rel="noopener noreferrer"' if ext else ''
@@ -197,8 +199,7 @@ def header(current, home):
   <div class="top"><img src="{logo}" alt="Brandaz" width="600" height="300"><button type="button" class="menu-btn x" id="mmX" aria-label="Fechar menu">×</button></div>
   <nav aria-label="Menu"><a href="{U('/')}">Início</a>{nav_links(current, '')}<a href="{U('/contato/')}">Contato</a></nav>
   <div class="socials mm-socials">{socials}</div>
-</div>
-<aside class="az-rail" aria-hidden="true"><div class="az">{"".join(f"<i>{chr(65 + k)}</i>" for k in range(26))}</div><p class="now"><b id="hudL">A</b><span id="hudT"></span></p></aside>'''
+</div>'''
 
 def footer(full=False):
     fnav = ''.join(f'<a href="{U(h)}">{E(n)}</a>' for n, h in C['nav']) + f'<a href="{U("/contato/")}">Contato</a>'
@@ -206,8 +207,8 @@ def footer(full=False):
         return f'''<footer class="site-footer" data-ch="Contato"><div class="f-in">
   <nav class="f-nav" aria-label="Rodapé">{fnav}</nav>
   <div class="f-addr"><p>Brandaz</p><p>{E(SITE['address_full'])}</p><a href="tel:{SITE['phone']['tel']}">{SITE['phone']['intl']}</a><a class="maps" href="{MAPS}" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></div>
+  {static_map('mini')}
   <p class="f-copy">© {YEAR} Brandaz. Todos os direitos reservados.</p></div>
-  <div class="f-map">{static_map()}</div>
 </footer>'''
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener noreferrer" aria-label="{n}">{i}</a>' for n, u, i in SOCIALS)
     return f'''<section class="editorial-band footer-cta" data-ch="Próximo capítulo"><div class="editorial-container">
@@ -219,7 +220,7 @@ def footer(full=False):
     <div><div class="socials">{socials}</div><p class="addr">{E(SITE['address'])}</p><a class="maps" href="{MAPS}" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></div>
     <nav aria-label="Rodapé">{fnav}<a href="{U('/como-trabalhamos/')}">Como trabalhamos</a></nav>
   </div>
-  {static_map('big')}
+  {static_map('mini wide')}
   <p class="copy">© {YEAR} Brandaz · Onde a estratégia ganha magia. Todos os direitos reservados.</p>
 </div></footer>'''
 
@@ -286,10 +287,11 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
     with open(path, 'w', encoding='utf-8') as f:
         f.write(doc)
 
-def cta_band(lbl, first, second, text, button, ch='Contato', paper=False):
-    return f'''<section class="editorial-band cta-band{" bg-paper" if paper else " cinema-band"}" data-ch="{E(ch)}">
+def cta_band(lbl, first, second, text, button, ch='Contato', paper=False, belt=False):
+    row = case_row(PROJECTS, False, False) if belt else ''
+    return f'''<section class="editorial-band cta-band{" bg-paper" if paper else " cinema-band"}{" with-belt" if belt else ""}" data-ch="{E(ch)}">
   <div class="editorial-container home-chapter-grid reveal"><div class="home-chapter-body">{label(lbl)}<div class="mt6">{title(first, second)}</div>{f'<p class="type-lead mt6 muted">{E(text)}</p>' if text else ''}</div>
-  <div class="home-chapter-cta">{button}</div></div></section>'''
+  <div class="home-chapter-cta">{button}</div></div>{row}</section>'''
 
 def method_path(steps, paper=True, tag='h3'):
     nodes = ''.join(f'<li class="method-node"><span class="method-dot" aria-hidden="true"></span><p class="num">{E(n)}</p><{tag}>{E(t)}</{tag}><p class="t">{E(d)}</p></li>' for n, t, d in steps)
@@ -319,7 +321,7 @@ def client_items(rows=None):
                 else f'<span class="client-marquee-item">{logo}</span>')
     return out
 
-def testimonials(cls=''):
+def testimonials(cls='', book=False):
     """Depoimentos de clientes. Itens "modelo" só aparecem nas prévias, nunca no site oficial."""
     real = [d for d in DEP['depoimentos'] if d.get('texto') and not d.get('modelo')]
     items = real or ([d for d in DEP['depoimentos'] if d.get('modelo')] if RELATIVE else [])
@@ -333,10 +335,11 @@ def testimonials(cls=''):
         role = ' · '.join(x for x in (d.get('cargo'), d.get('empresa')) if x)
         case = (f'<a class="t-case" href="{U("/projetos/" + d["case"] + "/")}">Ver o case {ARROW}</a>' if d.get('case') in BY_SLUG else '')
         tag = '<span class="t-tag">Espaço para depoimento</span>' if d.get('modelo') else ''
-        cards += (f'<figure class="t-card{" modelo" if d.get("modelo") else ""}" data-reveal style="--d:{i * 110}ms">{tag}{svg("<path d=" + chr(34) + "M10 7H6a2 2 0 0 0-2 2v4h5v5H4M20 7h-4a2 2 0 0 0-2 2v4h5v5h-5" + chr(34) + "/>", "t-quote", extra=LINE)}'
-                  f'<blockquote>{E(d["texto"])}</blockquote><figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
-    return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos" aria-labelledby="dep-title"><div class="editorial-container">
-  <div class="t-head">{label(DEP['label'])}<div class="mt6" id="dep-title">{title(*DEP['titulo'])}</div><p class="type-lead muted mt6 measure">{E(DEP['texto'])}</p></div>
+        cards += (f'<figure class="t-card{" modelo" if d.get("modelo") else ""}" data-reveal style="--d:{i * 110}ms">{tag}<div class="quoted">{QUOTE}<blockquote>{E(d["texto"])}</blockquote></div>'
+                  f'<figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
+    return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos"{' data-shape="book"' if book else ''} aria-labelledby="dep-title"><div class="editorial-container">
+  <div class="t-head"><div><div id="dep-title">{title(*DEP['titulo'])}</div><p class="type-lead muted mt6 measure">{E(DEP['texto'])}</p></div>
+    {f'<i class="dust-anchor book" aria-hidden="true"><b class="dust-cap">{E(DEP["legenda"])}</b></i>' if book else ''}</div>
   <div class="t-grid">{cards}</div>
 </div></section>'''
 
@@ -360,25 +363,33 @@ HERO_A = ('<div class="projection-hero" aria-hidden="true"><div class="reel-show
           '<div class="credit-bar" aria-hidden="true"><div class="ticks" id="ticks">' + ''.join('<i><b></b></i>' for _ in SLIDES) + f'</div><p class="film-credit" id="credit">{F90}</p></div>')
 FILMS = C['films']
 WALL_KEYS = ["croissants", "biscoitos", "cafes-carraro", "cachaca", "inverno", "cuca", "dia-das-maes", "franui", "garibaldi", "granolas", "pratos-prontos"]
-FNAME = {f['preview']: f['name'] for f in FILMS}
 COVER = 'B'  # capa da home: 'B' = parede de filmes verticais (aprovada) · 'A' = filme horizontal da 90 Graus + cases
 WALL_POSTERS = True
-WALL = ''.join(f'<figure class="wf"><video src="{H("wall-" + k + ".mp4")}"{" poster=" + chr(34) + H("wall-" + k + ".jpg") + chr(34) if WALL_POSTERS else ""} muted loop playsinline preload="metadata"></video>'
-               f'<figcaption>Filme · Supermercado Royal — {E(FNAME[k].replace("Royal — ", ""))}</figcaption></figure>' for k in WALL_KEYS)
+WALL = ''.join(f'<figure class="wf"><video src="{H("wall-" + k + ".mp4")}"{" poster=" + chr(34) + H("wall-" + k + ".jpg") + chr(34) if WALL_POSTERS else ""} muted loop playsinline preload="metadata"></video></figure>' for k in WALL_KEYS)
 HERO_B = ('<div class="projection-hero" aria-hidden="true"><div class="wall"><div class="wtrack">' + WALL + WALL + '</div></div>'
           '<div class="projection-gradient"></div><div class="hero-bottom"></div></div>')
+
+def hero_title(first, second):
+    """Título da capa em caixa alta; a palavra "magia" ganha brilho e faíscas."""
+    stars = ''.join(f'<i style="--x:{x}%;--y:{y}%;--s:{z}px;--t:{t}s"></i>' for x, y, z, t in
+                    [(-8, 14, 22, 0), (106, 4, 28, .7), (90, 96, 18, 1.3), (32, -16, 16, 1.9), (58, 108, 20, .4), (114, 62, 14, 2.4), (-12, 80, 14, 1.1), (72, -10, 12, 1.6)])
+    l2 = re.sub(r'magia', lambda m: f'<span class="magic">{m.group(0)}<span class="sparks" aria-hidden="true">{stars}</span></span>', E(second), flags=re.I)
+    return (f'<h1 class="editorial-title editorial-title-hero up" aria-label="{E(first)} {E(second)}"><span class="ln"><span class="l1">{E(first)}</span></span>'
+            f'<span class="ln"><span class="l2">{l2}</span></span></h1>')
 
 def home(variant):
     h = C['home']
     films = ''
+    by_name = {p['name']: p['slug'] for p in PROJECTS}
     for f in FILMS:
         vert = '' if f['preview'] == '90-graus' else ' data-vertical'
         wide = ' wide' if not vert else ''  # o filme horizontal ganha box 16:9 na mesma altura dos verticais
-        films += (f'<div class="cinema-reel-link{wide}"><p class="cinema-category">{E(f["category"])}</p>'
+        client = by_name.get(f['client'], f['slug'])
+        films += (f'<div class="cinema-reel-link{wide}">'
                   f'<button type="button" class="cinema-reel" data-lb="filmes" data-type="video" data-src="{U(f["full"])}" data-poster="{U("/assets/preview/loop-" + f["preview"] + ".jpg")}"{vert} data-cap="{E(f["client"])} · {E(f["name"])}" aria-label="Assistir {E(f["name"])}">'
                   f'<video src="{U("/assets/preview/loop-" + f["preview"] + ".mp4")}" poster="{U("/assets/preview/loop-" + f["preview"] + ".jpg")}" muted loop playsinline preload="metadata"></video>'
                   f'{I_PLAY.replace(chr(34) + "ic" + chr(34), chr(34) + "ic cinema-reel-play" + chr(34))}</button>'
-                  f'<p class="cinema-caption">Filme · {E(f["client"])}</p><a class="film-link" href="{U("/projetos/" + f["slug"] + "/")}">{E(f["name"])} →</a></div>')
+                  f'<p class="film-title"><span>Filme:</span> {E(f.get("title", f["name"]))}</p><a class="film-client" href="{U("/projetos/" + client + "/")}">{E(f["client"])} {ARROW}</a></div>')
     specs = ''.join(f'<li><i class="node" aria-hidden="true"></i><span class="text-accent">{n}</span> {E(t)}</li>' for n, t, d in C['especialidades']['items'])
     clients = client_items()
     dock = '<div class="dock"><button type="button" id="mot" class="mot" aria-pressed="false">Pausar movimento</button></div>'
@@ -387,7 +398,7 @@ def home(variant):
 {HERO_A if variant == 'A' else HERO_B}
   <div class="v3-hero-content">
     <img class="hero-logo" src="{U('/assets/site/logo-brandaz.png')}" alt="Brandaz" width="600" height="300">
-    {title(h['hero'][0], h['hero'][1], 'h1', True)}
+    {hero_title(*h['hero'])}
     <p class="lead type-body">{E(h['lead'])}</p>
     <div class="hero-buttons">{btn("Sobre a Brandaz", "/brandaz/")}{btn("Conheça nosso Portfólio", "/projetos/")}</div>
   </div>
@@ -403,35 +414,35 @@ def home(variant):
 
 <section id="cases" class="case-marquee-section" aria-label="Estratégia que ganha forma" data-ch="Cases" data-shape="growth">
   <div class="editorial-container cm-head">
-    <div>{label(C['transformamos']['label'])}<div class="mt7">{title(*C['transformamos']['title'])}</div>
+    <div>{title(*C['transformamos']['title'])}
       <p class="type-body muted mt5">Conheça projetos que mostram a criatividade e a diversidade da nossa atuação.</p></div>
     <div class="cm-right"><i class="dust-anchor" aria-hidden="true"></i><button type="button" class="btn icon" data-slot="button" id="casePause" aria-pressed="false" aria-label="Pausar esteira de cases" data-play="{E(I_PLAY)}" data-pause="{E(I_PAUSE)}">{I_PAUSE}</button></div>
   </div>
   {case_row(FEATURED, True)}
   {case_row(OTHERS, False)}
-  <div class="editorial-container mt8">{btn("Ver portfólio completo", "/projetos/", "ghost")}</div>
+  <div class="editorial-container mt8">{btn("Ver portfólio completo", "/projetos/")}</div>
 </section>
 
-<section id="filmes" class="editorial-band cinema-band" aria-labelledby="our-films-title" data-ch="Filmes" data-shape="play">
+<section id="filmes" class="editorial-band cinema-band films-band" aria-labelledby="our-films-title" data-ch="Filmes" data-shape="play">
   <div class="editorial-container films-head"><h2 id="our-films-title" class="editorial-title up xb"><span class="ln"><span class="l1">Nossos <span class="text-accent">filmes</span></span></span></h2><i class="dust-anchor" aria-hidden="true"></i></div>
   <div class="belt films-belt" data-speed="-46" aria-label="Nossos filmes"><div class="belt-track"><div class="belt-group">{films}</div><div class="belt-group" aria-hidden="true">{films}</div></div></div>
   <div class="editorial-container">{btn("Ver portfólio completo", "/projetos/", "mt12")}</div>
 </section>
 
-<section id="servicos" class="editorial-band home-chapter cinema-band" data-ch="Especialidades" data-shape="flow">
-  <div class="editorial-container home-chapter-grid reveal">
+<section id="servicos" class="home-chapter cinema-band spec-pin" data-ch="Especialidades" data-shape="flow">
+  <div class="spec-stick"><div class="editorial-container home-chapter-grid reveal">
     <div class="home-chapter-body">{title("O que fazemos", "Da ideia à execução")}
       <div class="spec-wrap"><svg class="spec-road" id="road" aria-hidden="true"><defs><mask id="done"><path id="mpath" fill="none" stroke="#fff" stroke-width="30"/></mask></defs><path id="ahead" fill="none"/><path id="trail" fill="none" mask="url(#done)"/></svg><i class="orb" id="orb" aria-hidden="true"></i>
       <ol class="home-specialties" id="specs">{specs}</ol></div></div>
-    <div class="home-chapter-cta">{btn("Conheça nossos serviços", "/servicos/")}</div>
-  </div>
+    <div class="home-chapter-cta spec-cta">{btn("Conheça nossos serviços", "/servicos/")}</div>
+  </div></div>
 </section>
 
-<section class="editorial-band home-chapter cinema-band" id="clientes" data-ch="Clientes" data-shape="21">
+<section class="editorial-band home-chapter cinema-band" id="clientes" data-ch="Clientes" data-shape="stars">
   <div class="editorial-container home-chapter-grid reveal">
     <div class="home-chapter-body">{title(*C['marcas']['title'])}
       <p class="type-lead muted mt6">{accent(C['marcas']['text'])}</p></div>
-    <div class="home-chapter-cta"><i class="dust-anchor num" aria-hidden="true"><b class="dust-cap">marcas</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
+    <div class="home-chapter-cta"><i class="dust-anchor stars" aria-hidden="true"><b class="dust-cap">{E(C['marcas']['caption'])}</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
   </div>
   <!-- duas fileiras de ponta a ponta, como no Portfólio, em ritmo mais lento para cada marca ser reconhecida -->
   <div class="client-marquee home-brands" aria-label="Marcas atendidas pela Brandaz">
@@ -440,7 +451,7 @@ def home(variant):
   </div>
 </section>
 
-{testimonials('cinema-band')}
+{testimonials('cinema-band', book=True)}
 
 <section id="contato" class="editorial-band home-chapter cinema-band" data-ch="Contato" data-shape="mark">
   <div class="editorial-container home-chapter-grid reveal">
@@ -467,7 +478,7 @@ def brandaz():
   <div>{label("A Brandaz")}<div class="mt6">{title(*hi['title'], tag='h1')}</div>
     {''.join(f'<p class="type-lead mt6 paper-muted">{E(p)}</p>' for p in hi['paragraphs'])}
     <p class="type-h3 mt8"><strong>{E(hi['closing'][0])}</strong><br><span class="fw3">{E(hi['closing'][1])}</span></p></div>
-  <div class="stats self-center">{stats}</div>
+  <div class="stats-wrap self-center"><img class="stats-mark" src="{U('/assets/site/mark-clean.png')}" alt="" width="230" height="380" aria-hidden="true"><div class="stats">{stats}</div></div>
 </div></section>
 
 <section class="editorial-band bg-accent" data-ch="Nova forma de enxergar"><div class="editorial-container">
@@ -476,20 +487,20 @@ def brandaz():
 
 <section class="editorial-band cinema-band" data-ch="Nossa evolução"><div class="editorial-container two-col">
   <div>{label(ev['label'])}<div class="mt6">{title(*ev['title'])}</div></div>
-  <div class="self-end"><p class="type-lead muted">{E(ev['text'])}</p><div class="chips">{''.join(f'<span class="{"on" if i == 0 else ""}">{E(c)}</span>' for i, c in enumerate(ev['chips']))}</div></div>
+  <div class="self-end"><p class="type-lead muted">{E(ev['text'])}</p><p class="chips">{''.join(f'<span class="{"on" if i == 0 else ""}">{E(c)}</span>' for i, c in enumerate(ev['chips']))}</p></div>
 </div>
 <div class="belt office-belt mt12" data-speed="-28" aria-label="Fotos do novo espaço"><div class="belt-track"><div class="belt-group">{office}</div><div class="belt-group" aria-hidden="true">{office}</div></div></div>
 </section>
 
 <section class="editorial-band bg-paper" data-ch="Liderança"><div class="editorial-container two-col b">
   <div data-reveal>{img(li['image'], li['name'] + ', ' + li['role'] + ' da Brandaz', 'diego-photo')}</div>
-  <div>{label("Liderança")}<h2 class="type-h2 fw8 mt6">{E(li['name'])}</h2><p class="type-label mt3 accent-dark">{E(li['role'])}</p>
-    <p class="type-lead mt6 paper-muted">{E(li['bio'])}</p>{I_QUOTE}<blockquote class="big-quote">“{E(li['quote'])}”</blockquote></div>
+  <div class="self-center"><h2 class="type-h2 fw8">{E(li['name'])}</h2><p class="type-label mt3 accent-dark">{E(li['role'])}</p>
+    <p class="type-lead mt6 paper-muted">{E(li['bio'])}</p><div class="quoted big mt10">{QUOTE}<blockquote class="big-quote">{E(li['quote'])}</blockquote></div></div>
 </div></section>
 
 <section class="editorial-band cinema-band" data-ch="O que nos move"><div class="editorial-container two-col">
   <div>{label(pr['label'])}<div class="mt6">{title(*pr['title'])}</div><p class="type-lead muted mt6">{E(pr['text'])}</p><ul class="checks mt6">{checks}</ul></div>
-  <div><p class="type-label text-accent">{E(pr['differentialsLabel'])}</p><div class="diffs">{diffs}</div></div>
+  <div>{label(pr['differentialsLabel'])}<div class="diffs-wrap"><div class="magic-bg" aria-hidden="true"><i></i><i></i><i></i></div><div class="diffs">{diffs}</div></div></div>
 </div></section>
 
 <section class="editorial-band bg-paper" data-ch="Como trabalhamos"><div class="editorial-container">
@@ -498,7 +509,7 @@ def brandaz():
   <div class="mt12">{btn("Entenda nosso processo", "/como-trabalhamos/")}</div>
 </div></section>
 
-{cta_band("Portfólio", "Ideias que", "ganharam forma.", "Conheça projetos de branding, campanhas, conteúdo e audiovisual que desenvolvemos ao lado de nossos clientes.", btn("Ver portfólio", "/projetos/"), "Portfólio")}
+{cta_band("Portfólio", "Ideias que", "ganharam forma.", "Conheça projetos de branding, campanhas, conteúdo e audiovisual que desenvolvemos ao lado de nossos clientes.", btn("Ver portfólio", "/projetos/"), "Portfólio", belt=True)}
 {cta_band("Vamos conversar", "Qual é o próximo desafio", "da sua marca?", "Conte para a gente. Estamos prontos para conversar.", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
     page('/brandaz/', 'A Brandaz | Mais de 20 anos de comunicação em Chapecó',
          'Conheça a Brandaz: mais de 20 anos de história, marcas e conexões em Chapecó. Novo espaço, nova equipe e o mesmo propósito: criatividade com estratégia e resultado.',
@@ -545,7 +556,8 @@ def related_for(scopes, n=2):
 def servicos():
     a = C['aaz']
     letters = ''.join(f'<div class="service-letter-item" data-reveal style="--d:{i * 90}ms"><span class="services-letter">{L}</span><p>{E(t)}</p></div>' for i, (L, t) in enumerate(a['letters']))
-    letters += '<div class="service-letter-item" data-reveal style="--d:450ms"><span class="services-letter">…Z</span><p>Do insight ao último detalhe</p></div>'
+    letters += ('<div class="service-letter-item z" data-reveal style="--d:450ms"><span class="services-letter"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>'
+                '<span class="zl" data-run="FGHIJKLMNOPQRSTUVWXYZ">Z</span></span><p>Do insight ao último detalhe</p></div>')
     items = ''
     for i, s in enumerate(C['services']):
         rel = ''.join(f'<a href="{U("/projetos/" + p["slug"] + "/")}">{img(p["image"], p["name"])}<h4>{E(p["name"])}</h4><p>{E(p["segment"])}</p></a>' for p in related_for(s['scopes']))
@@ -554,13 +566,13 @@ def servicos():
     <div class="mt6">{btn("Conheça nossos projetos", "/projetos/", "ghost")}</div></div>
   <div><p class="type-label muted">Projetos relacionados</p><div class="related">{rel}</div></div></div></details>'''
     body = f'''
-<section class="editorial-opening bg-paper" data-ch="De A a Z"><div class="editorial-container two-col">
-  <div>{label(a['label'])}<div class="mt6">{title(*a['title'], tag='h1')}</div><p class="type-lead paper-muted mt6">{E(a['text'])}</p>
+<section class="editorial-opening cinema-band" data-ch="De A a Z"><div class="editorial-container two-col">
+  <div>{label(a['label'])}<div class="mt6">{title(*a['title'], tag='h1')}</div><p class="type-lead muted mt6">{E(a['text'])}</p>
     <p class="type-h3 mt8 fw3">{accent(a['closing'])}</p></div>
-  <div class="services-letters">{letters}</div>
+  <div class="services-letters" data-az>{letters}</div>
 </div></section>
 
-<section class="editorial-band cinema-band" data-ch="Especialidades"><div class="editorial-container">
+<section class="editorial-band bg-paper svc-band" data-ch="Especialidades"><div class="editorial-container">
   {label(C['especialidades']['label'])}<div class="mt6">{title(*C['especialidades']['title'])}</div>
   <div class="mt12">{items}</div>
 </div></section>
@@ -588,7 +600,7 @@ def norm_scope(s):
 def projetos():
     feats = ''
     for i, p in enumerate(FEATURED):
-        feats += f'''<article class="group" data-reveal style="--d:{(i % 2) * 120}ms"><a href="{U("/projetos/" + p["slug"] + "/")}" class="project-media">{img(p["image"], p["name"], "case-cover")}<span class="see">Ver case →</span></a>
+        feats += f'''<article class="group glass" data-reveal style="--d:{(i % 2) * 120}ms"><a href="{U("/projetos/" + p["slug"] + "/")}" class="project-media">{img(p["image"], p["name"], "case-cover")}<span class="see">Ver case →</span></a>
   <div><p class="cap-k">Case {p["caseNumber"]} · {E(p["discipline"])}</p><h2><a href="{U("/projetos/" + p["slug"] + "/")}">{E(p["name"])}</a></h2><p class="type-body muted mt3">{E(p["tagline"])}</p></div>
   {result_block(p) or f'<p class="type-h3 fw3 text-accent">{E(p["highlight"])}</p>'}</article>'''
     segs = sorted({p['segment'] for p in PROJECTS})
@@ -599,23 +611,21 @@ def projetos():
         tags = ''.join(f'<span>{E(s)}</span>' for s in p['scope'][:2])
         grid += f'''<article class="proj-item group" data-seg="{E(p["segment"])}" data-scopes="{E("|".join(sc))}"><a href="{U("/projetos/" + p["slug"] + "/")}">
   <div class="project-media">{img(p["image"], p["name"], "case-cover")}<span class="see">Ver case →</span></div>
-  <div class="tags">{tags}</div><p class="seg type-label">{E(p["segment"])}</p><h2 class="type-h3">{E(p["name"])} <small>{E(p["year"])}</small></h2><p class="txt">{E(p["text"])}</p></a></article>'''
+  <div class="pi-body"><p class="seg type-label">{E(p["segment"])}</p><h2>{E(p["name"])} <small>{E(p["year"])}</small></h2><p class="txt">{E(p["text"])}</p><div class="tags">{tags}</div></div></a></article>'''
     rows = client_items()
     body = f'''
-<section class="page-top" data-ch="Portfólio"><div class="wrap-1500">
+<section class="page-top bg-paper port-top" data-ch="Portfólio"><div class="wrap-1500">
   {label("Portfólio")}<div class="mt6">{title(*C['transformamos']['title'], tag='h1')}</div>
-  <p class="type-lead muted mt6 measure">Conheça projetos que mostram a criatividade e a diversidade da nossa atuação: branding, campanhas, conteúdo, audiovisual e mídia para marcas de Chapecó e do Oeste catarinense.</p>
+  <p class="type-lead paper-muted mt6 measure">Conheça projetos que mostram a criatividade e a diversidade da nossa atuação: branding, campanhas, conteúdo, audiovisual e mídia para marcas de Chapecó e do Oeste catarinense.</p>
+  <p class="section-label mt16">Marcas que fazem parte da nossa história</p></div>
+  <div class="client-marquee"><div class="client-marquee-row"><div class="client-marquee-track">{rows}{rows}</div></div><div class="client-marquee-row"><div class="client-marquee-track rev">{rows}{rows}</div></div></div>
+</section>
+
+<section class="editorial-band cases-band" data-ch="Cases"><div class="wrap-1500">{title("Cases de marketing e publicidade", "em Chapecó e no Oeste catarinense")}
+  <div class="featured-cases">{feats}</div>
 </div></section>
 
-<section class="editorial-band" data-ch="Clientes"><div class="wrap-1500"><p class="section-label">Marcas que fazem parte da nossa história.</p></div>
-  <div class="client-marquee mt10"><div class="client-marquee-row"><div class="client-marquee-track">{rows}{rows}</div></div><div class="client-marquee-row"><div class="client-marquee-track rev">{rows}{rows}</div></div></div>
-</section>
-
-<section class="wrap-1500" data-ch="Cases"><h2 class="type-h2 fw8 measure-wide">Cases de marketing e publicidade em Chapecó e no Oeste catarinense</h2>
-  <div class="featured-cases">{feats}</div>
-</section>
-
-<section class="editorial-band" data-ch="Mais projetos"><div class="wrap-1500">
+<section class="editorial-band more-band" data-ch="Mais projetos"><div class="wrap-1500">
   <p class="section-label">Mais projetos</p>
   <div class="proj-tools"><label class="type-label muted" for="segSel">Segmento</label><select class="select" id="segSel"><option value="">Todos os segmentos</option>{''.join(f'<option>{E(s)}</option>' for s in segs)}</select></div>
   <div class="filters" role="group" aria-label="Filtrar por escopo"><button type="button" data-scope="" aria-pressed="true">Todos</button>{''.join(f'<button type="button" data-scope="{E(s)}" aria-pressed="false">{E(s)}</button>' for s in scopes)}</div>
@@ -623,7 +633,7 @@ def projetos():
   <div class="project-grid" id="projGrid">{grid}<div class="load-more"><button type="button" class="btn" id="loadMore">Carregar mais</button></div></div>
 </div></section>
 
-{testimonials()}
+{testimonials('tight')}
 
 {cta_band("Vamos conversar", "Sua marca pode ser", "nosso próximo case.", "", btn("Falar no WhatsApp", WA, ext=True), "Contato")}'''
     lst = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Portfólio Brandaz", "url": BASE + "/projetos/",
@@ -724,7 +734,7 @@ def post(b):
     body = f'''
 <article class="page-top" data-ch="Artigo"><div class="wrap-1200">
   <a class="back" href="{U('/blog/')}">{BACK} Blog</a>
-  <p class="editorial-label"><span aria-hidden="true">•</span>Blog · {E(b["category"])}</p>
+  <p class="editorial-label">Blog · {E(b["category"])}</p>
   <h1 class="type-h2 fw8 mt6 measure-wide">{E(b["title"])}</h1>
   <div class="blog-meta"><span>{E(b["author"])}</span><span>{date_br(b["date"])}</span><span>{b["readingMinutes"]} min de leitura</span></div>
   <img class="blog-cover{" portrait" if h > w else ""}" src="{U(b["cover"])}" alt="{E(b["coverAlt"])}" width="{w}" height="{h}" decoding="async">
@@ -748,9 +758,9 @@ def contato():
     socials = ''.join(f'<a href="{u}" target="_blank" rel="noopener noreferrer" aria-label="{n}">{i}</a>' for n, u, i in SOCIALS)
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{E(q)}</summary><p>{E(a)}</p></details>' for i, (q, a) in enumerate(C['faq']))
     body = f'''
-<section class="page-top" data-ch="Contato"><div class="wrap-1500 contact-grid">
+<section class="page-top bg-paper contact-top" data-ch="Contato"><div class="wrap-1500 contact-grid">
   <div>{label("Contato")}<div class="mt6">{title("Seu próximo capítulo", "começa aqui.", tag='h1')}</div>
-    <p class="type-lead muted mt6">Conte o que sua marca precisa. Respondemos pelo WhatsApp, e-mail ou pessoalmente no nosso novo espaço em Chapecó.</p>
+    <p class="type-lead paper-muted mt6">Conte o que sua marca precisa. Respondemos pelo WhatsApp, e-mail ou pessoalmente no nosso novo espaço em Chapecó.</p>
     <div class="contact-info">
       <div class="socials">{socials}</div>
       <div><p class="type-label lb">WhatsApp e telefone</p><a class="big" href="{WA}" target="_blank" rel="noopener noreferrer">{SITE['phone']['display']}</a></div>
@@ -768,7 +778,7 @@ def contato():
   </form>
 </div></section>
 
-<section class="wrap-1500" data-ch="Localização">{static_map('contact-map')}</section>
+<section class="wrap-1500 loc" data-ch="Localização">{static_map('contact-map')}</section>
 
 <section class="editorial-band" data-ch="Perguntas frequentes"><div class="wrap-1500">{label("Perguntas frequentes")}<div class="mt6">{title("Dúvidas que", "costumam aparecer.")}</div><div class="faq">{faq}</div></div></section>'''
     faqld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in C['faq']]}

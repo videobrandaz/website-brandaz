@@ -253,8 +253,7 @@
  },
  {
   "order": -3,
-  "featured": true,
-  "caseNumber": "03",
+  "featured": false,
   "discipline": "Branding e identidade",
   "highlight": "Identidade visual e aplicações.",
   "slug": "melira-films",
@@ -436,7 +435,7 @@
  {
   "order": -2,
   "featured": true,
-  "caseNumber": "04",
+  "caseNumber": "03",
   "discipline": "Branding e identidade",
   "highlight": "Criação de identidade visual.",
   "statement": "Uma identidade criada para expressar a essência da marca.",
@@ -630,7 +629,7 @@
   "year": "2026",
   "client": "Hospital Regional do Oeste",
   "segment": "Saúde · Hospital",
-  "caseNumber": "05",
+  "caseNumber": "04",
   "discipline": "Social media e conteúdo",
   "highlight": "478 mil visualizações em 30 dias.",
   "image": "/assets/img/projects/hospital-regional-do-oeste/cover.webp",
