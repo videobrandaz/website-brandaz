@@ -323,7 +323,7 @@ def testimonials(cls=''):
                 else f'<span class="t-photo t-ini" aria-hidden="true">{E(ini)}</span>')
         role = ' · '.join(x for x in (d.get('cargo'), d.get('empresa')) if x)
         case = (f'<a class="t-case" href="{U("/projetos/" + d["case"] + "/")}">Ver o case {ARROW}</a>' if d.get('case') in BY_SLUG else '')
-        tag = '<span class="t-tag">Modelo · substituir em content/depoimentos.json</span>' if d.get('modelo') else ''
+        tag = '<span class="t-tag">Espaço para depoimento</span>' if d.get('modelo') else ''
         cards += (f'<figure class="t-card{" modelo" if d.get("modelo") else ""}" data-reveal style="--d:{i * 110}ms">{tag}{svg("<path d=" + chr(34) + "M10 7H6a2 2 0 0 0-2 2v4h5v5H4M20 7h-4a2 2 0 0 0-2 2v4h5v5h-5" + chr(34) + "/>", "t-quote", extra=LINE)}'
                   f'<blockquote>{E(d["texto"])}</blockquote><figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
     return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos" aria-labelledby="dep-title"><div class="editorial-container">
@@ -352,7 +352,8 @@ HERO_A = ('<div class="projection-hero" aria-hidden="true"><div class="reel-show
 FILMS = C['films']
 WALL_KEYS = ["croissants", "biscoitos", "cafes-carraro", "cachaca", "inverno", "cuca", "dia-das-maes", "franui", "garibaldi", "granolas", "pratos-prontos"]
 FNAME = {f['preview']: f['name'] for f in FILMS}
-WALL_POSTERS = not PREVIEW  # a prévia deixa os pôsteres de fora para caber no limite de arquivos
+COVER = 'B'  # capa da home: 'B' = parede de filmes verticais (aprovada) · 'A' = filme horizontal da 90 Graus + cases
+WALL_POSTERS = True
 WALL = ''.join(f'<figure class="wf"><video src="{H("wall-" + k + ".mp4")}"{" poster=" + chr(34) + H("wall-" + k + ".jpg") + chr(34) if WALL_POSTERS else ""} muted loop playsinline preload="metadata"></video>'
                f'<figcaption>Filme · Supermercado Royal — {E(FNAME[k].replace("Royal — ", ""))}</figcaption></figure>' for k in WALL_KEYS)
 HERO_B = ('<div class="projection-hero" aria-hidden="true"><div class="wall"><div class="wtrack">' + WALL + WALL + '</div></div>'
@@ -371,9 +372,7 @@ def home(variant):
                   f'<p class="cinema-caption">Filme · {E(f["client"])}</p><a class="film-link" href="{U("/projetos/" + f["slug"] + "/")}">{E(f["name"])} →</a></div>')
     specs = ''.join(f'<li><i class="node" aria-hidden="true"></i><span class="text-accent">{n}</span> {E(t)}</li>' for n, t, d in C['especialidades']['items'])
     clients = client_items()
-    other = '/capa-verticais/' if variant == 'A' else '/'
-    dock = (f'<div class="dock"><button type="button" id="mot" class="mot" aria-pressed="false">Pausar movimento</button>'
-            f'<a class="vsw" href="{U(other)}">{"Ver V2 · filmes verticais" if variant == "A" else "Ver V1 · filme + cases"} →</a></div>')
+    dock = '<div class="dock"><button type="button" id="mot" class="mot" aria-pressed="false">Pausar movimento</button></div>'
     body = f'''<canvas id="dust" aria-hidden="true" data-mark="{U('/assets/site/mark-clean.png')}"></canvas>
 <section class="v3-hero projection-cover" data-ch="Início" data-shape="none">
 {HERO_A if variant == 'A' else HERO_B}
@@ -438,8 +437,7 @@ def home(variant):
   </div>
 </section>'''
     js = HOME + (COVER_A.replace('__SLIDES__', json.dumps([list(x) for x in SLIDES], ensure_ascii=False)) if variant == 'A' else COVER_B)
-    canon = '/' if variant == 'A' else '/capa-verticais/'
-    page(canon, h['title'], h['description'], body, current='/', home=True, noindex=variant == 'B',
+    page('/', h['title'], h['description'], body, current='/', home=True,
          schema=[{"@context": "https://schema.org", "@graph": [ORG, PRO]}, crumbs([])], extra_js=js, dock=dock)
 
 # ================================================================ A BRANDAZ
@@ -785,10 +783,10 @@ def copy_static():
             if PREVIEW:
                 if rel.startswith(PREVIEW_SKIP) and not (rel.startswith('assets/video/filmes/') and rel.endswith('.mp4')):
                     continue
-                if rel.startswith('assets/home/wall-') and rel.endswith('.jpg'):
-                    continue
                 if rel.endswith('/hero.webp') and rel not in used_heroes:
                     continue
+            if rel.startswith(('assets/home/hero-', 'assets/home/slide-') if COVER == 'B' else ('assets/home/wall-',)):
+                continue  # só a mídia da capa escolhida vai para o site
             dst = os.path.join(OUT, rel)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.copy2(os.path.join(r, f), dst)
@@ -800,9 +798,9 @@ def write(rel, text):
 def extras():
     write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
           ''.join(f'  <url><loc>{BASE}{c}</loc><lastmod>{date.today().isoformat()}</lastmod><priority>{"1.0" if c == "/" else "0.8" if c.count("/") == 2 else "0.6"}</priority></url>\n' for c in SITEMAP) + '</urlset>\n')
-    write('robots.txt', f'User-agent: *\nAllow: /\nDisallow: /capa-verticais/\n\nSitemap: {BASE}/sitemap.xml\n')
+    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n')
     redirects = [('/a-brandaz', '/brandaz/'), ('/about', '/brandaz/'), ('/contact', '/contato/'), ('/clientes', '/projetos/'), ('/trabalhos', '/projetos/'),
-                 ('/works', '/projetos/'), ('/works/*', '/projetos/'), ('/posicionamento', '/como-trabalhamos/'), ('/conteudos', '/blog/')]
+                 ('/works', '/projetos/'), ('/works/*', '/projetos/'), ('/posicionamento', '/como-trabalhamos/'), ('/conteudos', '/blog/'), ('/capa-verticais', '/'), ('/capa-verticais/', '/')]
     write('_redirects', ''.join(f'{a} {b} 301\n' for a, b in redirects))
     write('_headers', '/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/share/*\n  Cache-Control: public, max-age=86400\n'
           '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n')
@@ -813,7 +811,7 @@ def main():
         q = os.path.join(OUT, name)
         shutil.rmtree(q) if os.path.isdir(q) else os.remove(q)
     copy_static()
-    home('A'); home('B'); brandaz(); como(); servicos(); projetos()
+    home(COVER); brandaz(); como(); servicos(); projetos()
     for i, p in enumerate(PROJECTS):
         case_page(i, p)
     blog()

@@ -39,12 +39,10 @@ Aparecem na home (antes do Contato) e no Portfólio. Para incluir um cliente:
 2. Em `content/depoimentos.json`, adicione um item com `nome`, `cargo`, `empresa`, `texto`, `foto` (ex.: `/assets/img/depoimentos/joao-silva.webp`) e, se houver, `case` (o slug do case, ex.: `supermercado-royal`).
 3. Apague os itens com `"modelo": true`. Eles servem só para mostrar o layout nas prévias e nunca aparecem no site oficial.
 
-## Capas da home
+## Capa da home
 
-- `/` — V1: filme horizontal da 90 Graus + cases de design
-- `/capa-verticais/` — V2: parede de filmes verticais (fora do Google até a decisão)
-
-Para trocar a capa principal, inverta `home('A')` e `home('B')` em `tools/build.py` (função `home`).
+A capa aprovada é a parede de filmes verticais (`COVER = 'B'` em `tools/build.py`).
+A versão com o filme horizontal da 90 Graus + cases continua pronta: troque para `COVER = 'A'` se quiser voltar a ela.
 
 ## Cloudflare Pages (configuração única)
 
