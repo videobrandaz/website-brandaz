@@ -221,7 +221,7 @@ def footer(full=False):
     <nav aria-label="Rodapé">{fnav}<a href="{U('/como-trabalhamos/')}">Como trabalhamos</a></nav>
   </div>
   {static_map('mini wide')}
-  <p class="copy">© {YEAR} Brandaz · Onde a estratégia ganha magia. Todos os direitos reservados.</p>
+  <p class="copy">© {YEAR} Brandaz · Onde estratégia ganha magia. Todos os direitos reservados.</p>
 </div></footer>'''
 
 # ---------------------------------------------------------------- SEO

@@ -2,7 +2,7 @@
   "site": {
     "url": "https://brandaz.com.br",
     "name": "Brandaz",
-    "slogan": "Onde a estratégia ganha magia.",
+    "slogan": "Onde estratégia ganha magia.",
     "email": "atendimento@brandaz.com.br",
     "phone": { "display": "(49) 99810-3399", "intl": "+55 49 99810-3399", "tel": "+5549998103399", "whatsapp": "https://wa.me/5549998103399" },
     "instagram": { "handle": "@agenciabrandaz", "url": "https://www.instagram.com/agenciabrandaz/" },
@@ -22,7 +22,7 @@
   "home": {
     "title": "Agência de Marketing e Publicidade em Chapecó | Brandaz",
     "description": "+20 anos, +12 anos com o Supermercado Royal, ROAS 9,56x e 478 mil visualizações em 30 dias. Branding, campanhas, conteúdo, audiovisual e mídia em Chapecó e no Oeste de SC.",
-    "hero": ["Onde a estratégia", "ganha magia."],
+    "hero": ["Onde estratégia", "ganha magia."],
     "lead": "Agência de marketing e publicidade especializada em branding, comunicação e estratégias para marcas.",
     "statement": "Há mais de *20 anos* enxergando o que *poucos veem* e construindo o que muitos ainda *não imaginam.*",
     "about": "A Brandaz é uma agência de publicidade e comunicação integrada que reúne criatividade, planejamento e estratégia para desenvolver marcas, campanhas e experiências de comunicação."
@@ -137,7 +137,7 @@
     {"preview": "pratos-prontos", "full": "/assets/video/filmes/pratosprontos/master.m3u8", "category": "FOOD", "client": "Supermercado Royal", "name": "Pratos Prontos", "slug": "supermercado-royal"}
   ],
   "chapters": [
-    ["01", "Início", "/", "Onde a estratégia ganha magia."],
+    ["01", "Início", "/", "Onde estratégia ganha magia."],
     ["02", "A Brandaz", "/brandaz/", "Uma nova fase. A mesma essência."],
     ["03", "Como trabalhamos", "/como-trabalhamos/", "Toda grande ideia precisa de um caminho."],
     ["04", "Especialidades", "/servicos/", "Da ideia à execução. Tudo conectado."],
