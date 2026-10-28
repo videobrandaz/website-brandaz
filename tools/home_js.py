@@ -91,7 +91,8 @@ function pos(sec,pl,arr,i,time){if(sec.dataset.shape==='flow')return flowPos(i,t
 let mx=-999,my=-999;addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY},{passive:true});addEventListener('pointerleave',()=>{mx=my=-999});
 const caps=$$('.dust-cap');let lastSY=scrollY;
 function frame(t){requestAnimationFrame(frame);if(!ready)return;
-  const dS=lastSY-scrollY;lastSY=scrollY; // as partículas andam junto com a página (sem atraso em relação às imagens)const [sa,sb,k]=state();caps.forEach(c=>{const on=!!c.offsetParent&&k>.85&&sb.contains(c);c.classList.toggle('on',on);c.parentElement.classList.toggle('on',on)});const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
+  const dS=lastSY-scrollY;lastSY=scrollY; // as partículas andam junto com a página (sem atraso em relação às imagens)
+  const [sa,sb,k]=state();caps.forEach(c=>{const on=!!c.offsetParent&&k>.85&&sb.contains(c);c.classList.toggle('on',on);c.parentElement.classList.toggle('on',on)});const A=SH[sa.dataset.shape],B=SH[sb.dataset.shape],pa=place(sa),pb=place(sb);
   const al=pa[3]+(pb[3]-pa[3])*k;ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);if(al<.01){P.forEach(p=>p.init=false);return}
   ctx.globalCompositeOperation='lighter';const time=t/1000;
   for(let i=0;i<P.length;i++){const p=P[i];const lag=Math.max(0,Math.min(1,k*1.3-(i/P.length)*.3));

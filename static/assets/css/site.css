@@ -1,11 +1,11 @@
 /* Brandaz — site estático. Layout e escalas da última versão; fonte Grift e as 4 cores da marca. */
-@font-face{font-family:"Grift";font-weight:300;font-style:normal;font-display:swap;src:url(../fonts/grift-300.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/grift-400.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/grift-500.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/grift-600.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/grift-700.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/grift-800.woff2) format("woff2")}
-@font-face{font-family:"Grift";font-weight:900;font-style:normal;font-display:swap;src:url(../fonts/grift-900.woff2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:300;font-style:normal;font-display:swap;src:url(../fonts/grift-300.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/grift-400.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/grift-500.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/grift-600.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/grift-700.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/grift-800.woff2?v=2) format("woff2")}
+@font-face{font-family:"Grift";font-weight:900;font-style:normal;font-display:swap;src:url(../fonts/grift-900.woff2?v=2) format("woff2")}
 
 :root{
   --background:#341131;--depth:#261527;--accent:#D77F4E;--fg:#EAE8EE;
