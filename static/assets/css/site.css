@@ -534,11 +534,6 @@ main>section{position:relative}main>section>*:not(.projection-hero){position:rel
 .t-head>div:first-child{flex:1 1 32rem;min-width:0}
 .t-head .dust-anchor.book{position:relative;flex:none;width:400px;height:280px;margin:0 2% 60px 0}
 .dust-anchor.book .dust-cap{top:calc(100% + 40px)}
-.dust-anchor .sym{position:absolute;left:50%;top:50%;width:var(--sym,100%);max-width:none;height:auto;aspect-ratio:1;transform:translate(-50%,-50%) scale(.86);opacity:0;filter:blur(6px);transition:opacity 1.4s ease,transform 1.6s cubic-bezier(.22,1,.36,1),filter 1.4s}
-.dust-anchor.stars .sym{--sym:340px}.dust-anchor.book .sym{--sym:400px}
-.dust-anchor.on .sym{opacity:1;filter:none;transform:translate(-50%,-50%)}
-.dust-anchor.on.stars .sym{animation:breathe 6s ease-in-out 1.6s infinite}
-@keyframes breathe{50%{filter:brightness(1.18) drop-shadow(0 0 18px rgba(215,127,78,.35))}}
 .cm-right .dust-anchor{right:calc(100% + 40px);bottom:-30px;width:200px;height:200px}
 .films-head{position:relative}.films-head .dust-anchor{right:120px;top:50%;transform:translateY(-50%);width:200px;height:200px}
 .dust-cap{position:absolute;left:-40px;right:-40px;top:calc(100% + 14px);text-align:center;font:600 18px/1 "Grift",sans-serif;letter-spacing:.3em;white-space:nowrap;text-transform:uppercase;color:var(--fg);opacity:0;transform:translateY(8px);transition:opacity .6s .35s,transform .6s .35s}
@@ -555,8 +550,8 @@ html.still *{animation-play-state:paused!important}
   .credit-bar{left:6%;right:6%;bottom:110px;flex-wrap:wrap;gap:8px}.credit-bar .film-credit{white-space:normal}
   .hcta{display:none}
   .cm-right .dust-anchor,.films-head .dust-anchor,.home-chapter-cta .dust-anchor:not(.stars){display:none}.home-chapter-cta{align-items:flex-start}
-  .home-chapter-cta .dust-anchor.stars{width:260px;height:200px;margin:8px 0 56px}.dust-anchor.stars .sym{--sym:260px}
-  .t-head .dust-anchor.book{width:290px;height:210px;margin:0 auto 48px}.dust-anchor.book .sym{--sym:290px}.dust-anchor.book .dust-cap{top:calc(100% + 26px)}
+  .home-chapter-cta .dust-anchor.stars{width:260px;height:200px;margin:8px 0 56px}
+  .t-head .dust-anchor.book{width:290px;height:210px;margin:0 auto 48px}.dust-anchor.book .dust-cap{top:calc(100% + 26px)}
   .dust-cap{font-size:14px}
 }
 

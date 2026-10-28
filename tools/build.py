@@ -339,7 +339,7 @@ def testimonials(cls='', book=False):
                   f'<figcaption>{foto}<span><b>{E(d["nome"])}</b><small>{E(role)}</small></span></figcaption>{case}</figure>')
     return f'''<section class="editorial-band testimonials {cls}" data-ch="Depoimentos"{' data-shape="book"' if book else ''} aria-labelledby="dep-title"><div class="editorial-container">
   <div class="t-head"><div><div id="dep-title">{title(*DEP['titulo'])}</div><p class="type-lead muted mt6 measure">{E(DEP['texto'])}</p></div>
-    {f'<i class="dust-anchor book" aria-hidden="true"><img class="sym" src="{U('/assets/site/simbolos/livro.webp')}" alt="" width="800" height="800" loading="lazy" decoding="async"><b class="dust-cap">{E(DEP["legenda"])}</b></i>' if book else ''}</div>
+    {f'<i class="dust-anchor book" aria-hidden="true"><b class="dust-cap">{E(DEP["legenda"])}</b></i>' if book else ''}</div>
   <div class="t-grid">{cards}</div>
 </div></section>'''
 
@@ -442,7 +442,7 @@ def home(variant):
   <div class="editorial-container home-chapter-grid reveal">
     <div class="home-chapter-body">{title(*C['marcas']['title'])}
       <p class="type-lead muted mt6">{accent(C['marcas']['text'])}</p></div>
-    <div class="home-chapter-cta"><i class="dust-anchor stars" aria-hidden="true"><img class="sym" src="{U('/assets/site/simbolos/universo.webp')}" alt="" width="800" height="800" loading="lazy" decoding="async"><b class="dust-cap">{E(C['marcas']['caption'])}</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
+    <div class="home-chapter-cta"><i class="dust-anchor stars" aria-hidden="true"><b class="dust-cap">{E(C['marcas']['caption'])}</b></i>{btn("Ver portfólio completo", "/projetos/")}</div>
   </div>
   <!-- duas fileiras de ponta a ponta, como no Portfólio, em ritmo mais lento para cada marca ser reconhecida -->
   <div class="client-marquee home-brands" aria-label="Marcas atendidas pela Brandaz">
