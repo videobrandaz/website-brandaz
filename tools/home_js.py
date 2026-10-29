@@ -155,7 +155,8 @@ function frame(t){requestAnimationFrame(frame);if(!ready)return;
     if(!BZ.still&&sb.dataset.shape!=='flow'){tx+=Math.sin(time*.9+p.ph)*1.2;ty+=Math.cos(time*.8+p.ph)*1.2}
     if(!p.init){p.x=tx;p.y=ty+40;p.init=true}else p.y+=dS;
     if(lag>=1&&B[i][2]===6&&p.y-ty<-pb[2]*.2){p.x=tx;p.y=ty} // a coluna de luz recomeça embaixo sem riscar a tela
-    p.x+=(tx-p.x)*.12;p.y+=(ty-p.y)*.12; // desliza até o alvo, sem passar do ponto
+    if(lag>=1&&sb.dataset.shape==='flow'){p.x=tx;p.y=ty} // no trajeto o pó fica colado ao caminho (sem atraso nem saltos ao rolar)
+    else{p.x+=(tx-p.x)*.12;p.y+=(ty-p.y)*.12} // desliza até o alvo, sem passar do ponto
     const dx=p.x+p.ox-mx,dy=p.y+p.oy-my,d2=dx*dx+dy*dy;let px=0,py=0;if(d2<9000){const d=Math.sqrt(d2)||1,f=(1-d2/9000)*22;px=dx/d*f;py=dy/d*f}
     p.ox+=(px-p.ox)*.1;p.oy+=(py-p.oy)*.1;
     const s1=sty(A[i],p,tt,i),s2=sty(B[i],p,tt,i),m=j=>s1[j]+(s2[j]-s1[j])*lag;
