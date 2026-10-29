@@ -2,18 +2,7 @@
 (() => {
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const BZ = window.BZ = { $, $$, still: false, onStill: [], onScroll: [], casePaused: false };
-  try { BZ.still = localStorage.getItem('bz-still') === '1' } catch (e) {}
-
-  // pausar movimento (filmes, esteiras, partículas)
-  const mot = $('#mot');
-  BZ.setStill = v => {
-    BZ.still = v; document.documentElement.classList.toggle('still', v);
-    if (mot) { mot.setAttribute('aria-pressed', v); mot.textContent = v ? 'Retomar movimento' : 'Pausar movimento' }
-    try { localStorage.setItem('bz-still', v ? '1' : '0') } catch (e) {}
-    BZ.onStill.forEach(f => f(v));
-  };
-  if (mot) mot.onclick = () => BZ.setStill(!BZ.still);
-  document.documentElement.classList.toggle('still', BZ.still);
+  try { localStorage.removeItem('bz-still') } catch (e) {} // o botão de pausar movimento saiu; ninguém fica preso no modo parado
 
   // cabeçalho: some ao descer, volta ao subir; barra de leitura; WhatsApp flutuante
   const hdr = $('#hdr'), prog = $('#prog'), fwa = $('#floatWa'); let lastY = scrollY;

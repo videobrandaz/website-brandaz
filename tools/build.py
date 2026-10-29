@@ -245,7 +245,7 @@ def ld(obj):
 SITEMAP = []
 
 def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, og='/og-image.jpg', schema=(), noindex=False,
-         og_type='website', extra_js='', dock=''):
+         og_type='website', extra_js=''):
     url = BASE + canon
     meta = [f'<title>{E(ttl)}</title>', f'<meta name="description" content="{E(desc)}">',
             f'<link rel="canonical" href="{BASE + ("/" if noindex else canon)}">',
@@ -275,7 +275,6 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
 </main>
 {footer(full_footer)}
 <a class="float-wa" id="floatWa" href="{WA}" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Brandaz pelo WhatsApp" tabindex="-1">{I_WA}</a>
-{dock}
 <script src="{U('/assets/js/site.js')}?v={JS_V}"></script>
 {f"<script>{extra_js}</script>" if extra_js else ""}
 {'' if wrapper_less else '</body></html>'}
@@ -392,7 +391,6 @@ def home(variant):
                   f'<p class="film-title"><span>Filme:</span> {E(f.get("title", f["name"]))}</p><a class="film-client" href="{U("/projetos/" + client + "/")}">{E(f["client"])} {ARROW}</a></div>')
     specs = ''.join(f'<li><i class="node" aria-hidden="true"></i><span class="text-accent">{n}</span> {E(t)}</li>' for n, t, d in C['especialidades']['items'])
     clients = client_items()
-    dock = '<div class="dock"><button type="button" id="mot" class="mot" aria-pressed="false">Pausar movimento</button></div>'
     body = f'''<canvas id="dust" aria-hidden="true" data-mark="{U('/assets/site/mark-clean.png')}"></canvas>
 <section class="v3-hero projection-cover" data-ch="Início" data-shape="none">
 {HERO_A if variant == 'A' else HERO_B}
@@ -463,7 +461,7 @@ def home(variant):
 </section>'''
     js = HOME + (COVER_A.replace('__SLIDES__', json.dumps([list(x) for x in SLIDES], ensure_ascii=False)) if variant == 'A' else COVER_B)
     page('/', h['title'], h['description'], body, current='/', home=True,
-         schema=[{"@context": "https://schema.org", "@graph": [ORG, PRO]}, crumbs([])], extra_js=js, dock=dock)
+         schema=[{"@context": "https://schema.org", "@graph": [ORG, PRO]}, crumbs([])], extra_js=js)
 
 # ================================================================ A BRANDAZ
 def brandaz():
