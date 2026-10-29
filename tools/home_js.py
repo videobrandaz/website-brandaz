@@ -8,12 +8,12 @@ const wrap=$('.spec-wrap'),road=$('#road'),ahead=$('#ahead'),trail=$('#trail'),m
 const pin=$('.spec-pin'),stick=$('.spec-stick'),scta=$('.spec-cta'),pinned=()=>getComputedStyle(stick).position==='sticky';
 let table=[],total=0,L0=0,L1=0;BZ.orbXY=[-999,-999];BZ.orbK=0;
 function buildRoad(){const W=64,H=wrap.offsetHeight,top=wrap.getBoundingClientRect().top;road.setAttribute('width',W);road.setAttribute('height',H);road.setAttribute('viewBox',`0 0 ${W} ${H}`);
-  const pts=[[32,-30]];specs.forEach((li,i)=>{const r=li.getBoundingClientRect();const x=i%2?14:46;pts.push([x,r.top-top+r.height/2]);li.querySelector('.node').style.left=(x-64-6)+'px'}); // o caminho termina no 07
+  const pts=[];specs.forEach((li,i)=>{const r=li.getBoundingClientRect();const x=i%2?14:46;pts.push([x,r.top-top+r.height/2]);li.querySelector('.node').style.left=(x-64-6)+'px'}); // o caminho termina no 07
   let d=`M${pts[0][0]},${pts[0][1]}`;for(let i=0;i<pts.length-1;i++){const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
     d+=` C${p1[0]+(p2[0]-p0[0])/6},${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6},${p2[1]-(p3[1]-p1[1])/6} ${p2[0]},${p2[1]}`}
   [ahead,trail,mpath].forEach(p=>p.setAttribute('d',d));total=ahead.getTotalLength();mpath.style.strokeDasharray=total;
   table=[];for(let l=0;l<=total;l+=3){const q=ahead.getPointAtLength(l);table.push([l,q.x,q.y])}BZ.roadTable=table;
-  const at=y=>{let b=table[0];table.forEach(t=>{if(Math.abs(t[2]-y)<Math.abs(b[2]-y))b=t});return b[0]};L0=at(pts[1][1]);L1=total}
+  const at=y=>{let b=table[0];table.forEach(t=>{if(Math.abs(t[2]-y)<Math.abs(b[2]-y))b=t});return b[0]};L0=0;L1=total}
 // a rolagem define o alvo; a bolinha desliza até ele a cada quadro e a magia segue a posição dela
 let orbT=0,orbL=-1;
 function moveOrb(){if(!table.length)return;const r=wrap.getBoundingClientRect();
@@ -115,7 +115,7 @@ function place(sec){const n=sec.dataset.shape;
   const a=sec.querySelector('.dust-anchor');if(!a)return[innerWidth*.8,innerHeight*.5,220,.6];const b=a.getBoundingClientRect();return[b.left+b.width/2,b.top+b.height/2,Math.max(b.width,b.height),ALPHA[n]??.8]}
 // pó que flui por todo o caminho já percorrido, do primeiro item até o ponto de magia
 function flowPos(i,time){const f=SH.flow[i];if(!table.length)return[BZ.orbXY[0],BZ.orbXY[1]];const r=wrap.getBoundingClientRect();
-  const u=(f[0]+time*.05)%1,end=table[BZ.orbK][0],back=Math.max(0,end-Math.max(0,L0-24));const L=end-back*(1-Math.pow(u,.8));
+  const u=(f[0]+time*.05)%1,end=table[BZ.orbK][0],back=Math.max(0,end-L0);const L=end-back*(1-Math.pow(u,.8));
   let lo=0,hi=table.length-1;while(lo<hi){const m=(lo+hi)>>1;if(table[m][0]<L)lo=m+1;else hi=m}const q=table[lo];
   const spread=f[1]*(5+11*(1-u));return[r.left+q[1]+spread,r.top+q[2]+f[1]*4]}
 // posição na tela; formas com profundidade giram em 3D (R = [giro, inclinação]) e devolvem a escala da perspectiva
