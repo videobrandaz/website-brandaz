@@ -257,7 +257,7 @@ def page(canon, ttl, desc, body, *, current='', home=False, full_footer=False, o
         meta.append('<meta name="robots" content="noindex">')
     else:
         SITEMAP.append(canon)
-    head_assets = (f'<link rel="icon" type="image/png" href="{U("/favicon.png")}"><link rel="apple-touch-icon" href="{U("/apple-touch-icon.png")}">'
+    head_assets = (f'<link rel="icon" href="{U("/favicon.ico")}" sizes="48x48"><link rel="icon" type="image/png" sizes="512x512" href="{U("/favicon.png")}"><link rel="apple-touch-icon" href="{U("/apple-touch-icon.png")}">'
                    f'<link rel="preload" href="{U("/assets/fonts/grift-800.woff2")}?v=2" as="font" type="font/woff2" crossorigin>'
                    f'<link rel="preload" href="{U("/assets/fonts/grift-400.woff2")}?v=2" as="font" type="font/woff2" crossorigin>'
                    f'<link rel="stylesheet" href="{U("/assets/css/site.css")}?v={CSS_V}">')
