@@ -8,17 +8,21 @@ const wrap=$('.spec-wrap'),road=$('#road'),ahead=$('#ahead'),trail=$('#trail'),m
 const pin=$('.spec-pin'),stick=$('.spec-stick'),scta=$('.spec-cta'),pinned=()=>getComputedStyle(stick).position==='sticky';
 let table=[],total=0,L0=0,L1=0;BZ.orbXY=[-999,-999];BZ.orbK=0;
 function buildRoad(){const W=64,H=wrap.offsetHeight,top=wrap.getBoundingClientRect().top;road.setAttribute('width',W);road.setAttribute('height',H);road.setAttribute('viewBox',`0 0 ${W} ${H}`);
-  const pts=[[32,-30]];specs.forEach((li,i)=>{const r=li.getBoundingClientRect();const x=i%2?14:46;pts.push([x,r.top-top+r.height/2]);li.querySelector('.node').style.left=(x-64-6)+'px'});pts.push([32,H+30]);
+  const pts=[[32,-30]];specs.forEach((li,i)=>{const r=li.getBoundingClientRect();const x=i%2?14:46;pts.push([x,r.top-top+r.height/2]);li.querySelector('.node').style.left=(x-64-6)+'px'}); // o caminho termina no 07
   let d=`M${pts[0][0]},${pts[0][1]}`;for(let i=0;i<pts.length-1;i++){const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
     d+=` C${p1[0]+(p2[0]-p0[0])/6},${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6},${p2[1]-(p3[1]-p1[1])/6} ${p2[0]},${p2[1]}`}
   [ahead,trail,mpath].forEach(p=>p.setAttribute('d',d));total=ahead.getTotalLength();mpath.style.strokeDasharray=total;
   table=[];for(let l=0;l<=total;l+=3){const q=ahead.getPointAtLength(l);table.push([l,q.x,q.y])}BZ.roadTable=table;
-  const at=y=>{let b=table[0];table.forEach(t=>{if(Math.abs(t[2]-y)<Math.abs(b[2]-y))b=t});return b[0]};L0=at(pts[1][1]);L1=at(pts[pts.length-2][1])}
-function moveOrb(){if(!table.length)return;const r=wrap.getBoundingClientRect();let k=0;
-  if(pinned()){const pr=pin.getBoundingClientRect(),p=Math.max(0,Math.min(1,-pr.top/(pr.height-innerHeight))),L=L0+(L1-L0)*p;while(k+1<table.length&&table[k+1][0]<=L)k++;scta.classList.toggle('done',p>.97)}
-  else{const target=innerHeight*.55-r.top;while(k+1<table.length&&table[k+1][2]<=target)k++;scta.classList.add('done')}
+  const at=y=>{let b=table[0];table.forEach(t=>{if(Math.abs(t[2]-y)<Math.abs(b[2]-y))b=t});return b[0]};L0=at(pts[1][1]);L1=total}
+// a rolagem define o alvo; a bolinha desliza até ele a cada quadro e a magia segue a posição dela
+let orbT=0,orbL=-1;
+function moveOrb(){if(!table.length)return;const r=wrap.getBoundingClientRect();
+  if(pinned()){const pr=pin.getBoundingClientRect(),p=Math.max(0,Math.min(1,-pr.top/(pr.height-innerHeight)));orbT=L0+(L1-L0)*p;scta.classList.toggle('done',p>.97)}
+  else{const target=innerHeight*.55-r.top;let k=0;while(k+1<table.length&&table[k+1][2]<=target)k++;orbT=Math.max(L0,Math.min(L1,table[k][0]));scta.classList.add('done')}}
+(function orbLoop(){requestAnimationFrame(orbLoop);if(!table.length)return;orbL=orbL<0?orbT:orbL+(orbT-orbL)*.16;
+  const r=wrap.getBoundingClientRect();let k=Math.min(table.length-1,Math.max(0,Math.round(orbL/3)));
   const [len,x,y]=table[k];orb.style.transform=`translate(${x}px,${y}px)`;mpath.style.strokeDashoffset=total-len;BZ.orbXY=[r.left+x,r.top+y];BZ.orbK=k;
-  specs.forEach(li=>{const b=li.getBoundingClientRect(),c=b.top+b.height/2-r.top;li.classList.toggle('past',c<y-4);li.classList.toggle('lit',Math.abs(c-y)<b.height*.6)})}
+  specs.forEach(li=>{const b=li.getBoundingClientRect(),c=b.top+b.height/2-r.top;li.classList.toggle('past',c<y-4);li.classList.toggle('lit',Math.abs(c-y)<b.height*.6)})})();
 BZ.onScroll.push(moveOrb);
 const re=()=>{buildRoad();moveOrb()};addEventListener('resize',()=>{clearTimeout(window._hr);window._hr=setTimeout(re,160)});addEventListener('load',re);document.fonts&&document.fonts.ready.then(re);re();
 // cada filme roda em loop no próprio box enquanto está na tela
