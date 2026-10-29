@@ -824,6 +824,15 @@ def extras():
     redirects = [('/a-brandaz', '/brandaz/'), ('/about', '/brandaz/'), ('/contact', '/contato/'), ('/clientes', '/projetos/'), ('/trabalhos', '/projetos/'),
                  ('/works', '/projetos/'), ('/works/*', '/projetos/'), ('/posicionamento', '/como-trabalhamos/'), ('/conteudos', '/blog/'), ('/capa-verticais', '/'), ('/capa-verticais/', '/')]
     write('_redirects', ''.join(f'{a} {b} 301\n' for a, b in redirects))
+    # o GitHub Pages não lê _redirects: cada endereço antigo vira uma página que leva ao novo
+    for a, b in redirects:
+        d = os.path.join(OUT, a.strip('/').rstrip('*').strip('/'))
+        if '*' in a or os.path.exists(os.path.join(d, 'index.html')):
+            continue
+        os.makedirs(d, exist_ok=True)
+        write(os.path.relpath(os.path.join(d, 'index.html'), OUT),
+              f'<!doctype html><meta charset="utf-8"><title>Brandaz</title><meta name="robots" content="noindex"><link rel="canonical" href="{BASE}{b}">'
+              f'<meta http-equiv="refresh" content="0; url={b}"><script>location.replace("{b}")</script><a href="{b}">Continuar</a>')
     write('_headers', '/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/share/*\n  Cache-Control: public, max-age=86400\n'
           '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n')
 
