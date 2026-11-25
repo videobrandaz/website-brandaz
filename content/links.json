@@ -1,0 +1,23 @@
+{
+  "_como_editar": "Página brandaz.com.br/contatos. Cada item de 'links' vira um botão, na ordem da lista. 'destaque': true deixa o botão laranja (só um). 'ativo': false esconde sem apagar. 'ate': 'AAAA-MM-DD' some sozinho depois dessa data (bom para campanhas, eventos e vagas) — o site precisa ser publicado de novo para a data valer. Use {email} para o e-mail de site.json. Ícones: whatsapp, site, projetos, apresentacao, vagas, mapa, estrela, calendario, megafone. Links do próprio site recebem UTM da bio automaticamente. Para medir cliques, preencha ga4 (G-XXXXXXX) e/ou meta_pixel (só números).",
+  "titulo": "Brandaz · Links",
+  "descricao": "Agência de marketing e comunicação em Chapecó. Fale com o comercial, conheça o site, os projetos e onde estamos.",
+  "chamada": "Agência de Marketing e Comunicação",
+  "frase": "Onde estratégia ganha magia.",
+  "utm": "utm_source=instagram&utm_medium=bio&utm_campaign=links",
+  "ga4": "",
+  "meta_pixel": "",
+  "links": [
+    { "id": "comercial", "texto": "Fale com nosso comercial", "sub": "Resposta rápida pelo WhatsApp", "url": "https://wa.me/5549988726582?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20quero%20falar%20com%20o%20comercial%20da%20Brandaz.", "icone": "whatsapp", "destaque": true },
+    { "id": "site", "texto": "Conheça nosso site", "sub": "brandaz.com.br", "url": "/", "icone": "site" },
+    { "id": "projetos", "texto": "Conheça nossos projetos", "sub": "Portfólio no Behance", "url": "https://www.behance.net/agenciabrandaz", "icone": "projetos" },
+    { "id": "apresentacao", "texto": "Apresentação institucional", "sub": "Quem somos e como trabalhamos", "url": "/brandaz/", "icone": "apresentacao" },
+    { "id": "vagas", "texto": "Trabalhe conosco", "sub": "Currículo e portfólio: {email}", "url": "mailto:{email}?subject=Trabalhe%20conosco%20%E2%80%93%20Brandaz", "icone": "vagas" },
+    { "id": "mapa", "texto": "Nossa localização", "sub": "Chapecó · SC", "url": "https://www.google.com/maps/search/?api=1&query=Ag%C3%AAncia%20Brandaz%20Chapec%C3%B3", "icone": "mapa" }
+  ],
+  "redes": [
+    { "id": "instagram", "nome": "Instagram", "url": "https://www.instagram.com/agenciabrandaz/" },
+    { "id": "facebook", "nome": "Facebook", "url": "https://www.facebook.com/agenciabrandaz" },
+    { "id": "behance", "nome": "Behance", "url": "https://www.behance.net/agenciabrandaz" }
+  ]
+}

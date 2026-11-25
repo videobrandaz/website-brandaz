@@ -822,12 +822,12 @@ def extras():
           ''.join(f'  <url><loc>{BASE}{c}</loc><lastmod>{date.today().isoformat()}</lastmod><priority>{"1.0" if c == "/" else "0.8" if c.count("/") == 2 else "0.6"}</priority></url>\n' for c in SITEMAP) + '</urlset>\n')
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n')
     redirects = [('/a-brandaz', '/brandaz/'), ('/about', '/brandaz/'), ('/contact', '/contato/'), ('/clientes', '/projetos/'), ('/trabalhos', '/projetos/'),
-                 ('/works', '/projetos/'), ('/works/*', '/projetos/'), ('/posicionamento', '/como-trabalhamos/'), ('/conteudos', '/blog/'), ('/capa-verticais', '/'), ('/capa-verticais/', '/')]
+                 ('/works', '/projetos/'), ('/works/*', '/projetos/'), ('/posicionamento', '/como-trabalhamos/'), ('/conteudos', '/blog/'), ('/capa-verticais', '/'), ('/capa-verticais/', '/'), ('/links', '/contatos/'), ('/bio', '/contatos/')]
     write('_redirects', ''.join(f'{a} {b} 301\n' for a, b in redirects))
     # o GitHub Pages não lê _redirects: cada endereço antigo vira uma página que leva ao novo
     for a, b in redirects:
         d = os.path.join(OUT, a.strip('/').rstrip('*').strip('/'))
-        if '*' in a or os.path.exists(os.path.join(d, 'index.html')):
+        if RELATIVE or '*' in a or os.path.exists(os.path.join(d, 'index.html')):
             continue
         os.makedirs(d, exist_ok=True)
         write(os.path.relpath(os.path.join(d, 'index.html'), OUT),
@@ -835,6 +835,15 @@ def extras():
               f'<meta http-equiv="refresh" content="0; url={b}"><script>location.replace("{b}")</script><a href="{b}">Continuar</a>')
     write('_headers', '/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/share/*\n  Cache-Control: public, max-age=86400\n'
           '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n')
+
+def contatos_links():
+    """Página de links da bio do Instagram (brandaz.com.br/contatos), configurada em content/links.json."""
+    import links_page
+    cfg = links_page.load(ROOT)
+    html_ = links_page.render(cfg, U=U, E=E, base=BASE, year=YEAR, logo=U('/assets/site/logo-brandaz.png'), og=BASE + '/og-image.jpg', noindex=PAGES, email=SITE['email'])
+    write(out_file('/contatos/'), html_) if RELATIVE else (os.makedirs(os.path.join(OUT, 'contatos'), exist_ok=True), write('contatos/index.html', html_))
+    if not (PAGES or PREVIEW):
+        SITEMAP.append('/contatos/')
 
 def main():
     os.makedirs(OUT, exist_ok=True)
@@ -848,7 +857,7 @@ def main():
     blog()
     for b in POSTS:
         post(b)
-    contato()
+    contato(); contatos_links()
     if not RELATIVE:
         not_found(); extras()
     if PAGES:
