@@ -151,7 +151,8 @@ def render(cfg, *, U, E, base, year, logo, og, noindex, email=''):
         return url
 
     def ext(url):
-        return '' if url.startswith('/') or url.startswith('mailto:') else ' target="_blank" rel="noopener noreferrer"'
+        # tudo abre em nova guia para a pessoa não sair do hub (e-mail abre o app de e-mail)
+        return '' if url.startswith('mailto:') else ' target="_blank" rel="noopener"'
 
     items = [l for l in cfg['links'] if l.get('ativo', True) and (not l.get('ate') or date.fromisoformat(l['ate']) >= date.today())]
     btns = ''
@@ -192,7 +193,7 @@ def render(cfg, *, U, E, base, year, logo, og, noindex, email=''):
 <style>{CSS.replace('url(/assets/', 'url(' + U('/assets/'))}</style>{track}</head>
 <body><canvas id="sky" aria-hidden="true"></canvas>
 <main class="wrap">
-  <a class="crest" href="{E(href('/'))}" aria-label="Brandaz, ir para o site" data-link="logo"><span class="orbit" aria-hidden="true"><i></i><i></i><i></i></span><img src="{logo}" alt="Brandaz Agência" width="600" height="300"></a>
+  <a class="crest" href="{E(href('/'))}" target="_blank" rel="noopener" aria-label="Brandaz, ir para o site" data-link="logo"><span class="orbit" aria-hidden="true"><i></i><i></i><i></i></span><img src="{logo}" alt="Brandaz Agência" width="600" height="300"></a>
   <p class="kicker">{E(cfg['chamada'])}</p>
   <h1 class="motto">{motto}</h1>
   <ul class="links">{btns}</ul>
